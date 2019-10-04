@@ -1,0 +1,5 @@
+---
+title: "Contact"
+---
+
+<p>`r fontawesome::fa(name = "fas fa-envelope", fill = "bg-primary")`immcantation@googlegroups.com</p>

@@ -1,0 +1,8 @@
+---
+title: "Schedule"
+---
+
+```{r echo=FALSE}
+DT::datatable(read.delim("static/schedule.tsv"), elementId = "schedule", rownames = F)
+```
+

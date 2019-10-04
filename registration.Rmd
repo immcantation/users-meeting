@@ -1,0 +1,39 @@
+--- 
+title: "Registration and abstract submission"
+---
+
+TODO: describe registration and abstract submission process
+
+https://yalesurvey.ca1.qualtrics.com/jfe/preview/SV_5sVwvTv8QPuDtgV?Q_SurveyVersionID=current&Q_CHL=preview
+
+All abstracts will be reviewed by the organizers. Acceptance is based on scientific content and relevance to meeting topics discussed in the program.
+
+## Important dates:
+
+* Abstract submission ends: 
+
+* Selected speakers announced: 
+
+
+## Abstract formatting guidelines
+
+An abstract template is available for download <a href="static/AbstractTemplate.rtf">`r fontawesome::fa(name = "fas fa-file", fill = "bg-primary")` here</a>.
+
+* One abstract per presenting author
+    
+* No hyperlinks, comments, text or image boxes in the abstract.
+    
+* Paragraph breaks between title, author & institute, abstract body, references and funding.
+
+* 2500-character count limit including spaces, title, authors, affiliations, references and funding.
+
+* Abstract title only in BOLD font.  No other bold characters in the body of the abstract.
+
+* Title cannot be in all caps.
+
+* For Greek and Scientific Symbols (alpha, beta, gamma, etc.), use the Symbol option under the Insert tab in Microsoft Word (or equivalent option in other applications).
+
+* .rtf  documents only
+
+* To signify the Corresponding Author, use asterisk symbol *
+

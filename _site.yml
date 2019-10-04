@@ -1,0 +1,17 @@
+name: "1st Immcantation Users Group Meeting"
+navbar:
+  title: "1st Immcantation Users Group Meeting"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Registration and Abstract submission"
+      href: registration.html
+    - text: "Schedule"
+      href: schedule.html
+    - text: "Contact"
+      href: contact.html
+output:
+  html_document:
+    theme: flatly
+    highlight: tango
+    css: style.css

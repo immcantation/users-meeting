@@ -1,0 +1,29 @@
+---
+title: "1st Immcantation Users Group Meeting"
+---
+
+```{r echo=FALSE}
+suppressPackageStartupMessages(library(fontawesome))
+```
+
+TODO: describe goals, program, audience, important dates
+
+<div class="card text-white bg-primary mb-3" style="max-width: 35rem; float:right;">
+<div class="card-header"><img src='static/immcantation.png' style="max-width: 10rem; float:right;"></div>
+<div class="card-body">
+<div class="card-title"></div>
+<div class="card-text">
+* **Who**: Immcantation users
+
+* **When**: Januay 29, 2020 12-3PM (EST)
+  
+* **Where**: Virtually
+
+* **Registration fee**: $0, it's free
+
+* **Registration ends**: XXXX
+
+* **Abstract submission ends**: XXXX
+</div></div></div>
+
+
