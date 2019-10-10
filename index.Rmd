@@ -4,10 +4,30 @@ title: "1st Immcantation Users Group Meeting"
 
 ```{r echo=FALSE}
 suppressPackageStartupMessages(library(fontawesome))
+REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/preview/SV_5sVwvTv8QPuDtgV?Q_SurveyVersionID=current&Q_CHL=preview"
+REGISTRATION_ENDS <- "TBD"
+SUBMISSION_ENDS <- "TBD"
+CONTACT_SPEAKERS <- "TBD"
+FINAL_SCHEDULE <- "TBD"
 ```
 
-TODO: describe goals, program, audience, important dates
+<!-- main text -->
 
+<div  style="max-width: 55rem; float:left;">
+Join us for the **1st Immcantation Users Group Meeting** to present your research 
+using the [Immcanation Framework](http://immcantation.org) tools and learn 
+how others use them to advance knowledge of the Adaptive Immune Receptor Repertoire (AIRR).
+
+This virtual users meeting will take place on **January 29, 2020, from 12:00PM to 3:00PM (EST)**.
+It will consist of six short presentations showcasing the use of different Immcantation
+tools to learn about the immune system. Each talk will be 20 minutes long 
+and will be followed by 5 minutes for questions. The final [Schedule](schedule.html)
+will be published on `r FINAL_SCHEDULE`. Connection details will be communicated by email to all participants.
+
+Registration is **free** and will be open until `r REGISTRATION_ENDS` See [Registration and abstract submission](registration.html) for details.
+</div>
+
+<!-- side box -->
 <div class="card text-white bg-primary mb-3" style="max-width: 35rem; float:right;">
 <div class="card-header"><img src='static/immcantation.png' style="max-width: 10rem; float:right;"></div>
 <div class="card-body">
@@ -17,13 +37,12 @@ TODO: describe goals, program, audience, important dates
 
 * **When**: Januay 29, 2020 12-3PM (EST)
   
-* **Where**: Virtually
+* **Where**: Virtual
 
 * **Registration fee**: $0, it's free
 
-* **Registration ends**: XXXX
+* **Registration ends**: `r REGISTRATION_ENDS`
 
-* **Abstract submission ends**: XXXX
-</div></div></div>
-
-
+* **Abstract submission ends**: `r SUBMISSION_ENDS`
+</div></div>
+ </div>

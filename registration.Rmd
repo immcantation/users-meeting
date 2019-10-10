@@ -2,38 +2,61 @@
 title: "Registration and abstract submission"
 ---
 
-TODO: describe registration and abstract submission process
 
-https://yalesurvey.ca1.qualtrics.com/jfe/preview/SV_5sVwvTv8QPuDtgV?Q_SurveyVersionID=current&Q_CHL=preview
+<!-- main text -->
 
-All abstracts will be reviewed by the organizers. Acceptance is based on scientific content and relevance to meeting topics discussed in the program.
+<div  style="max-width: 55rem; float:left;">
+The registration form is available [here`r fontawesome::fa(name = "fas fa-link", fill = "bg-primary")`](`r REGISTRATION_FORM`).
 
-## Important dates:
+Registration is **free** and will be open until `r REGISTRATION_ENDS`. If you want to submit an abstract
+to be considered for presentation, have it ready at the time of registration, as
+you will be requested to upload it. The document should follow the abstract 
+formatting guidelines described below. Abstract sumission will end `r REGISTRATION_ENDS`. All 
+abstracts will be reviewed by the [organizers](https://medicine.yale.edu/lab/kleinstein/). Acceptance is based on 
+scientific content and relevance to the meeting goal, which is to showcase 
+the use of a variety of the Immcantation tools in advacing
+knowledge of the adaptive immune receptor repertoire. Selected speakers will be contacted
+by email on `r CONTACT_SPEAKERS`. The final schedule and selected abstracts will be published on `r FINAL_SCHEDULE`.
 
-* Abstract submission ends: 
+### Abstract formatting guidelines
 
-* Selected speakers announced: 
+An abstract template is available for download <a href="static/AbstractTemplate.rtf">here`r fontawesome::fa(name = "fas fa-file", fill = "bg-primary")`</a>.
 
+* One abstract per presenting author.
 
-## Abstract formatting guidelines
+* 2500 characters total (including *all text and spaces*: title, authors, abstract...).
 
-An abstract template is available for download <a href="static/AbstractTemplate.rtf">`r fontawesome::fa(name = "fas fa-file", fill = "bg-primary")` here</a>.
+* Title in bold text.
 
-* One abstract per presenting author
+* Title cannot be in all capital letters.
+
+* Presenter author must be underlined.
+
+* Use the asterisk symbol (*) to signify the Corresponding Author.
+
+* No comments, text or image boxes in the abstract.
     
-* No hyperlinks, comments, text or image boxes in the abstract.
-    
-* Paragraph breaks between title, author & institute, abstract body, references and funding.
+* .rtf  documents only.
+</div>
 
-* 2500-character count limit including spaces, title, authors, affiliations, references and funding.
 
-* Abstract title only in BOLD font.  No other bold characters in the body of the abstract.
+<!-- side box -->
+<div class="card text-white bg-primary mb-3" style="max-width: 35rem; float:right;">
+<div class="card-body">
+<div class="card-title"></div>
+<div class="card-text">
 
-* Title cannot be in all caps.
+<button type="button" class="btn btn-outline-primary">[Go to the registration form](`r REGISTRATION_FORM`)</button>
 
-* For Greek and Scientific Symbols (alpha, beta, gamma, etc.), use the Symbol option under the Insert tab in Microsoft Word (or equivalent option in other applications).
+Important dates: 
 
-* .rtf  documents only
+* **Abstract submission ends**: `r SUBMISSION_ENDS`
 
-* To signify the Corresponding Author, use asterisk symbol *
+* **Contact selected speakers**: `r CONTACT_SPEAKERS`
 
+* **Registration ends**: `r REGISTRATION_ENDS`
+
+* **Final schedule:**: `r FINAL_SCHEDULE`
+
+</div></div>
+ </div>
