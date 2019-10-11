@@ -41,6 +41,7 @@ An abstract template is available for download <a href="static/AbstractTemplate.
 
 <!-- side box -->
 <div class="card text-white bg-primary mb-3" style="max-width: 35rem; float:right;">
+<div class="card-header"><img src='static/immcantation-circle.png' style="max-width: 10rem; float:right;"></div>
 <div class="card-body">
 <div class="card-title"></div>
 <div class="card-text">
