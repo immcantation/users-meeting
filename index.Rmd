@@ -24,7 +24,7 @@ tools to learn about the immune system. Each talk will be 20 minutes long
 and will be followed by 5 minutes for questions. The final [Program](program.html)
 will be published on `r FINAL_SCHEDULE`. Connection details will be communicated by email to all participants.
 
-Registration is **free** and will be open until `r REGISTRATION_ENDS` See [Registration and abstract submission](registration.html) for details.
+Registration is **free** and will be open until `r REGISTRATION_ENDS`. See [Registration and abstract submission](registration.html) for details.
 </div>
 
 <!-- side box -->
