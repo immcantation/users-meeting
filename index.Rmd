@@ -14,14 +14,12 @@ FINAL_SCHEDULE <- "January 10, 2020"
 <!-- main text -->
 
 <div  style="max-width: 55rem; float:left;">
-Join us for the **1st Immcantation Users Group Meeting** to present your research 
-using the [Immcanation Framework](http://immcantation.org) tools and learn 
-how others use them to advance knowledge of the Adaptive Immune Receptor Repertoire (AIRR).
+Join us for the **Immcantation Users Group Meeting 2020** to learn how researchers are applying the [Immcanation Framework](http://immcantation.org) for high-throughput bulk and single-cell B cell receptor repertoire analysis.
+Submit an abstract to present your own research, or simply join us to learn how others are using [Immcanation](http://immcantation.org) to advance knowledge of adaptive immunity.
 
 This virtual users meeting will take place on **January 29, 2020, from 12:00PM to 3:00PM (EST)**.
-It will consist of six short presentations showcasing the use of different Immcantation
-tools to learn about the immune system. Each talk will be 20 minutes long 
-and will be followed by 5 minutes for questions. The final [Program](program.html)
+The program will consist of approximately six short presentations.
+Each talk will be 20 minutes long, followed by 5 minutes for questions. The final [Program](program.html)
 will be published on `r FINAL_SCHEDULE`. Connection details will be communicated by email to all participants.
 
 Registration is **free** and will be open until `r REGISTRATION_ENDS`. See [Registration and abstract submission](registration.html) for details.
@@ -43,6 +41,6 @@ Registration is **free** and will be open until `r REGISTRATION_ENDS`. See [Regi
 
 * **Registration ends**: `r REGISTRATION_ENDS`
 
-* **Abstract submission ends**: `r SUBMISSION_ENDS`
+* **Abstract submission deadline**: `r SUBMISSION_ENDS`
 </div></div>
  </div>
