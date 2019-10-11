@@ -1,12 +1,12 @@
 ---
-title: "Schedule"
+title: "Program"
 ---
 
 Note all times shown here use EST. 
 
 ```{r echo=FALSE}
-DT::datatable(read.delim("static/schedule.tsv"),
-              elementId = "schedule", rownames = F,
+DT::datatable(read.delim("static/program.tsv"),
+              elementId = "program", rownames = F,
               caption="1st Immcantation Users Group Meeting. January 29, 2020. Final progamme.")
 ```
 

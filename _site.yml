@@ -6,8 +6,8 @@ navbar:
       href: index.html
     - text: "Registration and Abstract submission"
       href: registration.html
-    - text: "Schedule"
-      href: schedule.html
+    - text: "Program"
+      href: program.html
     - text: "Contact"
       href: contact.html
 output:

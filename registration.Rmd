@@ -4,10 +4,6 @@ title: "Registration and abstract submission"
 
 
 <!-- main text -->
-
-<div  style="max-width: 55rem; float:left;">
-The registration form is available [here`r fontawesome::fa(name = "fas fa-link", fill = "bg-primary")`](`r REGISTRATION_FORM`).
-
 Registration is **free** and will be open until `r REGISTRATION_ENDS`. If you want to submit an abstract
 to be considered for presentation, have it ready at the time of registration, as
 you will be requested to upload it. The document should follow the abstract 
@@ -16,7 +12,10 @@ abstracts will be reviewed by the [organizers](https://medicine.yale.edu/lab/kle
 scientific content and relevance to the meeting goal, which is to showcase 
 the use of a variety of the Immcantation tools in advacing
 knowledge of the adaptive immune receptor repertoire. Selected speakers will be contacted
-by email on `r CONTACT_SPEAKERS`. The final schedule and selected abstracts will be published on `r FINAL_SCHEDULE`.
+by email on `r CONTACT_SPEAKERS`. The final program and selected abstracts will be published on `r FINAL_SCHEDULE`.
+
+<div  style="max-width: 55rem; float:left;">
+The registration form is available [here`r fontawesome::fa(name = "fas fa-link", fill = "bg-primary")`](`r REGISTRATION_FORM`).
 
 ### Abstract formatting guidelines
 
@@ -32,11 +31,11 @@ An abstract template is available for download <a href="static/AbstractTemplate.
 
 * Presenter author must be underlined.
 
-* Use the asterisk symbol (*) to signify the Corresponding Author.
+* Use the asterisk symbol (*) to signify the Corresponding Author(s).
 
 * No comments, text or image boxes in the abstract.
     
-* .rtf  documents only.
+* .rtf, .docx, .pdf  documents only.
 </div>
 
 
@@ -48,15 +47,15 @@ An abstract template is available for download <a href="static/AbstractTemplate.
 
 <button type="button" class="btn btn-outline-primary">[Go to the registration form](`r REGISTRATION_FORM`)</button>
 
-Important dates: 
+Key dates: 
 
 * **Abstract submission ends**: `r SUBMISSION_ENDS`
 
-* **Contact selected speakers**: `r CONTACT_SPEAKERS`
+* **Acceptance notification**: `r CONTACT_SPEAKERS`
 
 * **Registration ends**: `r REGISTRATION_ENDS`
 
-* **Final schedule:**: `r FINAL_SCHEDULE`
+* **Final program:**: `r FINAL_SCHEDULE`
 
 </div></div>
  </div>
