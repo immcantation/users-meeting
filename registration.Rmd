@@ -4,7 +4,7 @@ title: "Registration and abstract submission"
 
 
 <!-- main text -->
-Registration is **free** and will be open until `r REGISTRATION_ENDS`. To be considered for a presentation, you must register by `r REGISTRATION_ENDS`. 
+Registration is **free** and will be open until `r REGISTRATION_ENDS`. To be considered for a presentation, you must register by `r SUBMISSION_ENDS`. 
 Abstracts may be uploaded during the registration process, and should follow the formatting guidelines described below.  All 
 abstracts will be reviewed by the [organizers](https://medicine.yale.edu/lab/kleinstein/). Acceptance is based on 
 scientific content and relevance to the meeting goal, which is to showcase 
