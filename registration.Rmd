@@ -4,6 +4,7 @@ title: "Registration and abstract submission"
 
 
 <!-- main text -->
+<div  style="max-width: 55rem; float:left;">
 Registration is **free** and will be open until `r REGISTRATION_ENDS`. To be considered for a presentation, you must register by `r SUBMISSION_ENDS`. 
 Abstracts may be uploaded during the registration process, and should follow the formatting guidelines described below.  All 
 abstracts will be reviewed by the [organizers](https://medicine.yale.edu/lab/kleinstein/). Acceptance is based on 
@@ -14,7 +15,6 @@ knowledge of adaptive immune responses. Abtracts should state explicity how Immc
 Selected speakers will be contacted
 by email by `r CONTACT_SPEAKERS`. The final program and selected abstracts will be published on `r FINAL_SCHEDULE`.
 
-<div  style="max-width: 55rem; float:left;">
 The registration form is available [here`r fontawesome::fa(name = "fas fa-link", fill = "bg-primary")`](`r REGISTRATION_FORM`).
 
 ### Abstract formatting guidelines
@@ -46,17 +46,15 @@ An abstract template is available for download <a href="static/AbstractTemplate.
 <div class="card-title"></div>
 <div class="card-text">
 
-<button type="button" class="btn btn-outline-primary">[Go to the registration form](`r REGISTRATION_FORM`)</button>
+<button type="button" class="btn btn-outline-primary">[Go to the <br> registration form](`r REGISTRATION_FORM`)</button>
 
-Key dates: 
+**Abstract submission ends**: `r SUBMISSION_ENDS`
 
-* **Abstract submission ends**: `r SUBMISSION_ENDS`
+**Acceptance notification**: `r CONTACT_SPEAKERS`
 
-* **Acceptance notification**: `r CONTACT_SPEAKERS`
+**Registration ends**: `r REGISTRATION_ENDS`
 
-* **Registration ends**: `r REGISTRATION_ENDS`
-
-* **Final program:**: `r FINAL_SCHEDULE`
+**Final program:**: `r FINAL_SCHEDULE`
 
 </div></div>
  </div>

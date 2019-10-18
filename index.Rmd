@@ -14,8 +14,8 @@ FINAL_SCHEDULE <- "January 10, 2020"
 <!-- main text -->
 
 <div  style="max-width: 55rem; float:left;">
-Join us for the **Immcantation Users Group Meeting 2020** to learn how researchers are applying the [Immcanation Framework](http://immcantation.org) for high-throughput bulk and single-cell B cell receptor repertoire analysis.
-Submit an abstract to present your own research, or simply join us to learn how others are using [Immcanation](http://immcantation.org) to advance knowledge of adaptive immunity.
+Join us for the **Immcantation Users Group Meeting 2020** to learn how researchers are applying the [Immcantation Framework](http://immcantation.org) for high-throughput bulk and single-cell B cell receptor repertoire analysis.
+Submit an abstract to present your own research, or simply join us to learn how others are using [Immcantation](http://immcantation.org) to advance knowledge of adaptive immunity.
 
 This virtual users meeting will take place on **January 29, 2020, from 12:00PM to 3:00PM (EST)**.
 The program will consist of approximately six short presentations.
@@ -31,16 +31,16 @@ Registration is **free** and will be open until `r REGISTRATION_ENDS`. See [Regi
 <div class="card-body">
 <div class="card-title"></div>
 <div class="card-text">
-* **Who**: Immcantation users
+**Who**: Immcantation users
 
-* **When**: Januay 29, 2020 12-3PM (EST)
-  
-* **Where**: Virtual
+**When**: January 29, 2020 12-3PM (EST)
+ 
+**Where**: Virtual
 
-* **Registration fee**: $0, it's free
+**Registration fee**: $0, it's free
 
-* **Registration ends**: `r REGISTRATION_ENDS`
+**Registration ends**: `r REGISTRATION_ENDS`
 
-* **Abstract submission deadline**: `r SUBMISSION_ENDS`
+**Abstract submission deadline**: `r SUBMISSION_ENDS`
 </div></div>
- </div>
+</div>
