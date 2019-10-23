@@ -15,3 +15,4 @@ output:
     theme: flatly
     highlight: tango
     css: style.css
+exclude: ["admin"]
