@@ -19,7 +19,7 @@ The registration form is available [here`r fontawesome::fa(name = "fas fa-link",
 
 ### Abstract formatting guidelines
 
-An abstract template is available for download <a href="static/AbstractTemplate.rtf">here`r fontawesome::fa(name = "fas fa-file", fill = "bg-primary")`</a>.
+An abstract template is available for download <a href="static/AbstractTemplate.docx">here`r fontawesome::fa(name = "fas fa-file", fill = "bg-primary")`</a>.
 
 * One abstract per presenting author.
 
