@@ -7,6 +7,6 @@ Note all times shown here use EST.
 ```{r echo=FALSE}
 DT::datatable(read.delim("static/program.tsv"),
               elementId = "program", rownames = F,
-              caption="1st Immcantation Users Group Meeting. January 29, 2020. Final progam.")
+              caption=paste0("2020 Immcantation Users Group Meeting. Final progam."))
 ```
 

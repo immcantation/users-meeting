@@ -2,4 +2,4 @@
 title: "Contact"
 ---
 
-If you need additional information, please contact us at `r fontawesome::fa(name = "fas fa-envelope", fill = "bg-primary")`immcantation@googlegroups.com
+If you need additional information, please contact us at `r fontawesome::fa(name = "fas fa-envelope", fill = "bg-primary")`immcantation-meeting@googlegroups.com.

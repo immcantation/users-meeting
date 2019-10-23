@@ -1,26 +1,27 @@
 ---
-title: "1st Immcantation Users Group Meeting"
+title: "2020 Immcantation Users Group Meeting"
 ---
 
 ```{r echo=FALSE}
 suppressPackageStartupMessages(library(fontawesome))
-REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/preview/SV_5sVwvTv8QPuDtgV?Q_SurveyVersionID=current&Q_CHL=preview"
-REGISTRATION_ENDS <- "January 17, 2020"
-SUBMISSION_ENDS <- "November 22, 2019"
-CONTACT_SPEAKERS <- "December 20, 2019"
-FINAL_SCHEDULE <- "January 10, 2020"
+BIG_DAY <- "January 29th, 2020"
+BIG_DAY_TIME <- "12:00PM to 3:00PM (EST)" 
+REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_5sVwvTv8QPuDtgV"
+REGISTRATION_ENDS <- "January 17th, 2020"
+SUBMISSION_ENDS <- "November 22nd, 2019"
+CONTACT_SPEAKERS <- "December 20th, 2019"
+FINAL_SCHEDULE <- "January 10th, 2020"
 ```
 
 <!-- main text -->
 
 <div  style="max-width: 55rem; float:left;">
-Join us for the **Immcantation Users Group Meeting 2020** to learn how researchers are applying the [Immcantation Framework](http://immcantation.org) for high-throughput bulk and single-cell B cell receptor repertoire analysis.
+Join us for the **2020 Immcantation Users Group Meeting** to learn how researchers are applying the [Immcantation Framework](http://immcantation.org) for high-throughput bulk and single-cell B cell receptor repertoire analysis.
 Submit an abstract to present your own research, or simply join us to learn how others are using [Immcantation](http://immcantation.org) to advance knowledge of adaptive immunity.
 
-This virtual users meeting will take place on **January 29, 2020, from 12:00PM to 3:00PM (EST)**.
-The program will consist of approximately six short presentations.
-Each talk will be 20 minutes long, followed by 5 minutes for questions. The final [Program](program.html)
-will be published on `r FINAL_SCHEDULE`. Connection details will be communicated by email to all participants.
+This virtual users meeting will take place on **`r BIG_DAY`, from `r BIG_DAY_TIME`**.
+The program will consist of approximately six short presentations chosen from submitted abstracts.
+Each talk will be 20 minutes long.
 
 Registration is **free** and will be open until `r REGISTRATION_ENDS`. See [Registration and abstract submission](registration.html) for details.
 </div>
@@ -33,14 +34,16 @@ Registration is **free** and will be open until `r REGISTRATION_ENDS`. See [Regi
 <div class="card-text">
 **Who**: Immcantation users
 
-**When**: January 29, 2020 12-3PM (EST)
+**When**: `r BIG_DAY` (`r BIG_DAY_TIME`)
  
 **Where**: Virtual
 
 **Registration fee**: $0, it's free
 
-**Registration ends**: `r REGISTRATION_ENDS`
+**Abstract deadline**: `r SUBMISSION_ENDS`
 
-**Abstract submission deadline**: `r SUBMISSION_ENDS`
+**Final Program published**: `r FINAL_SCHEDULE`
+
+**Registration ends**: `r REGISTRATION_ENDS`
 </div></div>
 </div>

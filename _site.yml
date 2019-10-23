@@ -1,10 +1,10 @@
-name: "1st Immcantation Users Group Meeting"
+name: "Immcantation Users Group Meeting"
 navbar:
   title: ""
   left:
     - text: "Home"
       href: index.html
-    - text: "Registration and Abstract submission"
+    - text: "Registration and abstract submission"
       href: registration.html
     - text: "Program"
       href: program.html
