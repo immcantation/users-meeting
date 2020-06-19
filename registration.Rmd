@@ -5,7 +5,7 @@ title: "Registration and abstract submission"
 
 <!-- main text -->
 <div  style="max-width: 55rem; float:left;">
-Registration is **free** and will be open until `r REGISTRATION_ENDS`. To be considered for a presentation, you must register and submit an abstract by `r SUBMISSION_ENDS`. 
+Registration is **free**<!-- and will be open until `r REGISTRATION_ENDS`-->. To be considered for a presentation, you must register and submit an abstract by `r SUBMISSION_ENDS`. 
 Abstracts may be uploaded during the registration process, and should follow the formatting guidelines described below.  All 
 abstracts will be reviewed by the [organizers](https://medicine.yale.edu/lab/kleinstein/people/). Acceptance is based on 
 scientific content and relevance to the meeting goal, which is to showcase 
@@ -46,15 +46,15 @@ An abstract template is available for download <a href="static/AbstractTemplate.
 <div class="card-title"></div>
 <div class="card-text">
 
-<button type="button" class="btn btn-outline-primary">[Go to the <br> registration form](`r REGISTRATION_FORM`)</button>
+<!-- <button type="button" class="btn btn-outline-primary">[Go to the <br> registration form](`r REGISTRATION_FORM`)</button> -->
 
 **Abstract submission ends**: `r SUBMISSION_ENDS`
 
 **Acceptance notification**: `r CONTACT_SPEAKERS`
 
-**Final program:**: `r FINAL_SCHEDULE`
+**Final program**: `r FINAL_SCHEDULE`
 
-**Registration ends**: `r REGISTRATION_ENDS`
+<!--**Registration ends**: `r REGISTRATION_ENDS`-->
 
 </div></div>
  </div>

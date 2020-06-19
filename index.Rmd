@@ -1,9 +1,11 @@
 ---
-title: "2020 Immcantation Users Group Meeting"
+title: "Immcantation Users Group Meeting 2020"
 ---
 
 ```{r echo=FALSE}
 suppressPackageStartupMessages(library(fontawesome))
+suppressPackageStartupMessages(library(dplyr))
+suppressPackageStartupMessages(library(kableExtra))
 BIG_DAY <- "January 29th, 2020"
 BIG_DAY_TIME <- "12:00PM to 3:00PM (EST)" 
 REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_5sVwvTv8QPuDtgV"
@@ -11,24 +13,24 @@ REGISTRATION_ENDS <- "January 17th, 2020"
 SUBMISSION_ENDS <- "November 22nd, 2019"
 CONTACT_SPEAKERS <- "December 20th, 2019"
 FINAL_SCHEDULE <- "January 10th, 2020"
+JOIN_WEBINAR <- "https://zoom.us/j/968949568"
 ```
 
 <!-- main text -->
 
 <div  style="max-width: 55rem; float:left;">
-Join us for the **2020 Immcantation Users Group Meeting** to learn how researchers are applying the [Immcantation Framework](http://immcantation.org) for high-throughput bulk and single-cell B cell receptor repertoire analysis.
+Join us for the **Immcantation Users Group Meeting 2020** to learn how researchers are applying the [Immcantation Framework](http://immcantation.org) for high-throughput bulk and single-cell B cell receptor repertoire analysis.
 Submit an abstract to present your own research, or simply join us to learn how others are using [Immcantation](http://immcantation.org) to advance knowledge of adaptive immunity.
 
-This virtual users meeting will take place on **`r BIG_DAY`, from `r BIG_DAY_TIME`**.
-The program will consist of approximately six short presentations chosen from submitted abstracts.
-Each talk will be 20 minutes long.
+This virtual users meeting will take place via videoconference on **`r BIG_DAY`, from `r BIG_DAY_TIME`**.
+The program consists of seven presentations chosen from submitted abstracts. See [Program](program.html) for details.
 
-Registration is **free** and will be open until `r REGISTRATION_ENDS`. See [Registration and abstract submission](registration.html) for details.
+Registration is **free** <!-- and will be open until `r REGISTRATION_ENDS`-->. See [Registration](registration.html) for details.
 </div>
 
 <!-- side box -->
 <div class="card text-white bg-primary mb-3" style="max-width: 35rem; float:right;">
-<div class="card-header"><img src='static/immcantation-circle.png' style="max-width: 10rem; float:right;"></div>
+<div class="card-header"><img src='static/immcantation-circle.png' align="center" style="max-width: 10rem; float:right;"></div>
 <div class="card-body">
 <div class="card-title"></div>
 <div class="card-text">
@@ -44,6 +46,6 @@ Registration is **free** and will be open until `r REGISTRATION_ENDS`. See [Regi
 
 **Final Program published**: `r FINAL_SCHEDULE`
 
-**Registration ends**: `r REGISTRATION_ENDS`
+<!--**Registration ends**: `r REGISTRATION_ENDS`-->
 </div></div>
 </div>
