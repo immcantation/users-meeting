@@ -26,6 +26,8 @@ This virtual users meeting will take place via videoconference on **`r BIG_DAY`,
 The program consists of seven presentations chosen from submitted abstracts. See [Program](program.html) for details.
 
 Registration is **free** <!-- and will be open until `r REGISTRATION_ENDS`-->. See [Registration](registration.html) for details.
+
+[<button type="button" class="btn btn-info">Rercordings of some of the sessions are available on YouTube</button>](https://www.youtube.com/playlist?list=PL_vz5s41hsdDiPhRgcR_uWGQSbPQY8KDv)
 </div>
 
 <!-- side box -->
