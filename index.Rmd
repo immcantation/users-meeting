@@ -1,25 +1,27 @@
 ---
-title: "Immcantation Users Group Meeting 2020"
+title: "Immcantation Users Group Meeting 2024"
 ---
 
 ```{r echo=FALSE}
 suppressPackageStartupMessages(library(fontawesome))
 suppressPackageStartupMessages(library(dplyr))
 suppressPackageStartupMessages(library(kableExtra))
-BIG_DAY <- "January 29th, 2020"
-BIG_DAY_TIME <- "12:00PM to 3:00PM (EST)" 
-REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_5sVwvTv8QPuDtgV"
-REGISTRATION_ENDS <- "January 17th, 2020"
-SUBMISSION_ENDS <- "November 22nd, 2019"
-CONTACT_SPEAKERS <- "December 20th, 2019"
-FINAL_SCHEDULE <- "January 10th, 2020"
-JOIN_WEBINAR <- "https://zoom.us/j/968949568"
+BIG_DAY <- "January 25th, 2024"
+BIG_DAY_TIME <- "10:00PM to 2:00PM (EST)"
+# Link to the registration form.
+REGISTRATION_FORM <- ""
+REGISTRATION_ENDS <- "January 22nd, 2024"
+SUBMISSION_ENDS <- "December 1st, 2023"
+CONTACT_SPEAKERS <- "December 15th, 2023"
+FINAL_SCHEDULE <- "January 8th, 2024"
+# Zoom link:
+JOIN_WEBINAR <- ""
 ```
 
 <!-- main text -->
 
 <div  style="max-width: 55rem; float:left;">
-Join us for the **Immcantation Users Group Meeting 2020** to learn how researchers are applying the [Immcantation Framework](http://immcantation.org) for high-throughput bulk and single-cell B cell receptor repertoire analysis.
+Join us for the **Immcantation Users Group Meeting 2024** to learn how researchers are applying the [Immcantation Framework](http://immcantation.org) for high-throughput bulk and single-cell B cell receptor repertoire analysis.
 Submit an abstract to present your own research, or simply join us to learn how others are using [Immcantation](http://immcantation.org) to advance knowledge of adaptive immunity.
 
 This virtual users meeting will take place via videoconference on **`r BIG_DAY`, from `r BIG_DAY_TIME`**.
@@ -27,7 +29,6 @@ The program consists of seven presentations chosen from submitted abstracts. See
 
 Registration is **free** <!-- and will be open until `r REGISTRATION_ENDS`-->. See [Registration](registration.html) for details.
 
-[<button type="button" class="btn btn-info">Rercordings of some of the sessions are available on YouTube</button>](https://www.youtube.com/playlist?list=PL_vz5s41hsdDiPhRgcR_uWGQSbPQY8KDv)
 </div>
 
 <!-- side box -->
