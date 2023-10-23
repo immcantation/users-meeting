@@ -8,7 +8,7 @@ suppressPackageStartupMessages(library(fontawesome))
 suppressPackageStartupMessages(library(kableExtra))
 
 BIG_DAY <- "January 25th, 2024"
-BIG_DAY_TIME <- "10:00PM to 2:00PM (EST)"
+BIG_DAY_TIME <- "10:00AM to 2:00PM (ET)"
 
 # link to the registration form
 REGISTRATION_FORM <- ""
