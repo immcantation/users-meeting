@@ -1,8 +1,8 @@
 ## End of registration 
 
-Thank you for registering for the **Immcantation Users Group Virtual Meeting 2020**. Your registration has been received. 
+Thank you for registering for the **2024 Immcantation Users Group Virtual Meeting**! Your registration has been received. 
 
-The meeting will be held on January 29th, 2020, from 12:00pm to 3:00pm (EST). You will receive a reminder email along with connection details for how to join the meeting one week before the event. If you submitted an abstract, you will receive an email notification of the decission by December 20th, 2019.
+The meeting will be held on `r BIG_DAY`, from `r BIG_DAY_TIME`. You will receive a reminder email along with connection details for how to join the meeting one week before the event. If you submitted an abstract, you will receive an email notification of the decision by `r CONTACT_SPEAKERS`.
 
 Further details can be found at [our website](http://kleinstein.bitbucket.io/IM). If you have any questions, please contact us at [immcantation-meeting@googlegroups.com](mailto:immcantation-meeting@googlegroups.com). 
 

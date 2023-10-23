@@ -6,7 +6,7 @@ title: "Program"
 
 </br>
 
-The virtual Immcantation Users Group Meeting 2020 will take place on **January 29th, 2020**. 
+The 2024 Immcantation Users Group Meeting will take place on **`r BIG_DAY`**. 
 
 Note **all times shown here use EST.**
 
@@ -15,118 +15,6 @@ knitr::kable(read.delim("static/program.tsv")[,-1], "html") %>%
     kable_styling(bootstrap_options = c("striped", "hover","condensed", "responsive")) %>%
     column_spec(1, width = "5em") %>%
     column_spec(2, width = "5em")
-
 ```
 
 ## Abstracts
-
-### Dynamics of the human antibody repertoire after B cell depletion in systemic sclerosis
-Charles de Bourcy<sup>1,2</sup>, Cornelia Dekker<sup>3</sup>, Mark Davis<sup>4,5,6</sup>, Mark Nicolls<sup>7,8</sup>, Stephen Quake1<sup>,9,10\*</sup>
-
-<sup>1</sup>Department of Applied Physics, Stanford University, Stanford, CA 94305, USA
-<sup>2</sup>Current address: Chan Zuckerberg Initiative, Redwood City, CA 94063, USA
-<sup>3</sup>Department of Pediatrics, Stanford University School of Medicine, Stanford, CA 94305, USA
-<sup>4</sup>Department of Microbiology and Immunology, Stanford University School of Medicine, Stanford, CA 94305, USA
-<sup>5</sup>Institute for Immunity, Transplantation and Infection, Stanford University School of Medicine, Stanford, CA 94305, USA
-<sup>6</sup>Howard Hughes Medical Institute, Chevy Chase, MD 20815, USA
-<sup>7</sup>Division of Pulmonary and Critical Care Medicine, Department of Medicine, Stanford University School of Medicine, Stanford, CA 94305, USA
-<sup>8</sup>Veterans Affairs Palo Alto Health Care System, Medical Service, Palo Alto, CA 94303, USA
-<sup>9</sup>Department of Bioengineering, Stanford University, Stanford, CA 94305, USA
-<sup>10</sup>Chan Zuckerberg Biohub, San Francisco, CA 94158, USA.
-<sup>\*</sup>Corresponding author
-	
-Systemic sclerosis with pulmonary arterial hypertension (SSc-PAH) is a debilitating and frequently lethal disease of unknown cause lacking effective treatment options. Lymphocyte anomalies and autoantibodies observed in systemic sclerosis have suggested an autoimmune character. We study the clonal structure of the B cell repertoire in SSc-PAH using immunoglobulin heavy chain (IGH) sequencing before and after B cell depletion. The Immcantation suite was used to preprocess and standardize sequencing data in view of downstream analyses: assembly and quality control using pRESTO, germline characterization using Change-O in conjunction with IMGT/HighV-QUEST, and correction for potential novel alleles using TIgGER. We found SSc-PAH to be associated with anomalies in B cell development, namely, altered VDJ rearrangement frequencies (reduced IGHV2-5 segment usage) and an increased somatic mutation–fixation probability in expanded B cell lineages. SSc-PAH was also characterized by anomalies in B cell homeostasis, namely, an expanded immunoglobulin D–positive (IgD+) proportion with reduced mutation loads and an expanded proportion of highly antibody-secreting cells. Disease signatures pertaining to IGHV2-5 segment usage, IgD proportions, and mutation loads were temporarily reversed after B cell depletion. Analyzing the time course of B cell depletion, we find that the kinetics of naïve replenishment are predictable from baseline measurements alone, that release of plasma cells into the periphery can precede naïve replenishment, and that modes of B cell receptor diversity are highly elastic. Our findings reveal humoral immune signatures of SSc-PAH and uncover determinism in the effects of B cell depletion on the antibody repertoire.
-
-### Ara h 2 Specific IgA B Cell Repertoire Matures During Peanut Oral Immunotherapy
-Nicole LaHood MD<sup>1</sup>, Huong Tang<sup>1</sup>, Choiwing Yeung<sup>1</sup>, Yamini Virkud MD<sup>1,2</sup>, Bert Ruiter PhD<sup>1</sup>, J. Christopher Love PhD<sup>3</sup>, Wayne G. Shreffler MD PhD<sup>1,2</sup>, Sarita U. Patil MD<sup>1,2</sup>.
-
-<sup>1</sup>Center for Immunology and Inflammatory Diseases, Division of Rheumatology, Allergy, and  Immunology, Massachusetts General Hospital, Boston, Massachusetts.
-<sup>2</sup> Food Allergy Center, Massachusetts General Hospital for Children, Boston, Massachusetts.
-<sup>3</sup> Massachusetts Institute of Technology, Department of Chemical Engineering, Boston, Massachusetts.
-
-Rationale: 
-While peanut oral immunotherapy (OIT) induces clinical protection, its effects on mucosal immunity remain unknown. We hypothesize that the mucosal delivery of peanut during OIT induces maturation of the Ara h 2 specific IgA B cell repertoire, which may impact post-OIT immunity. 
-
-Methods:
-Thirty peanut-allergic children, (ages 7-13), enrolled in a single-center, open-label peanut OIT trial. Peripheral blood was obtained before, at 1-2 months during OIT, and at 3 months after OIT from 8 subjects selected from the 22 subjects who achieved clinical protection. Arah2 specific B cells were identified and isolated using a fluorescent Ara h 2 multimer for single-cell B cell receptor (BCR) sequencing using nested PCR and Sanger sequencing. Heavy chain BCRs were analyzed using our previously published pipeline, mutation frequency was normalized by length, and group-wise comparisons were performed in R and using Immcantation tools.
-
-Results: 
-We identified 80 functional Ara h 2 specific IgA BCRs, with 15 before OIT, 51 during OIT, and 14 after OIT.  The frequency of mutations in IgA V regions significantly increased during OIT (3.0% to 9.7%, p<0.001) and remained similar post-OIT (8.9%, p>0.1). Within IgA BCRs, we found an increased frequency of non-silent mutations during OIT in both complementary-determining regions (CDR, 6.8% to 13.0%, p=0.001) and framework regions (FR, 2.3% to 7.8%, p<0.001). These remained similar post-OIT (CDR 11.6% and FR 6.0%, p>0.1).
-
-Conclusions:
-The Ara h 2 specific IgA repertoire undergoes somatic hypermutation during OIT which persists after OIT. The OIT-induced maturation of the IgA repertoire may have a role in the development of mucosal immunity during OIT. 
-
-
-Funding institutions:  MGH, NIH NIAID, AAAAI/FARE, Charles H. Hood Foundation
-Clinical Trial or Protocol number associated with this study: NCT01324401
-
-
-### Mapping antigen-specific mAbs to clonal family lineages in Immcantation-based repertoires
-
-Eric Waltari<sup>1</sup>, Aaron McGeever<sup>1</sup>, Peter S. Kim<sup>1,2</sup>, Krista M. McCutcheon<sup>1\*</sup>
-
-<sup>1</sup>Chan Zuckerberg Biohub, San Francisco, CA; <sup>2</sup>Stanford Chem-H & Department of Biochemistry, Stanford University School of Medicine, Stanford, CA
-<sup>\*</sup>Corresponding author
-	
-Our group has developed a method to functionally expand the memory repertoire from PBMCs using in vitro polyclonal stimulation. In combination with an Immcantation-based pipeline incorporating Reflow, we have analyzed this antigen-experienced repertoire to quantify clonal expansions and map monoclonal antibody lineages. We show that combining deep sequencing of stimulated memory B cell repertoires with retrieving single antigen-specific cells is a promising approach in evaluating the functional B cell memory in PBMCs and in determining the immunodominance of paratopes in natural or vaccinated immunity.
-
-### B-cell receptor sequencing in patients with Chronic Lymphocytic Leukemia. Beyond the major clone.
-
-Azahara Fuentes <sup>1</sup>, Alicia Serrano <sup>2,5</sup>, Blanca Ferrer <sup>2</sup>, Maria José Terol <sup>2</sup> , Blanca Navarro <sup>2,5</sup> and F Javier Chaves <sup>1,3,4</sup>
-
-<sup>1</sup> Genomics and Genetics Diagnosis Unit, INCLIVA Research Institute, University of Valencia,
-Valencia, Spain; <sup>2</sup> Hematology Department, Clinic University Hospital. INCLIVA, Valencia, Spain; <sup>3</sup> Sequencing Multiplex SL, Valencia, Spain; <sup>4</sup> Centro de Investigación Biomédica en Red de Diabetes y Enfermedades Metabólicas Asociadas (CIBERDEM); <sup>5</sup> Physiology Department
-University of Valencia.
-
-Chronic Lymphocytic Leukemia (CLL) is a disease with highly genetic heterogeneity characterized
-by B-cell clonal expansion and accumulation in bone marrow, blood, and other lymphoid organs.
-This complex genetic background is reflected in patients outcomes, which are therefore, deeply
-variable. B-cell clones can be classified into UM-CLL (unmutated CLL) or MM-CLL (mutated CLL)
-depending on the mutational status in the variable region of the IgH locus. In the clinical practice the
-use of high throughput sequencing (HTS) for this purpose has not yet been standardized.
-We used a low-cost automatable method for amplification and sequencing of VDJ genes in samples
-(gDNA or RNA) from Peripheral blood (PB), paraffin embedded tissue or bone marrow (300 CLL
-patients), designed for Illumina 2x150 short-read sequencing. For their analysis, we used the
-Immcantation framework, both for data processing and visualization. We analyzed somatic mutation
-and clone diversity. We compared the results with SSeq data obtained at the patients diagnostic
-phase. In most samples analyzed with HTS we could identify the SSeq sequences known to be
-related to CLL. We also identified additional sequences, in both the same major clones and
-subclones, which could play a role in the disease.
-
-### Bcellmagic: a portable workflow for immune repertoire analysis based on the Immcantation framework
-
-Gisela Gabernet<sup>1\*</sup>, Alexander Peltzer<sup>1</sup>, Simon Heumos<sup>1</sup>, Christoph Ruschil<sup>2</sup>, Markus Kowarik<sup>2</sup>, Sven Nahnsen<sup>1</sup>
-
-<sup>1</sup>Quantitative Biology Center, Eberhard Karls University of Tübingen, Germany.
-<sup>2</sup>Department of Neurology and Stroke, and Hertie-Institute for Clinical Brain Research, Eberhard Karls University of Tübingen, Germany.<sup>\*</sup> Corresponding author.
-
-
-B-cell and T-cell immune repertoires are relevant for a number of auto-immune, infectious and oncological diseases. With the rise of personalized medicine, there is a niche for the high-throughput sequencing of individual patient’s immune repertoires. Portable, fully reproducible bioinformatics analysis workflows are therefore needed to achieve automated data processing. Here, we present Bcellmagic, an open-source workflow for the analysis of MiSeq amplicon BCR sequencing data from raw reads to repertoire comparison (https://github.com/nf-core/bcellmagic). Bcellmagic employs the Immcantation framework and is implemented in Nextflow, a Bioinformatics workflow language. Nextflow supports the usage of both Singularity and Docker containers, ensuring easy deployment and full reproducibility of the analyses. The modularity of the workflow allows parallelization of sample processing and optimization of the compute resources. We readily employed Bcellmagic at our Bioinformatics core facility for analyzing immune repertoires of B cell subtypes in multiple sclerosis patients. The workflow is available as part of the nf-core project, a collection of curated open-source Bioinformatics analysis pipelines (https://nf-co.re/). 
-
-### Revealing Ig Germline Variations by AIRR-seq Analysis
-
-Ayelet Peres<sup>1\*</sup>, Or Shemesh<sup>1\*</sup>, Aviv Omer<sup>1</sup>, and Gur Yaari<sup>1</sup>
-
-<sup>1</sup>Faculty of Engineering, Bar Ilan University, Ramat Gan, Israel.<sup>\*</sup> Corresponding author.
-
-We created a new publicly available database, VDJbase (vdjbase.org) which offers an easy
-searching and visualizations of data describing the complete sets of gene sequences
-(genotypes and haplotypes) inferred from adaptive immune receptor repertoire sequencing
-datasets. VDJbase is designed to act as a resource that will allow the scientific community to
-explore the genetic variability of the immunoglobulin (Ig) and T cell receptor (TR) gene loci. It
-can also assist in the investigation of Ig- and TR-related genetic predispositions to diseases.
-The database utilizes the Bayesian method of TIgGER for genotype inference and the new
-haplotype package RAbHIT which infers haplotype based on a novel Bayesian method. The
-inferred haplotypes and deletion patterns may have clinical implications for genetic
-predispositions to diseases. RAbHIT is integrated in the Immcantation tool suit, as an
-independent module. All relevant code for both VDJbase and RAbHIT can be freely downloaded
-and used from bitbucket (https://bitbucket.org/account/user/yaarilab/projects/GPHP)
-
-### VDJServer Analysis with the Immcantation Framework
-
-Scott Christley<sup>1,*</sup>, Lindsay G. Cowell<sup>1</sup>
-
-<sup>1</sup>Dept of Population and Data Sciences, UTSouthwestern Medical Center, Dallas, TX USA
-<sup>\*</sup>Corresponding author
-	
-VDJServer is a cloud-based analysis portal for immune repertoire sequence data. The Immcantation tools, including pRESTO, Change-O, Allakazam and Shazam, have been provided within VDJServer since V1. These tools provide read pre-processing, clone definition, selection quantification, mutation frequencies and lineage tree reconstruction as some of the main capabilities to VDJServer users. We will describe how the Immcantation tools are integrated within VDJServer's cloud infrastructure. VDJServer also provides a public data repository, the Community Data Portal, for publishing AIRR-seq studies, which is part of the AIRR Data Commons, a distributed system of data repositories that allow programmatic query and download of AIRR-seq data. VDJServer V2 is being refactored with tighter integration with the AIRR Data Commons, thus allowing users to perform comparative analysis between their private data and publicly queried AIRR-seq data. Furthermore, VDJServer's web API is being redesigned to be less focused on job/tool execution, instead the API will provide entrypoints for specific analyses. We will discuss this new API design and how Immcantation fits within it, and how VDJServer users will be able to take advantage of the Immcantation framework on private data and public data queried from the AIRR Data Commons.
