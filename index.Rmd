@@ -8,7 +8,7 @@ suppressPackageStartupMessages(library(fontawesome))
 suppressPackageStartupMessages(library(kableExtra))
 
 BIG_DAY <- "January 25th, 2024"
-BIG_DAY_TIME <- "10:00AM to 2:00PM (ET)"
+BIG_DAY_TIME <- "10:00am to 2:00pm ET"
 
 # link to the registration form
 REGISTRATION_FORM <- ""
@@ -24,12 +24,12 @@ JOIN_WEBINAR <- ""
 <!-- main text -->
 <div style="max-width: 55rem; float:left;">
 Join us for the **2024 Immcantation Users Group Meeting** to learn how researchers are applying the [Immcantation framework](http://immcantation.org) for high-throughput bulk and single-cell B cell receptor repertoire analysis.
-Submit an abstract to present your own research, or simply join us to learn how others are using [Immcantation](http://immcantation.org) to advance knowledge of adaptive immunity.
+[Submit an abstract](registration.html) to present your own research, or simply join us to learn how others are using [Immcantation](http://immcantation.org) to advance knowledge of adaptive immunity.
 
 The meeting will take place via Zoom on **`r BIG_DAY`, from `r BIG_DAY_TIME`**.
-The program consists of seven presentations chosen from submitted abstracts. See [Program](program.html) for details.
+The program will consist of several presentations chosen from submitted abstracts. See [program](program.html) for details. [Submit an abstract now!](registration.html)
 
-Registration is **free**<!-- and will be open until `r REGISTRATION_ENDS`-->. Please see [Registration](registration.html) for details.
+Registration is **free**<!-- and will be open until `r REGISTRATION_ENDS`-->. Please see [registration](registration.html) for details.
 
 </div>
 
@@ -39,7 +39,7 @@ Registration is **free**<!-- and will be open until `r REGISTRATION_ENDS`-->. Pl
 <div class="card-body">
 <div class="card-title"></div>
 <div class="card-text">
-**Who**: Immcantation users
+**Who**: Open to the public
 
 **When**: `r BIG_DAY` from `r BIG_DAY_TIME`
  

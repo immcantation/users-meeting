@@ -8,13 +8,15 @@ title: "Program"
 
 The 2024 Immcantation Users Group Meeting will take place on **`r BIG_DAY`**. 
 
-Note **all times shown here use EST.**
+*Note that all times shown here use ET.*
 
-```{r program, echo=FALSE}
-knitr::kable(read.delim("static/program.tsv")[,-1], "html") %>%
-    kable_styling(bootstrap_options = c("striped", "hover","condensed", "responsive")) %>%
-    column_spec(1, width = "5em") %>%
-    column_spec(2, width = "5em")
+```{r program, echo=FALSE, eval=FALSE}
+# TODO: Decide on new timings (since now we go from 10-2pm)
+knitr::kable(read.delim("static/program.tsv")[, -1], "html") %>%
+  kable_styling(bootstrap_options = c("striped", "hover",
+                                      "condensed", "responsive")) %>%
+  column_spec(1, width = "5em") %>%
+  column_spec(2, width = "5em")
 ```
 
 ## Abstracts

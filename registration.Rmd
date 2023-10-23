@@ -20,7 +20,7 @@ An abstract template is available for download <a href="static/AbstractTemplate.
 * There is only one abstract allowed per presenting author.
 * The presenting author must be underlined.
 * Use the asterisk symbol (*) to signify the Corresponding Author(s).
-* The title should be in bold text and cannot be in all capital letters.
+* The title should be in bold text and title case.
 * There should be no comments, text or image boxes in the abstract.
 * .rtf, .docx, .pdf  documents only.
 * 250 words maximum.
