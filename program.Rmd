@@ -6,7 +6,7 @@ title: "Program"
 
 </br>
 
-The 2024 Immcantation Users Group Meeting will take place on **`r BIG_DAY`**. 
+The 2024 Immcantation Users Group Meeting will take place on **`r BIG_DAY`**. The final program will be published on `r FINAL_SCHEDULE`.
 
 *Note that all times shown here use ET.*
 
