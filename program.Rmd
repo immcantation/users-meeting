@@ -11,7 +11,6 @@ The 2024 Immcantation Users Group Meeting will take place on **`r BIG_DAY`**. Th
 *Note that all times shown here use ET.*
 
 ```{r program, echo=FALSE, eval=FALSE}
-# TODO: Decide on new timings (since now we go from 10-2pm)
 knitr::kable(read.delim("static/program.tsv")[, -1], "html") %>%
   kable_styling(bootstrap_options = c("striped", "hover",
                                       "condensed", "responsive")) %>%
