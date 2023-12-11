@@ -27,7 +27,7 @@ Join us for the **2024 Immcantation Users Group Meeting** to learn how researche
 [Submit an abstract](registration.html) to present your own research, or simply join us to learn how others are using [Immcantation](http://immcantation.org) to advance knowledge of adaptive immunity.
 
 The meeting will take place via Zoom on **`r BIG_DAY`, from `r BIG_DAY_TIME`**.
-The program will consist of several presentations chosen from submitted abstracts. See [program](program.html) for details. [Submit an abstract now!](registration.html)
+The program will consist of several presentations chosen from submitted abstracts. See [program](program.html) for details. <!--[Submit an abstract now!](registration.html)-->
 
 Registration is **free**<!-- and will be open until `r REGISTRATION_ENDS`-->. Please see [registration](registration.html) for details.
 
