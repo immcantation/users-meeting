@@ -120,6 +120,13 @@ ImmuneDB is an AIRR-seq database system which allows for the rapid annotation of
 
 ### Single cell B cell phylogenetics with Immcantation {#session9}
 
+<strong>Kenneth B. Hoehn</strong><sup>1</sup>
+
+<sup>1</sup>Department of Biomedical Data Science, Geisel School of Medicine at Dartmouth 
+
+Like other evolving populations, B cells can be studied by reconstructing phylogenetic lineage trees, which represent the series of somatic hypermutations within a B cell clone. Using lineage trees, B cell receptors (BCRs) can act as natural, mutating barcodes that link B cells from different timepoints, tissues, or cellular subtypes. Single B cell sequencing has become widely available and can improve nearly all aspects of B cell lineage analysis by providing high-resolution biological information for tens of thousands of individual B cells. More specifically, single B cell sequencing can provide paired heavy and light chain B cell receptor sequences for individual cells, as well as associated transcriptomic, surface protein, and/or BCR affinity information. Incorporating these new sources of information into BCR sequence analysis requires special methodological considerations. This talk will cover how single B cell sequencing data can be analyzed using the latest methods in Immcantation, with focus on building B cell lineage trees with the R package Dowser. In particular, I will demonstrate new methods in Dowser that build trees to using paired heavy and light chain BCRs from individual cells, and use information from different tissues, cellular subtypes, and serially-sampled timepoints to investigate biological hypotheses. 
+
+
 [Back to top](#header)
 
 ---
