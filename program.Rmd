@@ -32,6 +32,10 @@ knitr::kable(program_table, format = "html") %>%
   column_spec(2, width = "5em")
 ```
 
+
+[<button type="button" class="btn btn-info">Download iCalendar (.ics) file</button>](static/2024-Immcantation-Users-Group-Meeting.ics)
+
+
 ## Abstracts
 
 ### Defining Immunogenomic Signatures in B Cell-Mediated Autoimmunities {#session2}
