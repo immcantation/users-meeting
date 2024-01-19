@@ -14,7 +14,7 @@ To update the real website, do this:
 # build site	
 Rscript -e "rmarkdown::render_site(encoding = 'UTF-8')"
 # rm files that you don't want to copy
-rm  _site/messages-to-users.html _site/Makefile
+rm _site/messages-to-users.html _site/Makefile
 # copy to the rest to the kleinstein.bitbucket.io repo (change paths as needed)
 cp -r _site/* ../kleinstein.bitbucket.io/IM/.
 ```
