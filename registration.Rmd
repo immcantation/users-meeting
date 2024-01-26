@@ -11,7 +11,10 @@ the use of a variety of the Immcantation tools in advancing knowledge of adaptiv
 Selected speakers will be contacted by email by `r CONTACT_SPEAKERS`.
 The final program and selected abstracts will be published on `r FINAL_SCHEDULE`.
 
+
+<!-- 
 The registration form is available [here`r fontawesome::fa(name = "fas fa-link", fill = "bg-primary")`](`r REGISTRATION_FORM`).
+-->
 
 ### Abstract formatting guidelines
 
