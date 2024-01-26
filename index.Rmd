@@ -8,7 +8,7 @@ suppressPackageStartupMessages(library(fontawesome))
 suppressPackageStartupMessages(library(kableExtra))
 
 BIG_DAY <- "January 25th, 2024"
-BIG_DAY_TIME <- "10:00am to 2:00pm ET"
+BIG_DAY_TIME <- "10:00am to 1:30pm ET"
 
 # link to the registration form
 REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_3jSlYHSKRbGSJfM"
