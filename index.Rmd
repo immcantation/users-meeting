@@ -31,7 +31,7 @@ The program will consist of several presentations chosen from submitted abstract
 
 Registration is **free**<!-- and will be open until `r REGISTRATION_ENDS`-->. Please see [registration](registration.html) for details.
 
-[<button type="button" class="btn btn-info">Rercordings of the sessions are available on YouTube</button>](https://www.youtube.com/playlist?list=PL_vz5s41hsdDwAxNVyytYlgHvEKEYCx88)
+[<button type="button" class="btn btn-info">Recordings of the sessions are available on YouTube</button>](https://www.youtube.com/playlist?list=PL_vz5s41hsdDwAxNVyytYlgHvEKEYCx88)
 </div>
 
 <!-- side box -->
