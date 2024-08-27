@@ -1,3 +1,6 @@
+
+**This repository has moved to: https://github.com/immcantation/users-meeting**
+
 ## Draft website for the Immcantation User Group Meeting
 
 To build the site you probably will need to install `fontawesome`:
