@@ -1,1 +1,1 @@
-Website for the Immcantation Users Group Meeting
+Website for the [Immcantation Users Group Meeting](https://immcantation.github.io/users-meeting)
