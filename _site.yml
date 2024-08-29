@@ -1,4 +1,5 @@
 name: "Immcantation Users Group Meeting"
+output_dir: "2025"
 navbar:
   title: ""
   left:
