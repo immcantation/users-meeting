@@ -17,4 +17,6 @@ output:
     theme: flatly
     highlight: tango
     css: style.css
-exclude: ["admin"]
+exclude: ["admin", 
+          "2020",
+          "2024"]

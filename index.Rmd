@@ -1,29 +1,39 @@
 ---
-title: "2024 Immcantation Users Group Meeting"
+title: "2025 Immcantation Users Group Meeting"
 ---
 
-```{r echo=FALSE}
+```{r setup, echo=FALSE}
 suppressPackageStartupMessages(library(dplyr))
 suppressPackageStartupMessages(library(fontawesome))
 suppressPackageStartupMessages(library(kableExtra))
 
-BIG_DAY <- "January 25th, 2024"
+#------------ CONFIGURATION -----------------#
+BIG_DAY <- "January 30th, 2025"
 BIG_DAY_TIME <- "10:00am to 1:30pm ET"
 
 # link to the registration form
-REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_3jSlYHSKRbGSJfM"
-REGISTRATION_ENDS <- "January 22nd, 2024"
-SUBMISSION_ENDS <- "December 1st, 2023"
-CONTACT_SPEAKERS <- "December 15th, 2023"
-FINAL_SCHEDULE <- "January 8th, 2024"
+REGISTRATION_FORM <- "TBA"
+REGISTRATION_ENDS <- "TBA"
+SUBMISSION_ENDS <- "TBA"
+CONTACT_SPEAKERS <- "TBA"
+FINAL_SCHEDULE <- "TBA"
+
+# NULL or link to a file
+ICS_FILE <- NULL
+
+# NULL or link to YouTube playlist
+YOUTUBE_PLAYLIST <- NULL
 
 # zoom link
 JOIN_WEBINAR <- ""
+#------------ END OF CONFIGURATION ------ ---#
+
+YEAR <- substring(BIG_DAY,nchar(BIG_DAY)-4+1)
 ```
 
 <!-- main text -->
 <div style="max-width: 55rem; float:left;">
-Join us for the **2024 Immcantation Users Group Meeting** to learn how researchers are applying the [Immcantation framework](http://immcantation.org) for high-throughput bulk and single-cell B cell receptor repertoire analysis.
+Join us for the **`r YEAR` Immcantation Users Group Meeting** to learn how researchers are applying the [Immcantation framework](http://immcantation.org) for high-throughput bulk and single-cell B cell receptor repertoire analysis.
 [Submit an abstract](registration.html) to present your own research, or simply join us to learn how others are using [Immcantation](http://immcantation.org) to advance knowledge of adaptive immunity.
 
 The meeting will take place via Zoom on **`r BIG_DAY`, from `r BIG_DAY_TIME`**.
@@ -31,7 +41,9 @@ The program will consist of several presentations chosen from submitted abstract
 
 Registration is **free**<!-- and will be open until `r REGISTRATION_ENDS`-->. Please see [registration](registration.html) for details.
 
-[<button type="button" class="btn btn-info">Recordings of the sessions are available on YouTube</button>](https://www.youtube.com/playlist?list=PL_vz5s41hsdDwAxNVyytYlgHvEKEYCx88)
+```{r, eval=!is.null(YOUTUBE_PLAYLIST), echo=FALSE, results='asis'}
+cat(paste0('[<button type="button" class="btn btn-info">Recordings of the sessions are available on YouTube</button>](',YOUTUBE_PLAYLIST,')'))
+```
 </div>
 
 <!-- side box -->
