@@ -3,8 +3,14 @@ output_dir: "2025"
 navbar:
   title: ""
   left:
+    # Toggle this section to close a year
+    # - text: "Home"
+    #   href: ../index.html
+    # - text: "2025 Home"
+    #   href: index.html    
     - text: "Home"
       href: index.html
+    #  
     - text: "Registration and abstract submission"
       href: registration.html
     - text: "Program"
