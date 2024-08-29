@@ -6,7 +6,7 @@ title: "Program"
 
 </br>
 
-The 2024 Immcantation Users Group Meeting will take place on **`r BIG_DAY`**. <!-- The final program will be published on `r FINAL_SCHEDULE`. -->
+The `r YEAR` Immcantation Users Group Meeting will take place on **`r BIG_DAY`**. <!-- The final program will be published on `r FINAL_SCHEDULE`. -->
 
 *Note that all times shown here use ET.* 
 
@@ -32,119 +32,9 @@ knitr::kable(program_table, format = "html") %>%
   column_spec(2, width = "5em")
 ```
 
-
-[<button type="button" class="btn btn-info">Download iCalendar (.ics) file</button>](static/2024-Immcantation-Users-Group-Meeting.ics)
-
+```{r, eval=!is.null(ICS_FILE), echo=FALSE, results='asis'}
+cat('[<button type="button" class="btn btn-info">Download iCalendar (.ics) file</button>](static/2024-Immcantation-Users-Group-Meeting.ics)')
+```
 
 ## Abstracts
-
-### Defining Immunogenomic Signatures in B Cell-Mediated Autoimmunities {#session2}
-
-<strong>Easton E. Ford</strong><sup>1</sup>, Veenasravani Pendyala<sup>1</sup>, Minh C. Pham<sup>2</sup>, Soumya S. Yandamuri<sup>2</sup>, Oscar L. Rodriguez<sup>3</sup>, Uddalok Jana<sup>3</sup>, Elizabeth A. Hudson<sup>3</sup>, Lindsay Young<sup>2</sup>, Kevin C. O'Connor<sup>2,4</sup>, Corey T. Watson<sup>3</sup>, Melissa L. Smith<sup>3</sup>
-
-<sup>1</sup>Department of Microbiology and Immunology, University of Louisville School of Medicine, Louisville, KY, United States; <sup>2</sup>Department of Immunobiology, Yale School of Medicine, New Haven, CT, United States;<sup>3</sup>Department of Biochemistry and Molecular Genetics, University of Louisville School of Medicine, Louisville, KY, United States;<sup>4</sup>Department of Neurology, Yale School of Medicine, New Haven, CT, United States. 
-
-A hallmark of many B cell-mediated autoimmune disorders is the production of autoreactive antibodies (aAb). We hypothesize that pathogenic mechanisms of these aAbs are associated with unique immunogenomic signatures, reflected by biased variable (V), diversity (D), joining (J), and/or constant (C) allele usage and residue signatures associated with effector functions in the immunoglobulin heavy chain (IGH). Here we define the initial immunogenomic background of three IgG aAb B cell autoimmune diseases: Acetylcholine Receptor Myasthenia Gravis (AChR MG n=7), Myelin oligodendrocyte glycoprotein antibody-associated disease (MOGAD n=4) and Neuromyelitis Optica Spectrum Disorder (NMOSD n=4) patients. We utilized a suite of immunogenomics tools including IGcapture for ground truth genotyping of the IGH locus and FLAIRR-seq which utilizes the Immcantation tool suite for near full-length IGH repertoire profiling from RNA.
-
-From initial profiling of the IGHC region, a total of 15 novel alleles were discovered across IgG subisotypes. Extensive repertoire profiling using Immcantation tools across disease types revealed numerous discernible trends in the utilization frequency of IgG IGHC and IGHV genes when comparing to those from healthy donors. Additionally, statistically significant differences (p-value=0.05) in IGHV gene usage within IgG subisotypes were evident across each disease-specific patient group, despite small initial sample numbers. Collectively, with these pilot data we are beginning to define how IGH genomic variation may be associated with B cell autoimmunities. Future studies will examine if these data can be used to identify individuals who are more likely to respond to therapy, allowing for patient tailored treatment plans with higher chances of success. 
-
-[Back to top](#header)
-
----
-
-### Spatial transcriptomics of B cell and T cell receptors reveals lymphocyte clonal dynamics {#session3}
-
-Camilla Engblom<sup>1†</sup>, Kim Thrane<sup>2†</sup>, <strong>Qirong Lin</strong><sup>1†</sup>, Alma Andersson<sup>2</sup>, Hosein Toosi<sup>3</sup>, Xinsong Chen<sup>4</sup>, Embla Steiner<sup>1</sup>, Chang Lu<sup>5</sup>, Giulia Mantovani<sup>1</sup>, Michael Hagemann-Jensen<sup>1</sup>, Sami Saarenpää<sup>2</sup>, Mattias Jangard<sup>6</sup>, Julio Saez-Rodriguez<sup>5</sup>, Jakob Michaëlsson<sup>7</sup>, Johan Hartman<sup>4,8</sup>, Jens Lagergren<sup>3</sup>, Jeff Mold<sup>1*‡</sup>, Joakim Lundeberg<sup>2‡</sup>, Jonas Frisén<sup>1‡</sup>
-
-<sup>1</sup>Department of Cell and Molecular Biology, Karolinska Institutet; Stockholm, Sweden; <sup>2</sup>SciLifeLab, Department of Gene Technology, KTH Royal Institute of Technology; Stockholm, Sweden; <sup>3</sup>SciLifeLab, Computational Science and Technology department, KTH Royal Institute of Technology; Stockholm, Sweden; <sup>4</sup>Department of Oncology-Pathology, Karolinska Institutet; Stockholm, Sweden; <sup>5</sup>Heidelberg University, Faculty of Medicine and Heidelberg University Hospital, Institute for Computational Biomedicine; Heidelberg, Germany ; <sup>6</sup>ENT Unit, Sophiahemmet University Research Laboratory and Sophiahemmet Hospital; Stockholm, Sweden; <sup>7</sup>Center for Infectious Medicine, Department of Medicine Huddinge, Karolinska Institutet; Stockholm, Sweden; <sup>8</sup>Department of Clinical Pathology and Cancer Diagnostics, Karolinska University Hospital; Stockholm, Sweden
-
-<sup>*</sup>Corresponding author. Email: jeff.mold@ki.se; <sup>†, ‡</sup> These authors contributed equally to this work
-
-The spatial distribution of lymphocyte clones within tissues is critical to their development, selection, expansion, and downstream effector functions. However, a high-throughput approach to comprehensively map antigen receptors within human tissues is lacking. We have developed Spatial Transcriptomics of VDJ sequences (Spatial VDJ), which captures full-length immunoglobulin and T cell antigen receptors as an extension of a commercially available spatial transcriptomics solution. Spatial VDJ reveals clonal distributions in human tonsil sections, which matches T, B, and plasma cell distributions predicted by cell type deconvolution method. We implement Change-O, SHazaM and Alakazam from Immcantation framework to Spatial VDJ data and uncover B cell somatic hypermutation and class switch recombination within their tissue microenvironment. Furthermore, Spatial VDJ allows for the identification of putative tumor-reactive antigen receptors that are associated with different tumor areas. Overall, Spatial VDJ effectively captures the spatial clonal architecture of lymphocytes across tissues permitting novel avenues to investigate lymphocyte biology in a native context. 
-
-[Back to top](#header)
-
----
-
-### CLL stereotyped B-cell receptor immunoglobulin sequences are recurrent in the B-cell repertoire of healthy individuals: Apparent lack of central and early peripheral tolerance censoring {#session4}
-
-<strong>Stefano Vergani</strong><sup>1</sup>, Davide Bagnara<sup>1</sup>, Andreas Agathangelidis <sup>2,3</sup>, Anita Kar Yun Ng<sup>1</sup>, Gerardo Ferrer <sup>1</sup>, Andrea N. Mazzarello<sup>1</sup>, Florencia Palacios<sup>1</sup>, Sophia Yancopoulos<sup>4</sup>, Xiao-Jie Yan<sup>1</sup>, Jaqueline C. Barrientos<sup>1</sup>, Kanti R. Rai<sup>1</sup>, Kostas Stamatopoulos<sup>1</sup> and Nicholas Chiorazzi<sup>1*</sup> 
-
-<sup>1</sup>Karches Center for Oncology Research, The Feinstein Institutes for Medical Research, Northwell Health, Manhasset, NY, United States; <sup>2</sup>Centre for Research and Technology Hellas, Institute of Applied Biosciences, Thessaloniki, Greece; <sup>3</sup>Department of Biology, School of Science, National and Kapodistrian University of Athens, Athens, Greece; <sup>4</sup>New York Genome Center, New York, NY, United States
-
-<sup>*</sup>Corresponding author 
-
-The leukemic cells of patients with Chronic Lymphocytic Leukemia (CLL) often express remarkably similar IGHV-IGHD-IGHJ rearrangements, also called stereotyped B cell receptor (BCR). These BCRs possess autoreactive features and are rarely found in the peripheral blood of healthy donors, leading to the assumption of a defect in immune tolerance in CLL patients. To test whether those potentially harmful and autoreactive B cells are indeed deleted during B cell development, we performed bulk and single-cell VDJ-seq to look for CLL stereotype-like IGHV-IGHD-IGHJ sequences (CLL-SLS) in B cells from cord blood (CB), peripheral blood (PBMC) and bone marrow (BM) of healthy donors. We used pRESTO for the processing of the raw reads and ChangeO to create our Ig databases. We detected CLL-SLS at very similar frequencies in several B cell populations across the different compartments. Interestingly, their frequencies did not differ among B lymphocytes in the BM at early stages of development and we found that re-circulating marginal zone B cells contained significantly high CLL-SLS. We identified CLL-SLS corresponding to most of the CLL major stereotyped subsets but their frequencies did not correlate with those found in patients. Moreover, IGHV-mutated CLL-SLS subsets were enriched among antigen-experienced B-cell subpopulations, and IGHV-unmutated CLL-SLS were found mostly in antigen-inexperienced B cells. Lastly, using single-cell DNA sequencing, we identified paired IGH and IGL rearrangements in normal B lymphocytes resembling those of stereotyped BCRs in CLL. In summary, CLL-SLS are present in normal B-lymphocyte populations at all stages of development and despite their autoreactive profile they are not deleted by central or peripheral tolerance mechanisms. 
-
-[Back to top](#header)
-
----
-
-### Single Cell Analysis of Transitional B Cells in Systemic Sclerosis Highlights Defective Peripheral Tolerance Break {#session5}
-
-<strong>Claire Beesley</strong><sup>1\*</sup>, Nina Goldman<sup>1</sup>, David Abraham<sup>1</sup>, Christopher Denton<sup>1</sup>, Rizgar Mageed<sup>2</sup> and Voon Ong<sup>1*</sup>
-
-<sup>1</sup>University College London, Medical School, Royal Free Campus, London, NW3 2PF; <sup>2</sup>The William Harvey Research Institute, Queen Mary University of London, London, EC1M 6BQ
-
-<sup>*</sup>Corresponding author
-
-Transitional B cells are a population of B cells that have recently migrated from the bone marrow to the periphery. In the fibrotic autoimmune disease systemic sclerosis (SSc), we have identified late-stage transitional B cells which are seropositive for the SSc-associated autoantigen anti-topoisomerase I, indicating that these cells have evaded peripheral tolerance. To investigate this, we performed a 5’ single-cell RNA-sequencing study on sorted transitional B cells (CD19+CD24<sup>hi</sup>CD38<sup>hi</sup>) in four healthy controls (HCs) and four treatment naïve SSc patients. Through analysis of the gene expression (GEX) data we identified four distinct transitional B cells clusters, including a marginal zone (MZ) precursor subset and a memory-like cluster. To analyse the single-cell B cell receptor data we used the pRESTO, Change-O, Alakazam and SHazaM Immcantation packages. This revealed increased B cell clones in SSc, as well as differences in kappa versus lambda V gene usage, specifically with more IGKC+ B cells in SSc. Additionally, we observed differences in transitional B cell immunoglobulin isotypes and mutation frequencies. For example, increased IGHD and reduced IGHA expression in SSc compared to HCs. Overall, this data suggests impaired transitional B cell development in disease potentially resulting in B cell subsets that are developmentally immature. This is concordant with our single-cell GEX data which revealed an SSc-associated gene signature that may favor the development of innate-like MZ B cells. Further studies are underway to explore how these findings relate to global B cell development and pathogenesis in scleroderma. 
-
-Funding: Claire Beesley is funded through a Versus Arthritis PhD studentship (grant number: 22534).
-
-[Back to top](#header)
-
----
-
-### VDJServer Analysis with the Immcantation Framework {#session7}
-
-<strong>Scott Christley</strong><sup>1,*</sup>, Lindsay G. Cowell<sup>1</sup> 
-
-<sup>1</sup>Dept of Population and Data Sciences, UT Southwestern Medical Center, Dallas, TX USA
-
-<sup>*</sup>Corresponding author 
-
-VDJServer is a cloud-based analysis portal for immune repertoire sequence data. The Immcantation tools, including pRESTO, Change-O, Alakazam and Shazam, have been provided within VDJServer since V1. These tools provide read pre-processing, clone definition, selection quantification, mutation frequencies and lineage tree reconstruction as some of the main capabilities to VDJServer users. We will describe how the Immcantation tools are integrated within VDJServer's cloud infrastructure. VDJServer also provides a public data repository, the Community Data Portal, for publishing AIRR-seq studies, which is part of the AIRR Data Commons (ADC), a distributed system of data repositories that allow programmatic query and download of AIRR-seq data. A new NIAID-funded resource, AIRR Knowledge, is being developed that will expand the ADC by integrating additional data types, including antigen and epitope specificities, genotype, haplotype, and population genetic data, and by running analytic and predictive algorithms on the integrated data. We will discuss how the Immcantation tools will play an important role for this new resource. Furthermore, we demonstrate some new mutational analysis visualizations that are based on Immcantation output and how they are being used in some of our own research. 
-
-[Back to top](#header)
-
----
-
-### Integrating Immcantation and immuneDB in order to study B cell subset relationship across clonal lineages {#session8}
-
-<strong>Muhammad Khamaisi</strong><sup>1</sup>, Areen Shtewe<sup>1</sup> and Uri Hershberg<sup>1</sup> 
-
-<sup>1</sup>System Immunology Lab; Department of Human Biology; Faculty of Sciences; University of Haifa; Haifa, Israel 
-
-ImmuneDB is an AIRR-seq database system which allows for the rapid annotation of raw B cell (or T cell) sequence data. In ImmuneDB every sequence is annotated for its germline and clonal associations as well as its mutations from germline and selection pressure. Clonal lineages are also created for every clone. All while maintaining the sampling metadata associations. ImmuneDB is a very useful companion tool to Immcantation as it can easily be asked to output data in AIRR-seq approved formats utilized by the different Immcantation programs and work-packages. In this way one can save many of the initial annotation steps necessary for analysis. We here present one test case of the use of ImmuneDB and Immcantation to study the order of development of two B cell memory subsets, CD69 and CD45RB. We utilized TestEdges/TableEdges in the Alakazam to perform a permutation test on clonal lineages and find out the significance of a given annotation’s association with parent-child relationships. One of the time costly steps in utilizing this tool is the need to create clonal annotation and lineages. We suggest a possible solution,to pre-calculate clones and lineages and store them in ImmuneDB databases. We will go over the several connection points of ImmuneDB and Immcantation within this example and more generally.
-
-[Back to top](#header)
-
----
-
-### Single cell B cell phylogenetics with Immcantation {#session9}
-
-<strong>Kenneth B. Hoehn</strong><sup>1</sup>
-
-<sup>1</sup>Department of Biomedical Data Science, Geisel School of Medicine at Dartmouth 
-
-Like other evolving populations, B cells can be studied by reconstructing phylogenetic lineage trees, which represent the series of somatic hypermutations within a B cell clone. Using lineage trees, B cell receptors (BCRs) can act as natural, mutating barcodes that link B cells from different timepoints, tissues, or cellular subtypes. Single B cell sequencing has become widely available and can improve nearly all aspects of B cell lineage analysis by providing high-resolution biological information for tens of thousands of individual B cells. More specifically, single B cell sequencing can provide paired heavy and light chain B cell receptor sequences for individual cells, as well as associated transcriptomic, surface protein, and/or BCR affinity information. Incorporating these new sources of information into BCR sequence analysis requires special methodological considerations. This talk will cover how single B cell sequencing data can be analyzed using the latest methods in Immcantation, with focus on building B cell lineage trees with the R package Dowser. In particular, I will demonstrate new methods in Dowser that build trees to using paired heavy and light chain BCRs from individual cells, and use information from different tissues, cellular subtypes, and serially-sampled timepoints to investigate biological hypotheses. 
-
-
-[Back to top](#header)
-
----
-
-### Dietary Restriction Mitigates the Age-Associated Decline in Mouse B Cell Receptor Repertoire Diversity {#session10}
-
-<strong>Carolina Monzó</strong><sup>1,2,3,*</sup>, Lisonia Gkioni<sup>2</sup>, Andreas Beyer<sup>3</sup>, Dario R Valenzano<sup>1</sup>, Sebastian Grönke<sup>1</sup>, Linda Partridge<sup>1</sup> 
-
-<sup>1</sup>Institute for Integrative Systems Biology (I2SysBio), Spanish National Research Council (CSIC); <sup>2</sup>Max Planck Institute for Biology of Ageing; <sup>3</sup>Cluster of Excellence on Cellular Stress Responses in Aging-associated Diseases (CECAD) 
-
-<sup>*</sup>Corresponding author 
-
-Aging exerts a deleterious impact on the adaptive immune response, impairing the ability to mount effective defenses against novel antigens. This compromised immune function not only heightens vulnerability to pathogens but also undermines the efficacy of vaccines. Dietary restriction (DR) extends life- and health span in diverse animals. However, little is known about the capacity of DR to combat the decline in immune function. To unravel the effects of DR on the adaptive immune capacity, we studied the changes in B cell receptor (BCR) repertoire during aging in both DR and control mice. Employing asymmetric 400 + 100 nt paired-end sequencing, we sequenced the variable region of the BCR heavy chain in the spleen and ileum. Leveraging the Immcantation framework for processing and analyzing the sequencing data, revealed that DR, notably, not only preserves the repertoire diversity but also attenuates the escalating clonal expansions throughout the aging process. Remarkably, mice starting DR in mid-life displayed BCR repertoire diversity and clonal expansion rates indistinguishable from their chronically DR-treated counterparts. This observation hints at the sustained impact of DR initiated later in life. In contrast, in the intestine, these traits are unaffected by either age or DR, underscoring the regional nuances in BCR repertoire dynamics. Finally, our study establishes a correlation between reduced within-individual B cell repertoire diversity, increased clonal expansions, and higher morbidity, suggesting a potential contribution of B cell repertoire dynamics in influencing health during the aging process. 
-
-Funding: This work was funded by the Max Planck Society (D.R.V. and L.P.), the European Research Council under the European Union’s Seventh Framework Programme ([FP7/2007-2013](https://www.sciencedirect.com/science/article/pii/S2211124723007337?via%3Dihub#gs3))/ERC grant agreement number [268739](https://www.sciencedirect.com/science/article/pii/S2211124723007337?via%3Dihub#gs4) to L.P., and the Collaborative Research Center 1310 Predictability in Evolution by the Deutsche Forschungsgemeinschaft to D.R.V. 
-
 [Back to top](#header)
