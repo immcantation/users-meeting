@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>Program</title>
+
+<script src="site_libs/header-attrs-2.27/header-attrs.js"></script>
+<script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="site_libs/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="site_libs/navigation-1.1/tabsets.js"></script>
+<script src="site_libs/kePrint-0.0.1/kePrint.js"></script>
+<link href="site_libs/lightable-0.0.1/lightable.css" rel="stylesheet" />
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+<style type="text/css">
+.dropdown-submenu {
+  position: relative;
+}
+.dropdown-submenu>.dropdown-menu {
+  top: 0;
+  left: 100%;
+  margin-top: -6px;
+  margin-left: -1px;
+  border-radius: 0 6px 6px 6px;
+}
+.dropdown-submenu:hover>.dropdown-menu {
+  display: block;
+}
+.dropdown-submenu>a:after {
+  display: block;
+  content: " ";
+  float: right;
+  width: 0;
+  height: 0;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  border-left-color: #cccccc;
+  margin-top: 5px;
+  margin-right: -10px;
+}
+.dropdown-submenu:hover>a:after {
+  border-left-color: #adb5bd;
+}
+.dropdown-submenu.pull-left {
+  float: none;
+}
+.dropdown-submenu.pull-left>.dropdown-menu {
+  left: -100%;
+  margin-left: 10px;
+  border-radius: 6px 0 6px 6px;
+}
+</style>
+
+<script type="text/javascript">
+// manage active state of menu based on current page
+$(document).ready(function () {
+  // active menu anchor
+  href = window.location.pathname
+  href = href.substr(href.lastIndexOf('/') + 1)
+  if (href === "")
+    href = "index.html";
+  var menuAnchor = $('a[href="' + href + '"]');
+
+  // mark the anchor link active (and if it's in a dropdown, also mark that active)
+  var dropdown = menuAnchor.closest('li.dropdown');
+  if (window.bootstrap) { // Bootstrap 4+
+    menuAnchor.addClass('active');
+    dropdown.find('> .dropdown-toggle').addClass('active');
+  } else { // Bootstrap 3
+    menuAnchor.parent().addClass('active');
+    dropdown.addClass('active');
+  }
+
+  // Navbar adjustments
+  var navHeight = $(".navbar").first().height() + 15;
+  var style = document.createElement('style');
+  var pt = "padding-top: " + navHeight + "px; ";
+  var mt = "margin-top: -" + navHeight + "px; ";
+  var css = "";
+  // offset scroll position for anchor links (for fixed navbar)
+  for (var i = 1; i <= 6; i++) {
+    css += ".section h" + i + "{ " + pt + mt + "}\n";
+  }
+  style.innerHTML = "body {" + pt + "padding-bottom: 40px; }\n" + css;
+  document.head.appendChild(style);
+});
+</script>
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+
+
+<div class="navbar navbar-default  navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbar" data-bs-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html"></a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav">
+        <li>
+  <a href="index.html">Home</a>
+</li>
+<li>
+  <a href="registration.html">Registration and abstract submission</a>
+</li>
+<li>
+  <a href="program.html">Program</a>
+</li>
+<li>
+  <a href="past.html">Past meetings</a>
+</li>
+<li>
+  <a href="contact.html">Contact</a>
+</li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div><!--/.container -->
+</div><!--/.navbar -->
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore">Program</h1>
+
+</div>
+
+
+<p><img src='static/immcantation-circle.png' style="max-width: 10rem; float:left;"></p>
+<p></br></p>
+<p>The 2024 Immcantation Users Group Meeting will take place on
+<strong>January 25th, 2024</strong>.
+<!-- The final program will be published on January 8th, 2024. --></p>
+<p><em>Note that all times shown here use ET.</em></p>
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:left;">
+Start
+</th>
+<th style="text-align:left;">
+End
+</th>
+<th style="text-align:left;">
+Speaker
+</th>
+<th style="text-align:left;">
+Title
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left;width: 5em; ">
+10:00 am
+</td>
+<td style="text-align:left;width: 5em; ">
+10:15 am
+</td>
+<td style="text-align:left;">
+Kleinstein lab, Yale University
+</td>
+<td style="text-align:left;">
+Welcome
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5em; ">
+10:15 am
+</td>
+<td style="text-align:left;width: 5em; ">
+10:35 am
+</td>
+<td style="text-align:left;">
+Mr. Easton E. Ford, University of Louisville
+</td>
+<td style="text-align:left;">
+<a href="#session2">Defining Immunogenomic Signatures in B Cell-Mediated
+Autoimmunities</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5em; ">
+10:35 am
+</td>
+<td style="text-align:left;width: 5em; ">
+10:55 am
+</td>
+<td style="text-align:left;">
+Mr. Qirong Lin, Karolinska Institutet
+</td>
+<td style="text-align:left;">
+<a href="#session3">Spatial transcriptomics of B cell and T cell
+receptors reveals lymphocyte clonal dynamics</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5em; ">
+10:55 am
+</td>
+<td style="text-align:left;width: 5em; ">
+11:15 am
+</td>
+<td style="text-align:left;">
+Dr. Stefano Vergani, Miltenyi Biotec
+</td>
+<td style="text-align:left;">
+<a href="#session4">CLL stereotyped B-cell receptor immunoglobulin
+sequences are recurrent in the B-cell repertoire of healthy individuals:
+Apparent lack of central and early peripheral tolerance censoring</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5em; ">
+11:15 am
+</td>
+<td style="text-align:left;width: 5em; ">
+11:35 am
+</td>
+<td style="text-align:left;">
+Miss Claire Beesley, University College London
+</td>
+<td style="text-align:left;">
+<a href="#session5">Single Cell Analysis of Transitional B Cells in
+Systemic Sclerosis Highlights Defective Peripheral Tolerance</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5em; ">
+11:35 am
+</td>
+<td style="text-align:left;width: 5em; ">
+11:50 am
+</td>
+<td style="text-align:left;">
+Break
+</td>
+<td style="text-align:left;">
+Break
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5em; ">
+11:50 am
+</td>
+<td style="text-align:left;width: 5em; ">
+12:10 pm
+</td>
+<td style="text-align:left;">
+Dr. Scott Christley, UT Southwestern Medical Center
+</td>
+<td style="text-align:left;">
+<a href="#session7">VDJServer Analysis with the Immcantation
+Framework</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5em; ">
+12:10 pm
+</td>
+<td style="text-align:left;width: 5em; ">
+12:30 pm
+</td>
+<td style="text-align:left;">
+Mr. Muhammad Khamaisi, Haifa University
+</td>
+<td style="text-align:left;">
+<a href="#session8">Integrating Immcantation and immuneDB in order to
+study B cell subset relationship across clonal lineages</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5em; ">
+12:30 pm
+</td>
+<td style="text-align:left;width: 5em; ">
+12:50 pm
+</td>
+<td style="text-align:left;">
+Dr. Kenneth Hoehn, Geisel School of Medicine at Dartmouth
+</td>
+<td style="text-align:left;">
+<a href="#session9">Single cell B cell phylogenetics with
+Immcantation</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5em; ">
+12:50 pm
+</td>
+<td style="text-align:left;width: 5em; ">
+1:10 pm
+</td>
+<td style="text-align:left;">
+Dr. Carolina Monzó, Institute for Integrative Systems Biology, Spanish
+National Research Council
+</td>
+<td style="text-align:left;">
+<a href="#session10">Dietary Restriction Mitigates the Age-Associated
+Decline in Mouse B Cell Receptor Repertoire Diversity</a>
+</td>
+</tr>
+<tr>
+<td style="text-align:left;width: 5em; ">
+1:10 pm
+</td>
+<td style="text-align:left;width: 5em; ">
+1:25 pm
+</td>
+<td style="text-align:left;">
+Kleinstein lab, Yale University
+</td>
+<td style="text-align:left;">
+Wrap up
+</td>
+</tr>
+</tbody>
+</table>
+<p><a
+href="static/2024-Immcantation-Users-Group-Meeting.ics"><button type="button" class="btn btn-info">Download
+iCalendar (.ics) file</button></a></p>
+<div id="abstracts" class="section level2">
+<h2>Abstracts</h2>
+<div id="session2" class="section level3">
+<h3>Defining Immunogenomic Signatures in B Cell-Mediated
+Autoimmunities</h3>
+<p><strong>Easton E. Ford</strong><sup>1</sup>, Veenasravani
+Pendyala<sup>1</sup>, Minh C. Pham<sup>2</sup>, Soumya S.
+Yandamuri<sup>2</sup>, Oscar L. Rodriguez<sup>3</sup>, Uddalok
+Jana<sup>3</sup>, Elizabeth A. Hudson<sup>3</sup>, Lindsay
+Young<sup>2</sup>, Kevin C. O’Connor<sup>2,4</sup>, Corey T.
+Watson<sup>3</sup>, Melissa L. Smith<sup>3</sup></p>
+<p><sup>1</sup>Department of Microbiology and Immunology, University of
+Louisville School of Medicine, Louisville, KY, United States;
+<sup>2</sup>Department of Immunobiology, Yale School of Medicine, New
+Haven, CT, United States;<sup>3</sup>Department of Biochemistry and
+Molecular Genetics, University of Louisville School of Medicine,
+Louisville, KY, United States;<sup>4</sup>Department of Neurology, Yale
+School of Medicine, New Haven, CT, United States.</p>
+<p>A hallmark of many B cell-mediated autoimmune disorders is the
+production of autoreactive antibodies (aAb). We hypothesize that
+pathogenic mechanisms of these aAbs are associated with unique
+immunogenomic signatures, reflected by biased variable (V), diversity
+(D), joining (J), and/or constant (C) allele usage and residue
+signatures associated with effector functions in the immunoglobulin
+heavy chain (IGH). Here we define the initial immunogenomic background
+of three IgG aAb B cell autoimmune diseases: Acetylcholine Receptor
+Myasthenia Gravis (AChR MG n=7), Myelin oligodendrocyte glycoprotein
+antibody-associated disease (MOGAD n=4) and Neuromyelitis Optica
+Spectrum Disorder (NMOSD n=4) patients. We utilized a suite of
+immunogenomics tools including IGcapture for ground truth genotyping of
+the IGH locus and FLAIRR-seq which utilizes the Immcantation tool suite
+for near full-length IGH repertoire profiling from RNA.</p>
+<p>From initial profiling of the IGHC region, a total of 15 novel
+alleles were discovered across IgG subisotypes. Extensive repertoire
+profiling using Immcantation tools across disease types revealed
+numerous discernible trends in the utilization frequency of IgG IGHC and
+IGHV genes when comparing to those from healthy donors. Additionally,
+statistically significant differences (p-value=0.05) in IGHV gene usage
+within IgG subisotypes were evident across each disease-specific patient
+group, despite small initial sample numbers. Collectively, with these
+pilot data we are beginning to define how IGH genomic variation may be
+associated with B cell autoimmunities. Future studies will examine if
+these data can be used to identify individuals who are more likely to
+respond to therapy, allowing for patient tailored treatment plans with
+higher chances of success.</p>
+<p><a href="#header">Back to top</a></p>
+<hr />
+</div>
+<div id="session3" class="section level3">
+<h3>Spatial transcriptomics of B cell and T cell receptors reveals
+lymphocyte clonal dynamics</h3>
+<p>Camilla Engblom<sup>1†</sup>, Kim Thrane<sup>2†</sup>, <strong>Qirong
+Lin</strong><sup>1†</sup>, Alma Andersson<sup>2</sup>, Hosein
+Toosi<sup>3</sup>, Xinsong Chen<sup>4</sup>, Embla Steiner<sup>1</sup>,
+Chang Lu<sup>5</sup>, Giulia Mantovani<sup>1</sup>, Michael
+Hagemann-Jensen<sup>1</sup>, Sami Saarenpää<sup>2</sup>, Mattias
+Jangard<sup>6</sup>, Julio Saez-Rodriguez<sup>5</sup>, Jakob
+Michaëlsson<sup>7</sup>, Johan Hartman<sup>4,8</sup>, Jens
+Lagergren<sup>3</sup>, Jeff Mold<sup>1*‡</sup>, Joakim
+Lundeberg<sup>2‡</sup>, Jonas Frisén<sup>1‡</sup></p>
+<p><sup>1</sup>Department of Cell and Molecular Biology, Karolinska
+Institutet; Stockholm, Sweden; <sup>2</sup>SciLifeLab, Department of
+Gene Technology, KTH Royal Institute of Technology; Stockholm, Sweden;
+<sup>3</sup>SciLifeLab, Computational Science and Technology department,
+KTH Royal Institute of Technology; Stockholm, Sweden;
+<sup>4</sup>Department of Oncology-Pathology, Karolinska Institutet;
+Stockholm, Sweden; <sup>5</sup>Heidelberg University, Faculty of
+Medicine and Heidelberg University Hospital, Institute for Computational
+Biomedicine; Heidelberg, Germany ; <sup>6</sup>ENT Unit, Sophiahemmet
+University Research Laboratory and Sophiahemmet Hospital; Stockholm,
+Sweden; <sup>7</sup>Center for Infectious Medicine, Department of
+Medicine Huddinge, Karolinska Institutet; Stockholm, Sweden;
+<sup>8</sup>Department of Clinical Pathology and Cancer Diagnostics,
+Karolinska University Hospital; Stockholm, Sweden</p>
+<p><sup>*</sup>Corresponding author. Email: <a
+href="mailto:jeff.mold@ki.se" class="email">jeff.mold@ki.se</a>; <sup>†,
+‡</sup> These authors contributed equally to this work</p>
+<p>The spatial distribution of lymphocyte clones within tissues is
+critical to their development, selection, expansion, and downstream
+effector functions. However, a high-throughput approach to
+comprehensively map antigen receptors within human tissues is lacking.
+We have developed Spatial Transcriptomics of VDJ sequences (Spatial
+VDJ), which captures full-length immunoglobulin and T cell antigen
+receptors as an extension of a commercially available spatial
+transcriptomics solution. Spatial VDJ reveals clonal distributions in
+human tonsil sections, which matches T, B, and plasma cell distributions
+predicted by cell type deconvolution method. We implement Change-O,
+SHazaM and Alakazam from Immcantation framework to Spatial VDJ data and
+uncover B cell somatic hypermutation and class switch recombination
+within their tissue microenvironment. Furthermore, Spatial VDJ allows
+for the identification of putative tumor-reactive antigen receptors that
+are associated with different tumor areas. Overall, Spatial VDJ
+effectively captures the spatial clonal architecture of lymphocytes
+across tissues permitting novel avenues to investigate lymphocyte
+biology in a native context.</p>
+<p><a href="#header">Back to top</a></p>
+<hr />
+</div>
+<div id="session4" class="section level3">
+<h3>CLL stereotyped B-cell receptor immunoglobulin sequences are
+recurrent in the B-cell repertoire of healthy individuals: Apparent lack
+of central and early peripheral tolerance censoring</h3>
+<p><strong>Stefano Vergani</strong><sup>1</sup>, Davide
+Bagnara<sup>1</sup>, Andreas Agathangelidis <sup>2,3</sup>, Anita Kar
+Yun Ng<sup>1</sup>, Gerardo Ferrer <sup>1</sup>, Andrea N.
+Mazzarello<sup>1</sup>, Florencia Palacios<sup>1</sup>, Sophia
+Yancopoulos<sup>4</sup>, Xiao-Jie Yan<sup>1</sup>, Jaqueline C.
+Barrientos<sup>1</sup>, Kanti R. Rai<sup>1</sup>, Kostas
+Stamatopoulos<sup>1</sup> and Nicholas Chiorazzi<sup>1*</sup></p>
+<p><sup>1</sup>Karches Center for Oncology Research, The Feinstein
+Institutes for Medical Research, Northwell Health, Manhasset, NY, United
+States; <sup>2</sup>Centre for Research and Technology Hellas, Institute
+of Applied Biosciences, Thessaloniki, Greece; <sup>3</sup>Department of
+Biology, School of Science, National and Kapodistrian University of
+Athens, Athens, Greece; <sup>4</sup>New York Genome Center, New York,
+NY, United States</p>
+<p><sup>*</sup>Corresponding author</p>
+<p>The leukemic cells of patients with Chronic Lymphocytic Leukemia
+(CLL) often express remarkably similar IGHV-IGHD-IGHJ rearrangements,
+also called stereotyped B cell receptor (BCR). These BCRs possess
+autoreactive features and are rarely found in the peripheral blood of
+healthy donors, leading to the assumption of a defect in immune
+tolerance in CLL patients. To test whether those potentially harmful and
+autoreactive B cells are indeed deleted during B cell development, we
+performed bulk and single-cell VDJ-seq to look for CLL stereotype-like
+IGHV-IGHD-IGHJ sequences (CLL-SLS) in B cells from cord blood (CB),
+peripheral blood (PBMC) and bone marrow (BM) of healthy donors. We used
+pRESTO for the processing of the raw reads and ChangeO to create our Ig
+databases. We detected CLL-SLS at very similar frequencies in several B
+cell populations across the different compartments. Interestingly, their
+frequencies did not differ among B lymphocytes in the BM at early stages
+of development and we found that re-circulating marginal zone B cells
+contained significantly high CLL-SLS. We identified CLL-SLS
+corresponding to most of the CLL major stereotyped subsets but their
+frequencies did not correlate with those found in patients. Moreover,
+IGHV-mutated CLL-SLS subsets were enriched among antigen-experienced
+B-cell subpopulations, and IGHV-unmutated CLL-SLS were found mostly in
+antigen-inexperienced B cells. Lastly, using single-cell DNA sequencing,
+we identified paired IGH and IGL rearrangements in normal B lymphocytes
+resembling those of stereotyped BCRs in CLL. In summary, CLL-SLS are
+present in normal B-lymphocyte populations at all stages of development
+and despite their autoreactive profile they are not deleted by central
+or peripheral tolerance mechanisms.</p>
+<p><a href="#header">Back to top</a></p>
+<hr />
+</div>
+<div id="session5" class="section level3">
+<h3>Single Cell Analysis of Transitional B Cells in Systemic Sclerosis
+Highlights Defective Peripheral Tolerance Break</h3>
+<p><strong>Claire Beesley</strong><sup>1*</sup>, Nina
+Goldman<sup>1</sup>, David Abraham<sup>1</sup>, Christopher
+Denton<sup>1</sup>, Rizgar Mageed<sup>2</sup> and Voon
+Ong<sup>1*</sup></p>
+<p><sup>1</sup>University College London, Medical School, Royal Free
+Campus, London, NW3 2PF; <sup>2</sup>The William Harvey Research
+Institute, Queen Mary University of London, London, EC1M 6BQ</p>
+<p><sup>*</sup>Corresponding author</p>
+<p>Transitional B cells are a population of B cells that have recently
+migrated from the bone marrow to the periphery. In the fibrotic
+autoimmune disease systemic sclerosis (SSc), we have identified
+late-stage transitional B cells which are seropositive for the
+SSc-associated autoantigen anti-topoisomerase I, indicating that these
+cells have evaded peripheral tolerance. To investigate this, we
+performed a 5’ single-cell RNA-sequencing study on sorted transitional B
+cells (CD19+CD24<sup>hi</sup>CD38<sup>hi</sup>) in four healthy controls
+(HCs) and four treatment naïve SSc patients. Through analysis of the
+gene expression (GEX) data we identified four distinct transitional B
+cells clusters, including a marginal zone (MZ) precursor subset and a
+memory-like cluster. To analyse the single-cell B cell receptor data we
+used the pRESTO, Change-O, Alakazam and SHazaM Immcantation packages.
+This revealed increased B cell clones in SSc, as well as differences in
+kappa versus lambda V gene usage, specifically with more IGKC+ B cells
+in SSc. Additionally, we observed differences in transitional B cell
+immunoglobulin isotypes and mutation frequencies. For example, increased
+IGHD and reduced IGHA expression in SSc compared to HCs. Overall, this
+data suggests impaired transitional B cell development in disease
+potentially resulting in B cell subsets that are developmentally
+immature. This is concordant with our single-cell GEX data which
+revealed an SSc-associated gene signature that may favor the development
+of innate-like MZ B cells. Further studies are underway to explore how
+these findings relate to global B cell development and pathogenesis in
+scleroderma.</p>
+<p>Funding: Claire Beesley is funded through a Versus Arthritis PhD
+studentship (grant number: 22534).</p>
+<p><a href="#header">Back to top</a></p>
+<hr />
+</div>
+<div id="session7" class="section level3">
+<h3>VDJServer Analysis with the Immcantation Framework</h3>
+<p><strong>Scott Christley</strong><sup>1,*</sup>, Lindsay G.
+Cowell<sup>1</sup></p>
+<p><sup>1</sup>Dept of Population and Data Sciences, UT Southwestern
+Medical Center, Dallas, TX USA</p>
+<p><sup>*</sup>Corresponding author</p>
+<p>VDJServer is a cloud-based analysis portal for immune repertoire
+sequence data. The Immcantation tools, including pRESTO, Change-O,
+Alakazam and Shazam, have been provided within VDJServer since V1. These
+tools provide read pre-processing, clone definition, selection
+quantification, mutation frequencies and lineage tree reconstruction as
+some of the main capabilities to VDJServer users. We will describe how
+the Immcantation tools are integrated within VDJServer’s cloud
+infrastructure. VDJServer also provides a public data repository, the
+Community Data Portal, for publishing AIRR-seq studies, which is part of
+the AIRR Data Commons (ADC), a distributed system of data repositories
+that allow programmatic query and download of AIRR-seq data. A new
+NIAID-funded resource, AIRR Knowledge, is being developed that will
+expand the ADC by integrating additional data types, including antigen
+and epitope specificities, genotype, haplotype, and population genetic
+data, and by running analytic and predictive algorithms on the
+integrated data. We will discuss how the Immcantation tools will play an
+important role for this new resource. Furthermore, we demonstrate some
+new mutational analysis visualizations that are based on Immcantation
+output and how they are being used in some of our own research.</p>
+<p><a href="#header">Back to top</a></p>
+<hr />
+</div>
+<div id="session8" class="section level3">
+<h3>Integrating Immcantation and immuneDB in order to study B cell
+subset relationship across clonal lineages</h3>
+<p><strong>Muhammad Khamaisi</strong><sup>1</sup>, Areen
+Shtewe<sup>1</sup> and Uri Hershberg<sup>1</sup></p>
+<p><sup>1</sup>System Immunology Lab; Department of Human Biology;
+Faculty of Sciences; University of Haifa; Haifa, Israel</p>
+<p>ImmuneDB is an AIRR-seq database system which allows for the rapid
+annotation of raw B cell (or T cell) sequence data. In ImmuneDB every
+sequence is annotated for its germline and clonal associations as well
+as its mutations from germline and selection pressure. Clonal lineages
+are also created for every clone. All while maintaining the sampling
+metadata associations. ImmuneDB is a very useful companion tool to
+Immcantation as it can easily be asked to output data in AIRR-seq
+approved formats utilized by the different Immcantation programs and
+work-packages. In this way one can save many of the initial annotation
+steps necessary for analysis. We here present one test case of the use
+of ImmuneDB and Immcantation to study the order of development of two B
+cell memory subsets, CD69 and CD45RB. We utilized TestEdges/TableEdges
+in the Alakazam to perform a permutation test on clonal lineages and
+find out the significance of a given annotation’s association with
+parent-child relationships. One of the time costly steps in utilizing
+this tool is the need to create clonal annotation and lineages. We
+suggest a possible solution,to pre-calculate clones and lineages and
+store them in ImmuneDB databases. We will go over the several connection
+points of ImmuneDB and Immcantation within this example and more
+generally.</p>
+<p><a href="#header">Back to top</a></p>
+<hr />
+</div>
+<div id="session9" class="section level3">
+<h3>Single cell B cell phylogenetics with Immcantation</h3>
+<p><strong>Kenneth B. Hoehn</strong><sup>1</sup></p>
+<p><sup>1</sup>Department of Biomedical Data Science, Geisel School of
+Medicine at Dartmouth</p>
+<p>Like other evolving populations, B cells can be studied by
+reconstructing phylogenetic lineage trees, which represent the series of
+somatic hypermutations within a B cell clone. Using lineage trees, B
+cell receptors (BCRs) can act as natural, mutating barcodes that link B
+cells from different timepoints, tissues, or cellular subtypes. Single B
+cell sequencing has become widely available and can improve nearly all
+aspects of B cell lineage analysis by providing high-resolution
+biological information for tens of thousands of individual B cells. More
+specifically, single B cell sequencing can provide paired heavy and
+light chain B cell receptor sequences for individual cells, as well as
+associated transcriptomic, surface protein, and/or BCR affinity
+information. Incorporating these new sources of information into BCR
+sequence analysis requires special methodological considerations. This
+talk will cover how single B cell sequencing data can be analyzed using
+the latest methods in Immcantation, with focus on building B cell
+lineage trees with the R package Dowser. In particular, I will
+demonstrate new methods in Dowser that build trees to using paired heavy
+and light chain BCRs from individual cells, and use information from
+different tissues, cellular subtypes, and serially-sampled timepoints to
+investigate biological hypotheses.</p>
+<p><a href="#header">Back to top</a></p>
+<hr />
+</div>
+<div id="session10" class="section level3">
+<h3>Dietary Restriction Mitigates the Age-Associated Decline in Mouse B
+Cell Receptor Repertoire Diversity</h3>
+<p><strong>Carolina Monzó</strong><sup>1,2,3,*</sup>, Lisonia
+Gkioni<sup>2</sup>, Andreas Beyer<sup>3</sup>, Dario R
+Valenzano<sup>1</sup>, Sebastian Grönke<sup>1</sup>, Linda
+Partridge<sup>1</sup></p>
+<p><sup>1</sup>Institute for Integrative Systems Biology (I2SysBio),
+Spanish National Research Council (CSIC); <sup>2</sup>Max Planck
+Institute for Biology of Ageing; <sup>3</sup>Cluster of Excellence on
+Cellular Stress Responses in Aging-associated Diseases (CECAD)</p>
+<p><sup>*</sup>Corresponding author</p>
+<p>Aging exerts a deleterious impact on the adaptive immune response,
+impairing the ability to mount effective defenses against novel
+antigens. This compromised immune function not only heightens
+vulnerability to pathogens but also undermines the efficacy of vaccines.
+Dietary restriction (DR) extends life- and health span in diverse
+animals. However, little is known about the capacity of DR to combat the
+decline in immune function. To unravel the effects of DR on the adaptive
+immune capacity, we studied the changes in B cell receptor (BCR)
+repertoire during aging in both DR and control mice. Employing
+asymmetric 400 + 100 nt paired-end sequencing, we sequenced the variable
+region of the BCR heavy chain in the spleen and ileum. Leveraging the
+Immcantation framework for processing and analyzing the sequencing data,
+revealed that DR, notably, not only preserves the repertoire diversity
+but also attenuates the escalating clonal expansions throughout the
+aging process. Remarkably, mice starting DR in mid-life displayed BCR
+repertoire diversity and clonal expansion rates indistinguishable from
+their chronically DR-treated counterparts. This observation hints at the
+sustained impact of DR initiated later in life. In contrast, in the
+intestine, these traits are unaffected by either age or DR, underscoring
+the regional nuances in BCR repertoire dynamics. Finally, our study
+establishes a correlation between reduced within-individual B cell
+repertoire diversity, increased clonal expansions, and higher morbidity,
+suggesting a potential contribution of B cell repertoire dynamics in
+influencing health during the aging process.</p>
+<p>Funding: This work was funded by the Max Planck Society (D.R.V. and
+L.P.), the European Research Council under the European Union’s Seventh
+Framework Programme (<a
+href="https://www.sciencedirect.com/science/article/pii/S2211124723007337?via%3Dihub#gs3">FP7/2007-2013</a>)/ERC
+grant agreement number <a
+href="https://www.sciencedirect.com/science/article/pii/S2211124723007337?via%3Dihub#gs4">268739</a>
+to L.P., and the Collaborative Research Center 1310 Predictability in
+Evolution by the Deutsche Forschungsgemeinschaft to D.R.V.</p>
+<p><a href="#header">Back to top</a></p>
+</div>
+</div>
+
+
+
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
