@@ -12,6 +12,14 @@ Selected speakers will be contacted by email by `r CONTACT_SPEAKERS`.
 The final program and selected abstracts will be published on `r FINAL_SCHEDULE`.
 
 
+```{r, eval=!is.null(REGISTRATION_FORM) & REGISTRATION_FORM != "", echo=FALSE, results='asis'}
+cat(paste0('The registration form is available [here', fontawesome::fa(name = "fas fa-link", fill = "bg-primary"),'](',REGISTRATION_FORM,')'))
+```
+
+```{r, eval=is.null(REGISTRATION_FORM), echo=FALSE, results='asis'}
+cat("**A link to the registration form will be available soon here.**")
+```
+
 <!-- 
 The registration form is available [here`r fontawesome::fa(name = "fas fa-link", fill = "bg-primary")`](`r REGISTRATION_FORM`).
 -->

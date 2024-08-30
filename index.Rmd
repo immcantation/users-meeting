@@ -11,8 +11,12 @@ suppressPackageStartupMessages(library(kableExtra))
 BIG_DAY <- "January 30th, 2025"
 BIG_DAY_TIME <- "10:00am to 1:30pm ET"
 
-# link to the registration form
-REGISTRATION_FORM <- "TBA"
+# NULL, "", or link to the registration form
+# NULL will write the message "A link to the registration form will be available soon here."
+#      in the registration page
+# A url will show a buttong with the linkt to the url
+# Use "" to do nothing
+REGISTRATION_FORM <- NULL
 REGISTRATION_ENDS <- "TBA"
 SUBMISSION_ENDS <- "November 1st, 2024"
 CONTACT_SPEAKERS <- "TBA"
