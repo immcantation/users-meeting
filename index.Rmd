@@ -14,9 +14,9 @@ BIG_DAY_TIME <- "10:00am to 1:30pm ET"
 # link to the registration form
 REGISTRATION_FORM <- "TBA"
 REGISTRATION_ENDS <- "TBA"
-SUBMISSION_ENDS <- "TBA"
+SUBMISSION_ENDS <- "November 1st, 2024"
 CONTACT_SPEAKERS <- "TBA"
-FINAL_SCHEDULE <- "TBA"
+FINAL_SCHEDULE <- "December 2nd, 2024"
 
 # NULL or link to a file
 ICS_FILE <- NULL
