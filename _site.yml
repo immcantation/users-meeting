@@ -24,6 +24,8 @@ output:
     theme: flatly
     highlight: tango
     css: style.css
+    includes:
+       in_header: static/ga.html
 exclude: ["admin", 
           "2020",
           "2024"]
