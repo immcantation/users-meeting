@@ -6,7 +6,7 @@ title: "Program"
 
 </br>
 
-The `r YEAR` Immcantation Users Group Meeting will take place on **`r BIG_DAY`**. <!-- The final program will be published on `r FINAL_SCHEDULE`. -->
+The `r YEAR` Immcantation Users Group Meeting will take place on **`r BIG_DAY`**. Abstract submission is now open. The final program will be published on `r FINAL_SCHEDULE`.
 
 *Note that all times shown here use ET.* 
 
