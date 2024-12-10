@@ -14,11 +14,12 @@ BIG_DAY_TIME <- "10:00am to 1:30pm ET"
 # NULL, "", or link to the registration form
 # NULL will write the message "A link to the registration form will be available soon here."
 #      in the registration page
-# A url will show a buttong with the linkt to the url
+# A url will show a button with the link to the url
 # Use "" to do nothing
 REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_0kC3u9npJt0onzM"
 REGISTRATION_ENDS <- "TBA"
 SUBMISSION_ENDS <- "November 1st, 2024"
+SUBMISSION_IS_OPEN <- FALSE
 CONTACT_SPEAKERS <- "November 22nd, 2024"
 FINAL_SCHEDULE <- "December 13th, 2024"
 
