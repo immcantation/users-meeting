@@ -65,7 +65,6 @@ Highly effective vaccines elicit specific, robust, and durable adaptive immune r
 
 [Back to top](#header)
 
-
 ### Integrative Bioinformatics for Characterizing Atypical Memory B Cells Through Single-Cell RNA-seq in COVID-19 {#session3}
 
 <strong>Melissa Garcia-Vega</strong><sup>1</sup>, Mara Anais Llamas-Covarrubias<sup>2</sup>, Martin Loza<sup>3</sup>, Monica Resendiz-Sandoval<sup>1</sup>, Diana Hinojosa-Trujillo<sup>1</sup>, Edgar Melgoza-Gonzalez<sup>1</sup>, Olivia Valenzuela<sup>4</sup>, Veronica Mata-Haro<sup>5</sup>, Miguel Hernandez-Oñate<sup>6</sup>, Alan Soto-Gaxiola<sup>7</sup>, Karina Chavez-Rueda<sup>8</sup>, Kenta Nakai<sup>3\*</sup>, Jesus Hernandez<sup>1\*</sup>
@@ -165,8 +164,7 @@ Funding Information: KB was supported by Canadian Institutes of Health Research 
 <sup>11</sup> Dept. of Cell and Developmental Biology, Northwestern Univ. Feinberg Sch. of Med., 
 <sup>12</sup> Program in Computational Biology and Bioinformatics, 
 <sup>13</sup> Dept. of Laboratory Medicine, Yale Sch. of Med. 
-<sup>\*</sup>Corresponding Author 
-
+<sup>\*</sup>Corresponding Author.
 
 The intestine is a barrier site where foreign stimuli interface with the immune system, causing protective and tolerogenic immune responses. IgA is a hallmark of intestinal immunity and is the predominant gut antibody isotype, neutralizing toxins, binding pathogens and foods, and maintaining microbial commensals. Despite IgA’s prevalence, the rules for making gut IgA are unknown. To investigate gut antibody responses, we used fate mapping to track antigen-specific B cells’ GC participation along with single-cell BCR sequencing and analysis with Immcantation to define relationships between antigen-specific B cells in multiple gut tissues. We found that antigen-specific B cells entered gut GCs soon after immunization but did not form GC-derived plasma cells until weeks later. Additionally, we identified an early wave of GC-independent, antigen-specific IgA plasma cells in the gut that accumulated somatic mutations and underwent clonal selection. Through analysis of BCRs in mice and humans using the Dowser package, we observed that IgA and IgG1 B cells were closely related in expanded clones. Further analysis of IgG1 and IgA B cells revealed that gut IgG1 B cells class switched to IgA to contribute to the gut IgA response. These results define several noncanonical pathways of antibody production in the gut, including GC-independent production of affinity matured plasma cells and sequential class switching through IgG1 to IgA, thus illuminating how the unique environment of the gut shapes B cell responses.  
 
@@ -187,8 +185,8 @@ A protective HIV vaccine must elicit broadly neutralizing antibodies (bnAbs). HI
 
 <strong>Ariel Erijman</strong><sup>1</sup>, Chen Song<sup>1</sup>, Evan Janzen<sup>1</sup>, Bradley W. Langhorst<sup>1\*</sup> 
 
-<sup>1</sup>New England Biolabs
-<sup>\*</sup>Corresponding author 
+<sup>1</sup>New England Biolabs.
+<sup>\*</sup>Corresponding author.
 
 The immune repertoire, comprising the diverse range of T and B cell antigen receptor transcripts, is key to understanding immune responses in various diseases. High-throughput sequencing has transformed immune repertoire analysis, enabling detailed profiling of clonal diversity and evolution. Although bulk sequencing cannot link receptor sequences to individual cells, its large-scale throughput provides valuable, population-wide insights into clonal diversity, frequency, and immune dynamics. 
 
