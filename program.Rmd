@@ -36,14 +36,15 @@ knitr::kable(program_table, format = "html") %>%
   column_spec(2, width = "5em")
 ```
 
+
 ```{r, eval=!is.null(GOOGLE_CAL), echo=FALSE, results='asis'}
-cat(paste0('[<button type="button" class="btn btn-info">Add to Google Calendar</button>](',GOOGLE_CAL,')'))
+cat(paste0('[<button type="button" class="btn btn-info btn-sm">Add to Google Calendar</button>](',GOOGLE_CAL,')'))
 ```
 ```{r, eval=!is.null(OFFICE_365), echo=FALSE, results='asis'}
-cat(paste0('[<button type="button" class="btn btn-info">Add to Office365 Calendar</button>](',OFFICE_365,')'))
+cat(paste0('[<button type="button" class="btn btn-info btn-sm">Add to Office365 Calendar</button>](',OFFICE_365,')'))
 ```
 ```{r, eval=!is.null(ICS_FILE), echo=FALSE, results='asis'}
-cat(paste0('[<button type="button" class="btn btn-info">Download iCalendar (.ics) file</button>](',ICS_FILE,')'))
+cat(paste0('[<button type="button" class="btn btn-info btn-sm">Download iCalendar (.ics) file</button>](',ICS_FILE,')'))
 ```
 
 ## Abstracts
