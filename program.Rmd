@@ -42,9 +42,6 @@ cat(paste0('[<button type="button" class="btn btn-info">Add to Google Calendar</
 ```{r, eval=!is.null(OFFICE_365), echo=FALSE, results='asis'}
 cat(paste0('[<button type="button" class="btn btn-info">Add to Office365 Calendar</button>](',OFFICE_365,')'))
 ```
-```{r, eval=!is.null(OUTLOOK_CAL), echo=FALSE, results='asis'}
-cat(paste0('[<button type="button" class="btn btn-info">Add to Outlook Calendar</button>](',OUTLOOK_CAL,')'))
-```
 ```{r, eval=!is.null(ICS_FILE), echo=FALSE, results='asis'}
 cat(paste0('[<button type="button" class="btn btn-info">Download iCalendar (.ics) file</button>](',ICS_FILE,')'))
 ```
