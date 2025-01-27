@@ -86,14 +86,20 @@ Funding Information: Consejo Nacional de Ciencia y Tecnología grant 312677
 
 [Back to top](#header)
 
-### Pre-Existing Memory B Cell Phenotype Determines the Quality of B Cell Response to Vaccine Boosters {#session4}
+### Full-length single-cell BCR sequencing paired with RNA sequencing reveals convergent responses to pneumococcal vaccination {#session4}
 
-<strong>Noemia S. Lima</strong><sup>1</sup>, Abby Spangler<sup>1</sup>, Lauren McCormick<sup>1</sup>, Samuel Li<sup>1</sup>, Christian G. Wake<sup>1</sup>, Yoav Pinto<sup>1</sup>, William Catalano<sup>1</sup>, Sarah Andrews<sup>1</sup>, Chaim A. Schramm<sup>1\*</sup>, Daniel C. Douek<sup>1\*</sup> 
+Duncan M. Morgan<sup>1,2</sup>, <strong>Yiming J. Zhang</strong><sup>1,3</sup>, Jin-Hwan Kim<sup>4</sup>, MaryAnn Murillo<sup>4</sup>, Suddham Singh<sup>4</sup>, Jakob Loschko<sup>4,8</sup>, Naveen Surendran<sup>4</sup>, Ognjen Sekulovic<sup>4</sup>, Ellie Feng<sup>1,3</sup>, Shuting Shi<sup>1,2</sup>, Darrell J. Irvine <sup>1,3,5,6</sup>, Sarita U. Patil<sup>7</sup>, Isis Kanevsky<sup>4</sup>, Laurent Chorro<sup>4,9</sup>, J. Christopher Love <sup>1,2,\*</sup>
 
-<sup>1</sup>Vaccine Research Center, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Bethesda, MD 20892 USA.
+<sup>1</sup>Koch Institute for Integrative Cancer Research, MIT, Cambridge, MA, USA.;
+<sup>2</sup>Department of Chemical Engineering, MIT, Cambridge, MA, USA.;
+<sup>3</sup>Department of Biological Engineering, MIT, Cambridge, MA, USA.;
+<sup>4</sup>Vaccine Research and Development Pfizer Inc. Pearl River, New York, NY, USA.
+<sup>5</sup>Howard Hughes Medical Institute, Chevy Chase, MD, USA.;
+<sup>6</sup>Department of Materials Science and Engineering, MIT, Cambridge, MA, USA.;
+<sup>7</sup>Center for Immunology and Inflammatory Diseases, Massachusetts General Hospital, Harvard Medical School, Boston, MA, USA.;
+<sup>8</sup>Present address: Deerfield Management, New York, NY, USA.;
+<sup>9</sup>Present address: Regeneron, Tarrytown, NY, USA.;
 <sup>\*</sup>Corresponding author.
-
-Different COVID-19 vaccine modalities expressing the same SARS-CoV-2 spike antigen present a unique opportunity to contrast the immunologic outcomes associated with each vaccine platform. Here we characterized the memory B cell response elicited by initial vaccination with either the Janssen adenovirus-vectored vaccine Ad26.COV2.S or the Moderna mRNA-1273 vaccine and then boosted 3-6 months later with Moderna mRNA-1273. Using lineage tracking by single-cell IG sequencing in concert with single-cell RNA sequencing and cellular indexing of transcriptomes and epitopes by sequencing (CITE-Seq), we characterized B cell lineages exhibiting different phenotypes at each time point. We showed that the dynamics of this process depended on the priming vaccine type and used Dowser to reveal likely pathways between distinct cell states. We identified B cell lineages with significant clonal evolution over 6 months post-boost and showed the clonal relationship between different cell phenotypes. We also found notable differences in the isotype distribution and levels of affinity maturation between the two priming modalities. Overall, our findings suggest that the type of response elicited by boosting is dependent on the nature of pre-existing memory B cells imprinted by the vaccine priming. 
 
 [Back to top](#header)
 
@@ -118,17 +124,24 @@ By characterizing these processes, we aim to uncover biomarkers predictive of se
 
 [Back to top](#header)
 
+### Consistency and Reproducibility Across Germline Databases in Immune Repertoire Analysis {#session6}
 
-### Impact of Pre-Existing Immunity on Clonal Evolution and Diversification of Memory B Cells in Response to Vaccination {#session6}
+<strong>Ariel Erijman</strong><sup>1</sup>, Chen Song<sup>1</sup>, Evan Janzen<sup>1</sup>, Bradley W. Langhorst<sup>1\*</sup> 
 
-<strong>Abby Spangler</strong><sup>1</sup>, Geoffrey D Shimberg<sup>1</sup>, Grace Mantus<sup>1</sup>, Rory Malek<sup>1</sup>, Julie E Raab<sup>1</sup>, Lauren Y Cominsky<sup>1</sup>, Suprabhath R Gajjala<sup>1</sup>, Rebecca A Gillespie<sup>1</sup>, Adrian Creanga<sup>1</sup>, Masaru Kanekiyo<sup>1</sup>, Sarah F Andrews<sup>1\*</sup>
-
-<sup>1</sup>Vaccine Research Center, National Institute of Allergy and Infectious Diseases, National Institutes of Health, USA.
+<sup>1</sup>New England Biolabs.
 <sup>\*</sup>Corresponding author.
 
-It has been well documented that pre-existing immunity affects vaccine responses. Here, we investigate how pre-existing immunity impacts the clonal evolution and diversification of the memory B cell receptor (BCR) repertoire upon vaccination. We sampled peripheral blood B cells from individuals vaccinated with an H2 HA ferritin nanoparticle vaccine that were either naïve to H2N2 at the time of vaccination or previously exposed to H2N2 influenza virus fifty years ago. Single-cell whole transcriptome, cell surface protein and B cell receptor data (BCR) was generated for H2-specific memory B cells collected between 0 and 40 weeks after vaccination. To study BCR clonal evolution and diversity, we used Immcantation bioinformatic tools to identify BCR lineages and construct phylogenetic trees of longitudinally sampled clones to determine whether these lineages were significantly evolving over time. We found that 52% of H2 specific BCR lineages were evolving in H2 naïve individuals compared to less than 10% of lineages from H2 exposed individuals. We further analyzed lineage evolution and clonal relationships across different phenotypic memory B cell subsets to study precursor-progeny relationships. We observed close interconnectedness between the different memory populations in both H2 naïve and H2 exposed individuals. All together, we conclude that the BCR repertoire undergoes little change upon vaccination in individuals with pre-existing immunity. 
+The immune repertoire, comprising the diverse range of T and B cell antigen receptor transcripts, is key to understanding immune responses in various diseases. High-throughput sequencing has transformed immune repertoire analysis, enabling detailed profiling of clonal diversity and evolution. Although bulk sequencing cannot link receptor sequences to individual cells, its large-scale throughput provides valuable, population-wide insights into clonal diversity, frequency, and immune dynamics. 
+
+Despite its advantages, bulk immune repertoire analysis presents notable bioinformatic challenges. Since each individual’s immune transcripts are unique, it’s not possible to align to a reference as in typical RNA-seq analysis methods. These vast datasets require robust pipelines for quality assessment, assembly, clustering, and annotation with known alleles. Furthermore, clonal assignment is complicated by somatic hypermutation and sequence similarity, leading to potential ambiguity in clonotype definitions. Standardized workflows like Immcantation help to address some of these technical challenges. Availability of curated V, D, and J alleles from B and T cells across diverse populations make it possible to annotate assembled clones, providing confidence in the biological relevance of each sequence. In this study, we analyze high quality B-Cell Receptor (BCR) data produced from cell line and clinical samples using the New England Biolabs Immune Sequencing kit. We evaluate clonal assignment differences between the widely used IMGT germline database and the new open-source OGRDB, highlighting the impact of reference database selection on immune repertoire analysis. 
+
+Funding Information: New England Biolabs supported this work 
 
 [Back to top](#header)
+
+
+### {#session7}
+
 
 ### Pathogenic IgE-Fated B Cell Memory Retains Functional Plasticity {#session8}
 
@@ -176,21 +189,21 @@ The intestine is a barrier site where foreign stimuli interface with the immune 
 <sup>1</sup>Duke Human Vaccine Institute, Duke University Medical Center, Durham, NC 27710.
 <sup>2</sup>Department of Medicine, Duke University Medical Center, Durham, NC, 27710, USA.
 
-A protective HIV vaccine must elicit broadly neutralizing antibodies (bnAbs). HIV bnAbs are challenging to elict because they are the result of long maturation pathways which include mutations that are not routinely made by the somatic hypermutation machinery. To address this challenge, we recently developed the mutation-guided vaccine design strategy in which developmentally rate-limiting bnAb mutations are targeted for selection by specifically designed immunogens. This vaccine strategy relies on accurate reconstruction of the maturation history of target bnAb clones including inferring the unmutated common ancestor and the ancestral sequences in the B cell clonal genealogy. Although recent advancements in sequencing have enabled paired heavy and light chain sequencing, there remains a shortage of tools capable of analyzing paired chain data and accurately reconstructing B cell maturation histories. Dowser is a newly developed lineage reconstruction tool in the Immcanatation framework. Using data from highly curated HIV B cell lineages, we compared ancestral states and clonal genealogy trees reconstructed by Dowser to previous methods. Our results demonstrated that Dowser reconstructed highly similar trees to the previously inferred HIV bnAb clonal genealogies. Furthermore, analysis of the inferred ancestral sequences showed that Dowser placed most of the critical, improbable mutations responsible for the breadth and binding affinity of the lineages along similar branches as previous methods. We also used Dowser to reconstruct a large clone elicited in a rhesus macaque demonstrating that Dowser can be applied to paired sequence data from a non-human primate animal model widely used in vaccine research. These findings establish Dowser as a robust and reliable tool for B cell lineage reconstruction, providing a valuable asset for advancing mutation-guided vaccine design strategies.
+A protective HIV vaccine must elicit broadly neutralizing antibodies (bnAbs). HIV bnAbs are challenging to elict because they are the result of long maturation pathways which include mutations that are not routinely made by the somatic hypermutation machinery. To address this challenge, we recently developed the mutation-guided vaccine design strategy in which developmentally rate-limiting bnAb mutations are targeted for selection by specifically designed immunogens. This vaccine strategy relies on accurate reconstruction of the maturation history of target bnAb clones including inferring the unmutated common ancestor and the ancestral sequences in the B cell clonal genealogy. Although recent advancements in sequencing have enabled paired heavy and light chain sequencing, there remains a shortage of tools capable of analyzing paired chain data and accurately reconstructing B cell maturation histories. Dowser is a newly developed lineage reconstruction tool in the Immcantation framework. Using data from highly curated HIV B cell lineages, we compared ancestral states and clonal genealogy trees reconstructed by Dowser to previous methods. Our results demonstrated that Dowser reconstructed highly similar trees to the previously inferred HIV bnAb clonal genealogies. Furthermore, analysis of the inferred ancestral sequences showed that Dowser placed most of the critical, improbable mutations responsible for the breadth and binding affinity of the lineages along similar branches as previous methods. We also used Dowser to reconstruct a large clone elicited in a rhesus macaque demonstrating that Dowser can be applied to paired sequence data from a non-human primate animal model widely used in vaccine research. These findings establish Dowser as a robust and reliable tool for B cell lineage reconstruction, providing a valuable asset for advancing mutation-guided vaccine design strategies.
 
 [Back to top](#header)
 
-### Consistency and Reproducibility Across Germline Databases in Immune Repertoire Analysis {#session11}
+### Lack of affinity signature for germinal center cells that have initiated plasma cell differentiation {#session11}
 
-<strong>Ariel Erijman</strong><sup>1</sup>, Chen Song<sup>1</sup>, Evan Janzen<sup>1</sup>, Bradley W. Langhorst<sup>1\*</sup> 
+Henry J Sutton<sup>1</sup>, Xin Gao<sup>1</sup>, Hannah G Kelly<sup>1</sup>, Brian J Parker<sup>2</sup>, Mariah Lofgren<sup>3</sup>, Cherrelle Dacon<sup>4</sup>, Deepyan Chatterjee<sup>1</sup>, Robert A Seder<sup>3</sup>, Joshua Tan<sup>4</sup>, Azza H Idris<sup>5</sup>, Teresa Neeman <sup>6</sup>, <strong>Ian A Cockburn</strong><sup>7,\*</sup>
 
-<sup>1</sup>New England Biolabs.
-<sup>\*</sup>Corresponding author.
-
-The immune repertoire, comprising the diverse range of T and B cell antigen receptor transcripts, is key to understanding immune responses in various diseases. High-throughput sequencing has transformed immune repertoire analysis, enabling detailed profiling of clonal diversity and evolution. Although bulk sequencing cannot link receptor sequences to individual cells, its large-scale throughput provides valuable, population-wide insights into clonal diversity, frequency, and immune dynamics. 
-
-Despite its advantages, bulk immune repertoire analysis presents notable bioinformatic challenges. Since each individual’s immune transcripts are unique, it’s not possible to align to a reference as in typical RNA-seq analysis methods. These vast datasets require robust pipelines for quality assessment, assembly, clustering, and annotation with known alleles. Furthermore, clonal assignment is complicated by somatic hypermutation and sequence similarity, leading to potential ambiguity in clonotype definitions. Standardized workflows like Immcantation help to address some of these technical challenges. Availability of curated V, D, and J alleles from B and T cells across diverse populations make it possible to annotate assembled clones, providing confidence in the biological relevance of each sequence. In this study, we analyze high quality B-Cell Receptor (BCR) data produced from cell line and clinical samples using the New England Biolabs Immune Sequencing kit. We evaluate clonal assignment differences between the widely used IMGT germline database and the new open-source OGRDB, highlighting the impact of reference database selection on immune repertoire analysis. 
-
-Funding Information: New England Biolabs supported this work 
+<sup>1</sup>Division of Immunology and Infectious Disease, John Curtin School of Medical Research, The Australian National University, Canberra, ACT 2601, Australia.;
+<sup>2</sup>Biological Data Science Institute, The Australian National University, Canberra, ACT 2601, Australia; School of Computing, ANU College of Engineering, Computing & Cybernetics, The Australian National University, Canberra, ACT 2601, Australia.;
+<sup>3</sup>Malaria Unit, Vaccine Research Center, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Bethesda, MD 20892, USA.;
+<sup>4</sup>Antibody Biology Unit, Laboratory of Immunogenetics, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Rockville, MD 20852, USA.;
+<sup>5</sup>Malaria Unit, Vaccine Research Center, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Bethesda, MD 20892, USA; Ragon Institute of MGH, MIT, and Harvard, Cambridge, MA 02139, USA; Department of Pediatrics, Massachusetts General Hospital, Boston, MA 02114, USA.;
+<sup>6</sup>Biological Data Science Institute, The Australian National University, Canberra, ACT 2601, Australia.;
+<sup>7</sup>Division of Immunology and Infectious Disease, John Curtin School of Medical Research, The Australian National University, Canberra, ACT 2601, Australia.
+<sup>\*</sup>Corresponding Author.
 
 [Back to top](#header)

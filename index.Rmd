@@ -26,8 +26,10 @@ FINAL_SCHEDULE <- "December 13th, 2024"
 # Add to calendars (https://parcel.io/tools/calendar)
 # Use NULL or link
 GOOGLE_CAL <- "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20250130T150000Z%2F20250130T184000Z&details=https%3A%2F%2Fimmcantation.github.io%2Fusers-meeting%2F2025%2Fprogram.html&location=Zoom&text=2025%20Immcantation%20Users%20Group%20Meeting"
-OFFICE_365 <- "https://outlook.office.com/calendar/0/action/compose?allday=false&body=https%3A%2F%2Fimmcantation.github.io%2Fusers-meeting%2F2025%2Fprogram.html&enddt=2025-01-30T19%3A40%3A00&location=Zoom&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2025-01-30T16%3A00%3A00&subject=2025%20Immcantation%20Users%20Group%20Meeting"
-ICS_FILE <- "static/Immcantation-Users-Group-Meeting.ics"
+OFFICE_365 <- NULL
+# OFFICE_365 <- "https://outlook.office.com/calendar/0/action/compose?allday=false&body=https%3A%2F%2Fimmcantation.github.io%2Fusers-meeting%2F2025%2Fprogram.html&enddt=2025-01-30T19%3A40%3A00&location=Zoom&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2025-01-30T16%3A00%3A00&subject=2025%20Immcantation%20Users%20Group%20Meeting"
+ICS_FILE <- NULL
+# ICS_FILE <- "static/Immcantation-Users-Group-Meeting.ics"
 
 # NULL or link to YouTube playlist
 YOUTUBE_PLAYLIST <- NULL
