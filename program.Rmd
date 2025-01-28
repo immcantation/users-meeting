@@ -86,20 +86,18 @@ Funding Information: Consejo Nacional de Ciencia y Tecnología grant 312677
 
 [Back to top](#header)
 
-### Full-length single-cell BCR sequencing paired with RNA sequencing reveals convergent responses to pneumococcal vaccination {#session4}
+### B3E-Seq: Full-Length BCR Sequencing from 3'-Barcoded scRNA-seq {#session4}
 
-Duncan M. Morgan<sup>1,2</sup>, <strong>Yiming J. Zhang</strong><sup>1,3</sup>, Jin-Hwan Kim<sup>4</sup>, MaryAnn Murillo<sup>4</sup>, Suddham Singh<sup>4</sup>, Jakob Loschko<sup>4,8</sup>, Naveen Surendran<sup>4</sup>, Ognjen Sekulovic<sup>4</sup>, Ellie Feng<sup>1,3</sup>, Shuting Shi<sup>1,2</sup>, Darrell J. Irvine <sup>1,3,5,6</sup>, Sarita U. Patil<sup>7</sup>, Isis Kanevsky<sup>4</sup>, Laurent Chorro<sup>4,9</sup>, J. Christopher Love <sup>1,2,\*</sup>
+<strong>Y. Jason Zhang</strong><sup>1,2</sup>, Duncan M. Morgan<sup>1,3</sup>, Darrell J. Irvine<sup>1,2</sup>, J. Christopher Love<sup>1,3,\*</sup>
 
-<sup>1</sup>Koch Institute for Integrative Cancer Research, MIT, Cambridge, MA, USA.;
-<sup>2</sup>Department of Chemical Engineering, MIT, Cambridge, MA, USA.;
-<sup>3</sup>Department of Biological Engineering, MIT, Cambridge, MA, USA.;
-<sup>4</sup>Vaccine Research and Development Pfizer Inc. Pearl River, New York, NY, USA.
-<sup>5</sup>Howard Hughes Medical Institute, Chevy Chase, MD, USA.;
-<sup>6</sup>Department of Materials Science and Engineering, MIT, Cambridge, MA, USA.;
-<sup>7</sup>Center for Immunology and Inflammatory Diseases, Massachusetts General Hospital, Harvard Medical School, Boston, MA, USA.;
-<sup>8</sup>Present address: Deerfield Management, New York, NY, USA.;
-<sup>9</sup>Present address: Regeneron, Tarrytown, NY, USA.;
-<sup>\*</sup>Corresponding author.
+<sup>1</sup>Koch Institute for Integrative Cancer Research, MIT, Cambridge, MA, USA.; 
+<sup>2</sup>Department of Biological Engineering, MIT, Cambridge, MA, USA.; 
+<sup>3</sup>Department of Chemical Engineering, MIT, Cambridge, MA, USA. 
+<sup>\*</sup>Corresponding author
+
+Single-cell RNA sequencing (scRNA-seq) can resolve transcriptional features from individual cells, but scRNA-seq techniques capable of resolving the variable regions of B cell receptors (BCRs) remain limited, especially from widely-used 3'-barcoded libraries. Here, we report a method that can recover heavy/light chain paired, full-length variable region sequences of BCRs from 3'-barcoded scRNA-seq libraries. We first verify this method (B3E-seq) can produce accurate, full-length BCR sequences. We then apply this method to profile B cell responses elicited against the capsular polysaccharide of Streptococcus pneumoniae serotype 3 (ST3) by glycoconjugate vaccines in five infant rhesus macaques. We identify BCR features associated with specificity for the ST3 antigen which are present in multiple vaccinated monkeys, indicating a convergent response to vaccination. These results demonstrate the utility of our method to resolve key features of the B cell repertoire and profile antigen-specific responses elicited by vaccination.
+
+Funding Information: The authors declare the following competing interests: J.C.L. has interests in Sunflower Therapeutics PBC, Honeycomb Biotechnologies, OneCyte Biotechnologies, SQZ Biotech, Alloy Therapeutics, QuantumCyte, Amgen, and Repligen (these interests are reviewed and managed under Massachusetts Institute of Technology’s policies for potential conflicts of interest); in addition, he receives sponsored research support at Massachusetts Institute of Technology from Amgen, the Bill and Melinda Gates Foundation, Biogen, Pfizer, Sartorius, Mott Corp, TurtleTree, Takeda, and Sanofi, and his spouse is an employee of Sunflower Therapeutics. Pfizer was involved in the design, analysis, and interpretation of the data in this research study. 
 
 [Back to top](#header)
 
@@ -193,17 +191,10 @@ A protective HIV vaccine must elicit broadly neutralizing antibodies (bnAbs). HI
 
 [Back to top](#header)
 
-### Lack of affinity signature for germinal center cells that have initiated plasma cell differentiation {#session11}
+### Linking affinity maturation and B cell differentiation in the germinal center after Plasmodium immunization {#session11}
 
-Henry J Sutton<sup>1</sup>, Xin Gao<sup>1</sup>, Hannah G Kelly<sup>1</sup>, Brian J Parker<sup>2</sup>, Mariah Lofgren<sup>3</sup>, Cherrelle Dacon<sup>4</sup>, Deepyan Chatterjee<sup>1</sup>, Robert A Seder<sup>3</sup>, Joshua Tan<sup>4</sup>, Azza H Idris<sup>5</sup>, Teresa Neeman <sup>6</sup>, <strong>Ian A Cockburn</strong><sup>7,\*</sup>
+<strong>Ian A Cockburn</strong><sup>1</sup>
 
-<sup>1</sup>Division of Immunology and Infectious Disease, John Curtin School of Medical Research, The Australian National University, Canberra, ACT 2601, Australia.;
-<sup>2</sup>Biological Data Science Institute, The Australian National University, Canberra, ACT 2601, Australia; School of Computing, ANU College of Engineering, Computing & Cybernetics, The Australian National University, Canberra, ACT 2601, Australia.;
-<sup>3</sup>Malaria Unit, Vaccine Research Center, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Bethesda, MD 20892, USA.;
-<sup>4</sup>Antibody Biology Unit, Laboratory of Immunogenetics, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Rockville, MD 20852, USA.;
-<sup>5</sup>Malaria Unit, Vaccine Research Center, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Bethesda, MD 20892, USA; Ragon Institute of MGH, MIT, and Harvard, Cambridge, MA 02139, USA; Department of Pediatrics, Massachusetts General Hospital, Boston, MA 02114, USA.;
-<sup>6</sup>Biological Data Science Institute, The Australian National University, Canberra, ACT 2601, Australia.;
-<sup>7</sup>Division of Immunology and Infectious Disease, John Curtin School of Medical Research, The Australian National University, Canberra, ACT 2601, Australia.
-<sup>\*</sup>Corresponding Author.
+<sup>1</sup>Division of Immunology and Infectious Disease, John Curtin School of Medical Research, The Australian National University, Canberra, ACT 2601, Australia.
 
 [Back to top](#header)
