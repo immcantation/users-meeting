@@ -166,14 +166,14 @@ Funding Information: KB was supported by Canadian Institutes of Health Research 
 <sup>3</sup> Dept. of Pathology, Yale Sch. of Med.;
 <sup>4</sup> Dept of Medicine, Div. of Allergy and Clinical Immunology, Div. of Genetics, Brigham and Women’s Hospital;
 <sup>5</sup> Harvard Med. Sch.;
-<sup>6</sup> The Broad Institute of MIT and Harvard, 
-<sup>7</sup> quThe Ragon Institute of MGH, MIT, and Harvard, 
-<sup>8</sup> Section of Rheumatology, Allergy and Immunology, Yale Sch. of Med., 
-<sup>9</sup> Section of Infectious Diseases, Yale Sch. of Med., 
-<sup>10</sup> Dept. of Medicine (Allergy and Immunology); Northwestern Univ. Feinberg Sch. of Med., 
-<sup>11</sup> Dept. of Cell and Developmental Biology, Northwestern Univ. Feinberg Sch. of Med., 
-<sup>12</sup> Program in Computational Biology and Bioinformatics, 
-<sup>13</sup> Dept. of Laboratory Medicine, Yale Sch. of Med. 
+<sup>6</sup> The Broad Institute of MIT and Harvard;
+<sup>7</sup> The Ragon Institute of MGH, MIT, and Harvard; 
+<sup>8</sup> Section of Rheumatology, Allergy and Immunology, Yale Sch. of Med.;
+<sup>9</sup> Section of Infectious Diseases, Yale Sch. of Med.;
+<sup>10</sup> Dept. of Medicine (Allergy and Immunology); Northwestern Univ. Feinberg Sch. of Med.;
+<sup>11</sup> Dept. of Cell and Developmental Biology, Northwestern Univ. Feinberg Sch. of Med.;
+<sup>12</sup> Program in Computational Biology and Bioinformatics;
+<sup>13</sup> Dept. of Laboratory Medicine, Yale Sch. of Med.
 <sup>\*</sup>Corresponding Author.
 
 The intestine is a barrier site where foreign stimuli interface with the immune system, causing protective and tolerogenic immune responses. IgA is a hallmark of intestinal immunity and is the predominant gut antibody isotype, neutralizing toxins, binding pathogens and foods, and maintaining microbial commensals. Despite IgA’s prevalence, the rules for making gut IgA are unknown. To investigate gut antibody responses, we used fate mapping to track antigen-specific B cells’ GC participation along with single-cell BCR sequencing and analysis with Immcantation to define relationships between antigen-specific B cells in multiple gut tissues. We found that antigen-specific B cells entered gut GCs soon after immunization but did not form GC-derived plasma cells until weeks later. Additionally, we identified an early wave of GC-independent, antigen-specific IgA plasma cells in the gut that accumulated somatic mutations and underwent clonal selection. Through analysis of BCRs in mice and humans using the Dowser package, we observed that IgA and IgG1 B cells were closely related in expanded clones. Further analysis of IgG1 and IgA B cells revealed that gut IgG1 B cells class switched to IgA to contribute to the gut IgA response. These results define several noncanonical pathways of antibody production in the gut, including GC-independent production of affinity matured plasma cells and sequential class switching through IgG1 to IgA, thus illuminating how the unique environment of the gut shapes B cell responses.  
@@ -184,7 +184,7 @@ The intestine is a barrier site where foreign stimuli interface with the immune 
 
 <strong>James San</strong><sup>1</sup>, Sravani Venkatayogi<sup>1</sup>, Elizabeth Van Itallie<sup>1</sup>, Kevin Wiehe<sup>1,2</sup>
 
-<sup>1</sup>Duke Human Vaccine Institute, Duke University Medical Center, Durham, NC 27710.
+<sup>1</sup>Duke Human Vaccine Institute, Duke University Medical Center, Durham, NC 27710;
 <sup>2</sup>Department of Medicine, Duke University Medical Center, Durham, NC, 27710, USA.
 
 A protective HIV vaccine must elicit broadly neutralizing antibodies (bnAbs). HIV bnAbs are challenging to elict because they are the result of long maturation pathways which include mutations that are not routinely made by the somatic hypermutation machinery. To address this challenge, we recently developed the mutation-guided vaccine design strategy in which developmentally rate-limiting bnAb mutations are targeted for selection by specifically designed immunogens. This vaccine strategy relies on accurate reconstruction of the maturation history of target bnAb clones including inferring the unmutated common ancestor and the ancestral sequences in the B cell clonal genealogy. Although recent advancements in sequencing have enabled paired heavy and light chain sequencing, there remains a shortage of tools capable of analyzing paired chain data and accurately reconstructing B cell maturation histories. Dowser is a newly developed lineage reconstruction tool in the Immcantation framework. Using data from highly curated HIV B cell lineages, we compared ancestral states and clonal genealogy trees reconstructed by Dowser to previous methods. Our results demonstrated that Dowser reconstructed highly similar trees to the previously inferred HIV bnAb clonal genealogies. Furthermore, analysis of the inferred ancestral sequences showed that Dowser placed most of the critical, improbable mutations responsible for the breadth and binding affinity of the lineages along similar branches as previous methods. We also used Dowser to reconstruct a large clone elicited in a rhesus macaque demonstrating that Dowser can be applied to paired sequence data from a non-human primate animal model widely used in vaccine research. These findings establish Dowser as a robust and reliable tool for B cell lineage reconstruction, providing a valuable asset for advancing mutation-guided vaccine design strategies.
@@ -193,8 +193,16 @@ A protective HIV vaccine must elicit broadly neutralizing antibodies (bnAbs). HI
 
 ### Linking affinity maturation and B cell differentiation in the germinal center after Plasmodium immunization {#session11}
 
-<strong>Ian A Cockburn</strong><sup>1</sup>
+Henry J. Sutton<sup>1,\*</sup>, Xin Gao<sup>1,\*</sup>, Hannah G. Kelly<sup>1</sup>, Brian J. Parker<sup>2,3</sup>, Mariah Lofgren<sup>4</sup>, Cherrelle Dacon<sup>5</sup>, Deepyan Chatterjee<sup>1</sup>, Robert A. Seder<sup>4</sup>, Joshua Tan<sup>5</sup>, Azza H. Idris<sup>4</sup>, Teresa Neeman<sup>2</sup> and Ian A. Cockburn<sup>1,†</sup>
 
-<sup>1</sup>Division of Immunology and Infectious Disease, John Curtin School of Medical Research, The Australian National University, Canberra, ACT 2601, Australia.
+<sup>1</sup>Department of Immunology and Infectious Disease, John Curtin School of Medical Research, The Australian National University, Canberra, ACT, 2601, Australia;
+<sup>2</sup>Biological Data Science Institute, The Australian National University, Canberra, ACT, 2601, Australia;
+<sup>3</sup>School of Computing, ANU College of Engineering, Computing & Cybernetics, The Australian National University, Canberra, ACT, 2601, Australia;
+<sup>4</sup>Malaria Unit, Vaccine Research Center, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Bethesda, MD 20892, USA;
+<sup>5</sup>Antibody Biology Unit, Laboratory of Immunogenetics, National Institute of Allergy and Infectious Diseases, National Institutes of Health, Rockville, MD 20852, USA.
+
+<sup>\*</sup>These authors contributed equally to this work.
+
+Long-lived plasma cells (PCs) secrete antibodies that can provide sustained immunity against infection. It has been proposed that high affinity cells are preferentially selected into this compartment, potentiating the immune response. We used single cell RNA-seq to track the germinal center (GC) development of Igh<sup>g2A10</sup> cells, specific for the *Plasmodium falciparum* circumsporozoite protein (*Pf*CSP). Following immunization with *Plasmodium* sporozoites we identified 3 populations of cells in the GC light zone. One population expressed a gene signature associated with the initiation of PC differentiation and had an enhanced propensity to form PCs in vitro. Unexpectedly, the estimated affinity of this putative pre-PC population was indistinguishable from cells in the GC generally. This was also true when high- or low-avidity recombinant *Pf*CSP proteins were used as immunogens. Immunization with low-avidity *Pf*CSP did, however, induce increased affinity maturation. Collectively these findings suggest that the initiation of PC development in the GC occurs via an affinity independent process.
 
 [Back to top](#header)
