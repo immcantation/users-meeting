@@ -37,6 +37,7 @@ An abstract template is available for download <a href="static/AbstractTemplate.
 * There should be no comments, text or image boxes in the abstract.
 * .rtf, .docx, .pdf  documents only.
 * 250 words maximum.
+* Indicate how Immcantation was used in the research.
 </div>
 
 <!-- side box -->
