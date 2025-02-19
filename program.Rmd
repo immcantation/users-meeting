@@ -37,7 +37,10 @@ knitr::kable(program_table, format = "html") %>%
 ```
 
 
-```{r, eval=!is.null(GOOGLE_CAL), echo=FALSE, results='asis'}
+```{r, eval=!is.null(YOUTUBE_PLAYLIST), echo=FALSE, results='asis'}
+cat(paste0('[<button type="button" class="btn btn-info">Watch on ', fontawesome::fa(name = "youtube", fill = "white"), '  YouTube</button>](',YOUTUBE_PLAYLIST,')'))
+```
+```{r, eval=!is.null(GOOGLE_CAL) & is.null(YOUTUBE_PLAYLIST), echo=FALSE, results='asis'}
 cat(paste0('[<button type="button" class="btn btn-info btn-sm">Add to Google Calendar</button>](',GOOGLE_CAL,')'))
 ```
 ```{r, eval=!is.null(OFFICE_365), echo=FALSE, results='asis'}
