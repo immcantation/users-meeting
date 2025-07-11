@@ -1,16 +1,19 @@
 name: "Immcantation Users Group Meeting"
-output_dir: "2025"
+output_dir: "2026"
 navbar:
   title: ""
   left:
-    # Toggle this section to close a year
-    # - text: "Home"
-    #   href: ../index.html
-    # - text: "2025 Home"
-    #   href: index.html    
+    # Toggle sections to close a year
+    # and add archived year to exclude
+    # Section 1: prepare for archival
+    #- text: "Home"
+    #  href: ../index.html
+    #- text: "2025 Home"
+    #  href: index.html
+    # Section 2: Active year
     - text: "Home"
       href: index.html
-    #  
+    #  End toggle section
     - text: "Registration and abstract submission"
       href: registration.html
     - text: "Program"
@@ -28,4 +31,5 @@ output:
        in_header: static/ga.html
 exclude: ["admin", 
           "2020",
-          "2024"]
+          "2024",
+          "2025"]
