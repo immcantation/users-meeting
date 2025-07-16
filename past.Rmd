@@ -2,6 +2,8 @@
 title: "Past Meetings"
 ---
 
+[**January 30th, 2025**](../2025/index.html)
+
 [**January 25th, 2024**](../2024/index.html)
 
 [**January 29th, 2020**](../2020/index.html)

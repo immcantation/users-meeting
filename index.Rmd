@@ -1,5 +1,5 @@
 ---
-title: "2025 Immcantation Users Group Meeting"
+title: "2026 Immcantation Users Group Meeting"
 ---
 
 ```{r setup, echo=FALSE}
@@ -8,7 +8,7 @@ suppressPackageStartupMessages(library(fontawesome))
 suppressPackageStartupMessages(library(kableExtra))
 
 #------------ CONFIGURATION -----------------#
-BIG_DAY <- "January 30th, 2025"
+BIG_DAY <- "January 22nd, 2026"
 BIG_DAY_TIME <- "10:00am to 1:30pm ET"
 
 # NULL, "", or link to the registration form
@@ -16,23 +16,26 @@ BIG_DAY_TIME <- "10:00am to 1:30pm ET"
 #      in the registration page
 # A url will show a button with the link to the url
 # Use "" to do nothing
-REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_0kC3u9npJt0onzM"
+REGISTRATION_FORM <- NULL
+#REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_0kC3u9npJt0onzM"
 REGISTRATION_ENDS <- "TBA"
-SUBMISSION_ENDS <- "November 1st, 2024"
+SUBMISSION_ENDS <- "TBA"
 SUBMISSION_IS_OPEN <- FALSE
-CONTACT_SPEAKERS <- "November 22nd, 2024"
-FINAL_SCHEDULE <- "December 13th, 2024"
+CONTACT_SPEAKERS <- "TBA"
+FINAL_SCHEDULE <- "TBA"
 
 # Add to calendars (https://parcel.io/tools/calendar)
 # Use NULL or link
-GOOGLE_CAL <- "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20250130T150000Z%2F20250130T184000Z&details=https%3A%2F%2Fimmcantation.github.io%2Fusers-meeting%2F2025%2Fprogram.html&location=Zoom&text=2025%20Immcantation%20Users%20Group%20Meeting"
+GOOGLE_CAL <- NULL
+#GOOGLE_CAL <- "https://calendar.google.com/calendar/render?action=TEMPLATE&dates=20250130T150000Z%2F20250130T184000Z&details=https%3A%2F%2Fimmcantation.github.io%2Fusers-meeting%2F2025%2Fprogram.html&location=Zoom&text=2025%20Immcantation%20Users%20Group%20Meeting"
 OFFICE_365 <- NULL
 # OFFICE_365 <- "https://outlook.office.com/calendar/0/action/compose?allday=false&body=https%3A%2F%2Fimmcantation.github.io%2Fusers-meeting%2F2025%2Fprogram.html&enddt=2025-01-30T19%3A40%3A00&location=Zoom&path=%2Fcalendar%2Faction%2Fcompose&rru=addevent&startdt=2025-01-30T16%3A00%3A00&subject=2025%20Immcantation%20Users%20Group%20Meeting"
 ICS_FILE <- NULL
 # ICS_FILE <- "static/Immcantation-Users-Group-Meeting.ics"
 
 # NULL or link to YouTube playlist
-YOUTUBE_PLAYLIST <- "https://www.youtube.com/playlist?list=PL_vz5s41hsdBh4Ubox3hZEKKHWYyWXOPE"
+YOUTUBE_PLAYLIST <- NULL
+#YOUTUBE_PLAYLIST <- "https://www.youtube.com/playlist?list=PL_vz5s41hsdBh4Ubox3hZEKKHWYyWXOPE"
 
 # zoom link
 JOIN_WEBINAR <- ""
