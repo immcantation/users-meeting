@@ -19,10 +19,11 @@ BIG_DAY_TIME <- "10:00am to 1:30pm ET"
 REGISTRATION_FORM <- NULL
 #REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_0kC3u9npJt0onzM"
 REGISTRATION_ENDS <- "TBA"
-SUBMISSION_ENDS <- "TBA"
+SUBMISSION_OPENS <- "August 25th, 2025" # NULL if undecided
+SUBMISSION_ENDS <- "October 1st, 2025"
 SUBMISSION_IS_OPEN <- FALSE
-CONTACT_SPEAKERS <- "TBA"
-FINAL_SCHEDULE <- "TBA"
+CONTACT_SPEAKERS <- "October 31st, 2025"
+FINAL_SCHEDULE <- "December 1st, 2025"
 
 # Add to calendars (https://parcel.io/tools/calendar)
 # Use NULL or link
@@ -72,6 +73,10 @@ cat(paste0('[<button type="button" class="btn btn-info">Recordings of the sessio
 **Where**: Virtual
 
 **Registration fee**: $0, it's free!
+
+```{r, eval=!SUBMISSION_IS_OPEN & !is.null(SUBMISSION_OPENS), echo=FALSE, results='asis'}
+cat(paste0("**Abstract submission opens**: ", SUBMISSION_OPENS))
+```
 
 **Abstract deadline**: `r SUBMISSION_ENDS`
 
