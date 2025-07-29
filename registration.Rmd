@@ -49,6 +49,10 @@ An abstract template is available for download <a href="static/AbstractTemplate.
 
 <!-- <button type="button" class="btn btn-outline-primary">[Go to the <br> registration form](`r REGISTRATION_FORM`)</button> -->
 
+```{r, eval=!SUBMISSION_IS_OPEN & !is.null(SUBMISSION_OPENS), echo=FALSE, results='asis'}
+cat(paste0("**Abstract submission opens**: ", SUBMISSION_OPENS))
+```
+
 **Abstract submission ends**: `r SUBMISSION_ENDS`
 
 **Acceptance notification**: `r CONTACT_SPEAKERS`
