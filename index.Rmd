@@ -21,7 +21,7 @@ REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_emkzxiVIP
 REGISTRATION_ENDS <- "TBA"
 SUBMISSION_OPENS <- "August 25th, 2025" # NULL if undecided
 SUBMISSION_ENDS <- "October 1st, 2025"
-SUBMISSION_IS_OPEN <- FALSE
+SUBMISSION_IS_OPEN <- TRUE
 CONTACT_SPEAKERS <- "October 31st, 2025"
 FINAL_SCHEDULE <- "December 1st, 2025"
 
