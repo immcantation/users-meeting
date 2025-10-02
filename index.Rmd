@@ -19,9 +19,10 @@ BIG_DAY_TIME <- "10:00am to 1:30pm ET"
 REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_emkzxiVIPABLk8K"
 #REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_0kC3u9npJt0onzM"
 REGISTRATION_ENDS <- "TBA"
-SUBMISSION_OPENS <- "August 25th, 2025" # NULL if undecided
+# SUBMISSION_OPENS <- "August 25th, 2025" # NULL if undecided or closed
 SUBMISSION_ENDS <- "October 1st, 2025"
-SUBMISSION_IS_OPEN <- TRUE
+SUBMISSION_IS_OPEN <- FALSE
+SUBMISSION_OPENS <- NULL
 CONTACT_SPEAKERS <- "October 31st, 2025"
 FINAL_SCHEDULE <- "December 1st, 2025"
 

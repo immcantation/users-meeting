@@ -14,6 +14,9 @@ cat(paste0("Abstract submission is now open. The final program will be published
 ```{r, eval=!SUBMISSION_IS_OPEN & !is.null(SUBMISSION_OPENS), echo=FALSE, results='asis'}
 cat(paste0("Abstract submission opens: ",SUBMISSION_OPENS,"."))
 ```
+```{r, eval=!SUBMISSION_IS_OPEN & is.null(SUBMISSION_OPENS) & !is.null(FINAL_SCHEDULE), echo=FALSE, results='asis'}
+cat(paste0("The final program will be published on ",FINAL_SCHEDULE,"."))
+```
 
 *Note that all times shown here use ET.*
 
