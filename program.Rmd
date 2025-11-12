@@ -392,3 +392,125 @@ against HIV.
 [↑ Back to Program](#header)
 </div>
 
+### Tissue-directed maintenance of vaccine-specific human B-cell memory {#session9}
+
+<strong>Eric Zhang</strong>, Alex George, Matteo Porotto, Peter Sims, Donna Farber<sup>\*</sup>
+
+<sup>\*</sup>Corresponding author
+
+<div class="abstract-box">
+<strong>Abstract:</strong>
+The formation and maintenance of memory B cells (MBCs) after vaccination and infection 
+is essential for lifelong immunity. A minority of MBCs circulate; instead, most reside in 
+lymphoid reservoirs such as the spleen, lymph nodes, and bone marrow. In humans, it 
+remains unclear whether these compartments maintain distinct MBC subsets and if such 
+subsets contribute to vaccine immunity. To address this, we performed paired single-cell 
+RNA and B-cell receptor (BCR) sequencing of four ubiquitous antigen-specific MBC 
+populations—measles and tetanus (childhood-primed) and SARS-CoV-2 and H1N1 
+influenza (recently primed/boosted)—across spleen, lymph nodes, and bone marrow. We 
+identified three major subsets enriched in distinct tissues: classical MBCs in lymph nodes, 
+marginal zone–like MBCs in spleen, and atypical MBCs in bone marrow. All three subsets 
+were present in each antigen-specific population, but their relative proportions were 
+shaped by both tissue and antigen. Using the Immcantation framework, we found that 
+antigen-specific MBCs were variably clonally expanded, with individual clones spanning 
+all three subsets in a tissue-guided manner. Additionally, each subset was represented 
+amongst class-switched and non-class-switched BCRs. Mutational inference and 
+phylogenetic analysis revealed that MBCs sharing identical BCRs often adopted different 
+subset identities, indicating that MBC cellular identity is highly dynamic and uncoupled 
+from lineage. Together, these findings demonstrate substantial phenotypic and functional 
+heterogeneity in the tissue reservoirs of human memory B cells, with implications for 
+future vaccine design and delivery.
+</div>
+
+<div class="back-to-program">
+[↑ Back to Program](#header)
+</div>
+
+### Activated Polyreactive B Cells Are Clonally Expanded in Autoantibody-positive and Patients with New-Onset Type 1 Diabetes {#session10}
+
+<strong>Kristen Wells<sup>1,2,\*</sup></strong>, Mia Smith<sup>1,2,\*</sup>, Catherine Nicholas<sup>1,2</sup>
+
+<sup>1</sup>Barbara Davis Center for Diabetes;
+<sup>2</sup>University of Colorado Anschutz Medical Campus
+
+<sup>\*</sup>Corresponding author
+
+<div class="abstract-box">
+<strong>Abstract:</strong>
+
+Autoreactive B cells play an important but ill-defined role in autoimmune type 1 diabetes (T1D). We isolated 
+pancreatic islet antigen-reactive B cells from the peripheral blood of non-diabetic autoantibody-negative 
+first-degree relatives, autoantibody-positive, and recent-onset T1D donors. Single-cell RNA sequencing 
+analysis revealed that islet antigen-reactive B cells from autoantibody-positive and T1D donors had altered 
+gene expression in pathways associated with B cell signaling and inflammation. Using Immcantation to align 
+BCR sequences and identify clonally related cells, we found a similar shift in islet antigen-reactive B cell 
+repertoires among autoantibody-positive and T1D donors where greater clonal expansion was also observed. 
+Notably, a substantial fraction of islet antigen-reactive B cells in autoantibody-positive and T1D donors 
+appeared to be polyreactive, which was corroborated by analysis of recombinant monoclonal antibodies. 
+These results expand our understanding of autoreactive B cell phenotypes during T1D and identify unique 
+BCR repertoire changes that may serve as biomarkers for increased disease risk.
+</div>
+
+<strong>Associated Publications:</strong>
+
+- https://doi.org/10.1016/j.celrep.2025.115425
+
+<strong>Funding:</strong>
+
+This work was funded by the National Institutes of Health (F31DK134095 [C.A.N.], T32GM136444 [C.A.N.], 
+K01OD028759 [M.J.S.], P30DK116073 [Lori Sussel], P30CA046934 [Cancer Center Grant], and the Leona M. & 
+Harry B. Helmsley Charitable Trust, Project #2305-06031 (M.J.S.).
+
+<div class="back-to-program">
+[↑ Back to Program](#header)
+</div>
+
+### Early emergence of signatures associated with HCV infection outcome {#session11}
+<strong>Money Gupta<sup>1,2,‡</sup></strong>, Arunasingam Abayasingam<sup>1,2,‡</sup>, 
+Bing-Ru Wu<sup>1,2,‡</sup>, Alexander P. Underwood<sup>1,2,3</sup>, Clara Young<sup>4,5</sup>, 
+Melanie R. Walker<sup>1,2</sup>, David Agapiou<sup>1</sup>, Auda A. Eltahla<sup>1,2</sup>, 
+Hui Li<sup>1</sup>, Elizabeth Keoshkerian<sup>1</sup>, Sarah Su<sup>1,2</sup>, 
+Nicholas Brasher<sup>1,2</sup>, Arnold Reynaldi<sup>1</sup>, Miles P. Davenport<sup>1</sup>, 
+Fabio Luciani<sup>2</sup>, Nicodemus Tedla<sup>2</sup>, Lisa Maher<sup>1</sup>, 
+Andrew R. Lloyd<sup>1</sup>, Rowena A. Bull<sup>1,2,\*</sup>
+
+<sup>1</sup>The Kirby Institute, Faculty of Health and Medicine, UNSW, Sydney, NSW, Australia;
+<sup>2</sup>School of Biomedical Science, Faculty of Health and Medicine, UNSW, Sydney, NSW, Australia;
+<sup>3</sup>Copenhagen Hepatitis C Program (CO-HEP), Department of Infectious Diseases, Copenhagen University Hospital, Hvidovre and Department of Immunology and Microbiology, Faculty of Health and Medical Sciences, University of Copenhagen, Copenhagen, Denmark;
+<sup>4</sup>Immunology Division, Garvan Institute of Medical Research, Darlinghurst, NSW, Australia;
+<sup>5</sup>St Vincent's Clinical School, Faculty of Medicine, University of New South Wales, Darlinghurst, NSW, Australia
+
+<sup>‡</sup>These authors contributed equally to this work.
+
+<sup>\*</sup>Corresponding authors: r.bull@unsw.edu.au, money11gupta@gmail.com
+
+<div class="abstract-box">
+<strong>Abstract:</strong>
+
+Previous studies have demonstrated a delayed emergence of neutralising antibodies (nAbs) as a 
+biomarker of failure to clear hepatitis C virus (HCV) infection, but why this happened remains 
+unclear. Here in this study we examined whether the B cell repertoire of the HCV Transmission 
+Founder (TF) virus was associated with this delay in the nAb development in a unique cohort of 
+acute primary HCV infected individuals that were followed over time. TF variants from subjects that 
+developed clearance had early formation of memory B cells and were more resistant to broadly 
+neutralising antibodies (BnAbs). NAbs that appeared in subjects that did not clear the infection, we 
+observed higher utilization of Vh1-69, Vh1-18 genes and somatic hypermutation (SHM) in chronics, 
+and longer complementarity-determining region 3 (CDR3) regions in the B cell heavy chain 
+suggesting additional rounds of maturation might be required to achieve strong binding against 
+chronic TF variants. We used Change-O implemented in Immcantation for identification of clones 
+and SHM in B cell repertoire, and no clonal differences were found across the outcome. This study 
+observed a negative correlation of SHM with CDR3 whereas, an increase in the binding affinity with 
+the increase in SHM. Transcriptomic analysis of the E2-specific memory B cells showed a distinct 
+population within memory B cells that can be found in other infections well, and no pathway 
+differences were found across the outcome. Finally, this work showed the relevance of identifying 
+antibodies that can be effective vaccine targets to B cell germlines and can drive early differences in 
+nAb development, and possibly enhance antigen valency for the development of HCV vaccines.
+</div>
+
+<strong>Funding:</strong>
+
+UNSW Scientia PhD Scholarship
+
+<div class="back-to-program">
+[↑ Back to Program](#header)
+</div>
