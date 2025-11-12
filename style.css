@@ -73,4 +73,27 @@
      padding-top: 0;
  }
  
+ /* Back to Program link */
+ .back-to-program {
+     margin: 2em 0;
+     padding: 1em 0;
+     border-top: 2px solid #e5e5e5;
+     border-bottom: 2px solid #e5e5e5;
+     text-align: center;
+ }
+ 
+ .back-to-program a {
+     display: inline-block;
+     padding: 0.5em 1.5em;
+     color: #0366d6;
+     text-decoration: none;
+     font-weight: 500;
+     transition: all 0.2s;
+ }
+ 
+ .back-to-program a:hover {
+     color: #024ea2;
+     transform: translateY(-2px);
+ }
+ 
  

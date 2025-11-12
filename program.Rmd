@@ -135,8 +135,9 @@ Other partial sources of funding include:
 - JAX Cancer Center (P30 CA034196)
 - American Heart Association Predoctoral Fellowship (24PRE1186316) (to T.G.)
 
+<div class="back-to-program">
 [↑ Back to Program](#header)
-
+</div>
 
 ### Nucleotide Context Models Outperform Protein Language Models For Predicting Antibody Affinity Maturation {#session3}
 
@@ -186,4 +187,6 @@ framework to integrate evolutionary principles with advances in language modelin
 
 - National Institutes of Health, https://ror.org/01cwqze88, R01-AI146028, R56-HG013117, R01-HG013117.
 
+<div class="back-to-program">
 [↑ Back to Program](#header)
+</div>
