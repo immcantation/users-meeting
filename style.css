@@ -2,3 +2,18 @@
      padding:1em;
  }
  
+ .abstract-box {
+     background-color: #f8f9fa;
+     border: 2px solid #0366d6;
+     border-radius: 8px;
+     padding: 20px;
+     margin: 20px 0;
+     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ }
+ 
+ .abstract-box strong {
+     color: #0366d6;
+     font-size: 1.1em;
+ }
+ 
+ 

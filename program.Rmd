@@ -59,3 +59,80 @@ cat(paste0('[<button type="button" class="btn btn-info btn-sm">Download iCalenda
 ```
 
 ## Abstracts
+
+### Latent CMV is Associated with Putative CMV-specific Clonal Expansion in Th1 and GZMK⁺ CD8⁺ T Cells {#session2}
+
+<strong>Titas Grabauskas</strong><sup>1,2,‡</sup>, 
+Luke Trinity<sup>1,‡</sup>, Chris P. Verschoor<sup>3,4</sup>, 
+Radu Marches<sup>1</sup>, Asa Thibodeau<sup>1</sup>, Djamel Nehar-Belaid<sup>1</sup>, 
+Giray Eryilmaz<sup>1</sup>, Avinash S. Mahajan<sup>1,2</sup>, Sathya Baarathi<sup>1</sup>, 
+Emilie Picard<sup>3</sup>, Chia-Ling Kuo<sup>2</sup>, Kenneth E. Schmader<sup>5</sup>, 
+Cathleen Colon-Emeric<sup>5</sup>, Heather E. Whitson<sup>5</sup>, Silke Paust<sup>1</sup>, 
+Adolfo García-Sastre<sup>6-11</sup>, Gur Yaari<sup>12</sup>, 
+Jacques Banchereau<sup>1,13,\*</sup>, George A. Kuchel<sup>2,14,\*</sup>, and Duygu Ucar<sup>1,15,\*</sup>
+
+<sup>1</sup>The Jackson Laboratory for Genomic Medicine, Farmington, CT 06030, USA;
+<sup>2</sup>University of Connecticut School of Medicine, Farmington, CT 06030, USA;
+<sup>3</sup>Health Sciences North Research Institute, NOSM University, Sudbury, ON P3E 2H3, Canada;
+<sup>4</sup>Department of Medicine, McMaster University, Hamilton, ON L8S 4L8 Canada;
+<sup>5</sup>Department of Medicine and Duke Center for the Study of Aging and Human Development (Aging Center), and GRECC, Durham VA Health Care System, Durham, NC 27705, USA;
+<sup>6</sup>Department of Microbiology, Icahn School of Medicine at Mount Sinai; New York, NY 10029, USA;
+<sup>7</sup>Global Health and Emerging Pathogens Institute, Icahn School of Medicine at Mount Sinai, New York, NY 10029, USA;
+<sup>8</sup>Department of Medicine, Division of Infectious Diseases, Icahn School of Medicine at Mount Sinai, New York, NY 10029, USA;
+<sup>9</sup>The Tisch Cancer Institute, Icahn School of Medicine at Mount Sinai, New York, NY 10029, USA;
+<sup>10</sup>Department of Pathology, Molecular and Cell-Based Medicine, Icahn School of Medicine at Mount Sinai, New York, NY 10029, USA;
+<sup>11</sup>The Icahn Genomics Institute, Icahn School of Medicine at Mount Sinai, New York, NY 10029, USA;
+<sup>12</sup>Department of Pathology, Yale School of Medicine, New Haven, CT 06510-3222, USA;
+<sup>13</sup>Immunoledge LLC; Montclair, NJ 07042, USA;
+<sup>14</sup>UConn Center on Aging, University of Connecticut School of Medicine, Farmington, CT 06032, USA.;
+<sup>15</sup>Institute for Systems Genomics, University of Connecticut Health Center, Farmington, CT 06032, USA. 
+
+<sup>‡</sup>These authors contributed equally to this work.
+
+<sup>*</sup>Corresponding authors: duygu.ucar@jax.org, jacques.banchereau@gmail.com, kuchel@uchc.edu  
+
+<div class="abstract-box">
+<strong>Abstract:</strong>
+
+Cytomegalovirus (CMV) is a common herpesvirus that establishes lifelong latency and becomes increasingly prevalent 
+with age. While CMV-associated effects on CD4+/CD8+ TEMRA and NK cells are well established, the impact on other 
+immune populations and T cell clonal expansion remain poorly defined. Here, we used single-cell RNA-sequencing 
+and flow cytometry to profile peripheral blood mononuclear cells from healthy older adults (median age: 73), 
+stratified by CMV serostatus with comparable age, sex, BMI, and frailty. Systems-level characterization identified 
+novel CMV-associated changes in cell frequencies: increase in GZMK⁺ CD8⁺ T and atypical B cells, and reduction in 
+CD56dim NK cells. We also validated these observations in an independent younger adult cohort. To infer CMV 
+serostatus in single-cell datasets lacking serological data, we developed CMVerify, a machine learning model that 
+predicts CMV serostatus with 97% accuracy (97% sensitivity; 98% specificity). Applying CMVerify and 
+Immcantation’s Alakazam to a public single-cell dataset with TCR sequencing (and no CMV serology data) revealed 
+reduced TCR clonal diversity in CMV-seropositive individuals across CD4+/CD8+ TEMRAs, GZMK⁺ CD8⁺ T, and Th1 cells. 
+Importantly, we show that putatively expanded CMV-specific clones within these subsets drive the reduction in TCR 
+clonal diversity. Our results establish CMV as a key driver of immune heterogeneity in both younger and older adults, 
+describe novel associations, and present a tool to effectively infer CMV serostatus from single-cell data. 
+</div>
+
+<strong>Publications:</strong> 
+
+- CMV-specific clonal expansion of Th1, GZMK⁺ CD8⁺, and TEMRA T cells revealed by human PBMC single cell profiling
+ https://doi.org/10.1101/2025.06.24.661167 
+
+
+<strong>Funding:</strong>
+
+This study was made possible by generous financial support of the National Institutes of Health (NIH) grants 
+under award number:
+
+- UH2 AG056925 (to G.K, CCE, J.B., D.U.)
+- U01 AI165452 (to D.U., G.K.)
+- P30AG067988 Older Americans Independence Pepper Center (to G.A.K., R.M., D.U.)
+- P30AG028716 Duke Older Americans Independence Center (to K.E.S, C.C.E, H.E.W)
+- NIH grant U19 AI168631 (to A.G.-S.)
+- CRIPT (Center for Research on Influenza Pathogenesis and Transmission), a as NIAID-funded Center of 
+    Excellence for Influenza Research and Response (CEIRR, contract # 75N93021C00014) (to A.G.S.)
+- 1T32AG062409-01A1 (to L.T.)
+
+Other partial sources of funding include:
+
+- JAX Cancer Center (P30 CA034196)
+- American Heart Association Predoctoral Fellowship (24PRE1186316) (to T.G.)
+
+[↑ Back to Program](#header)
