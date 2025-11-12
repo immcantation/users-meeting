@@ -158,6 +158,7 @@ Yun S. Song<sup>4,5</sup>, Julia Fukuyama<sup>6</sup>, Frederick A. Matsen IV<su
 
 <div class="abstract-box">
 <strong>Abstract:</strong>
+
 Antibodies play a crucial role in adaptive immunity. They develop as B cell receptors (BCRs) that are 
 expressed on the surfaces of B cells. BCRs are refined through affinity maturation, a process of somatic 
 hypermutation (SHM) and natural selection, to improve binding to an antigen. Computational models of 
@@ -298,6 +299,8 @@ Goran Bajic<sup>1,\*</sup>, Camila H. Coelho<sup>1,2,14,\*</sup>
 <sup>\*</sup>Corresponding authors
 
 <div class="abstract-box">
+<strong>Abstract:</strong>
+
 The human antibody repertoire uses a wide range of V genes against diverse pathogenic threats. While some 
 V genes show pathogen-specific biases, others are repeatedly used across different infections. This raises the 
 question of whether somatic hypermutations (SHMs) in these shared V genes evolve toward recognition of specific 
@@ -400,6 +403,7 @@ against HIV.
 
 <div class="abstract-box">
 <strong>Abstract:</strong>
+
 The formation and maintenance of memory B cells (MBCs) after vaccination and infection 
 is essential for lifelong immunity. A minority of MBCs circulate; instead, most reside in 
 lymphoid reservoirs such as the spleen, lymph nodes, and bone marrow. In humans, it 
