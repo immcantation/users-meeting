@@ -223,3 +223,121 @@ clonality analysis part, and Dowser for phylogenetic analysis.
 <div class="back-to-program">
 [↑ Back to Program](#header)
 </div>
+
+### New Generalized Metric Based on Branch Length Distance to Compare B Cell Lineage Trees {#session5}
+
+Mahsa Farnia<sup>1</sup>, <strong>Nadia Tahiri<sup>1,\*</sup></strong>
+
+<sup>1</sup>Department of Computer Science, University of Sherbrooke, 2500, boulevard de l'Université, 
+Sherbrooke, QC, J1K 2R1, Canada
+
+<sup>\*</sup>Corresponding author
+
+<div class="abstract-box">
+<strong>Abstract:</strong>
+
+Tracking the progression of naïve B cells and monitoring their differentiation leads to the 
+construction of lineage trees, representing adaptive processes within a single species. These 
+trees provide structured representations of B cell maturation from hematopoietic stem cells to 
+antibody-producing cells. Building upon prior computational evaluation of lineage trees (Farnia 
+and Tahiri, 2024), this study introduces a systematic framework for clustering B cell lineage trees 
+with increased granularity. Our approach incorporates structural and numerical features, including 
+tree topology, branch lengths, node out-degree, tree height, and clonal family size. Feature 
+weighting is adjustable to accommodate specific experimental or clinical objectives.
+To perform lineage reconstruction and B cell repertoire analysis, we employed the Immcantation 
+framework, including Dowser for tree building and visualization, and Alakazam for clonal lineage 
+diversity analysis. Extracted tree features were then analyzed using the DBSCAN (Density-Based 
+Spatial Clustering of Applications with Noise) algorithm, chosen for its ability to detect clusters in 
+low-dimensional feature spaces while identifying atypical or outlier structures.
+This framework allows systematic comparison of B cell lineage trees, providing insights into 
+affinity maturation, class switching, and memory B cell diversification. By integrating detailed 
+structural features with density-based clustering, the study offers an analytical basis for 
+understanding B cell adaptive dynamics and evaluating immune responses under different 
+physiological or pathological conditions.
+</div>
+
+<strong>Associated Publications:</strong>
+
+- https://doi.org/10.1186/s13015-024-00267-1
+
+<strong>Funding:</strong>
+
+This research was funded by the Natural Sciences and Engineering Research Council of 
+Canada - Discovery Grants and Fonds de Recherche du Québec - Nature and Technologies.
+
+<div class="back-to-program">
+[↑ Back to Program](#header)
+</div>
+
+
+### Clonotype-specificity reveals differential roles of somatic hypermutation in epitope targeting  {#session6}
+
+<strong>Vishal N. Rao<sup>1,2,3</sup></strong>, Iden A. Sapse<sup>1,3</sup>, 
+Hallie Cohn<sup>1,2</sup>, Duck-Kyun Yoo<sup>4</sup>, Pei Tong<sup>4</sup>, 
+Jordan J. Clark<sup>1,2</sup>, Bailey Bozarth<sup>1,2</sup>, Yuexing Chen<sup>1,2</sup>, 
+Komal Srivastava<sup>1,2</sup>, Gagandeep Singh<sup>1,2</sup>, 
+Florian Krammer<sup>1,2,5,6</sup>, Viviana Simon<sup>1,2,4,7,8</sup>, 
+Ali H Ellebedy<sup>9</sup>, Duane R. Wesemann<sup>4,10,11,12,13,\*</sup>, 
+Goran Bajic<sup>1,\*</sup>, Camila H. Coelho<sup>1,2,14,\*</sup>
+
+<sup>1</sup>Department of Microbiology, Icahn School of Medicine at Mount Sinai, New York, NY, USA;
+<sup>2</sup>Center for Vaccine Research and Pandemic Preparedness, Icahn School of Medicine at Mount Sinai, New York, NY, USA;
+<sup>3</sup>Graduate School of Biomedical Sciences, Icahn School of Medicine at Mount Sinai, New York, NY, USA;
+<sup>4</sup>Department of Medicine, Division of Allergy and Clinical Immunology, Division of Genetics, Brigham and Women's Hospital, Boston, MA, USA;
+<sup>5</sup>Department of Pathology, Molecular and Cell-Based Medicine, Icahn School of Medicine at Mount Sinai, New York, NY, USA;
+<sup>6</sup>Ignaz Semmelweis Institute, Interuniversity Institute for Infection Research, Medical University of Vienna, Vienna, Austria;
+<sup>7</sup>The Global Health and Emerging Pathogens Institute, Icahn School of Medicine at Mount Sinai, New York, NY, USA;
+<sup>8</sup>Division of Infectious Diseases, Department of Medicine, Icahn School of Medicine at Mount Sinai, New York, NY, USA;
+<sup>9</sup>Department of Pathology and Immunology, Washington University in St. Louis, St. Louis, MO, USA;
+<sup>10</sup>Harvard Medical School, Boston, MA, USA;
+<sup>11</sup>The Broad Institute of MIT and Harvard, Cambridge, MA, USA;
+<sup>12</sup>The Ragon Institute of MGH, MIT, and Harvard, Cambridge, MA, USA;
+<sup>13</sup>Massachusetts Consortium on Pathogen Readiness, Boston, MA, USA;
+<sup>14</sup>Precision Immunology Institute, Icahn School of Medicine at Mount Sinai, New York, NY, USA.
+
+<sup>\*</sup>Corresponding authors
+
+<div class="abstract-box">
+The human antibody repertoire uses a wide range of V genes against diverse pathogenic threats. While some 
+V genes show pathogen-specific biases, others are repeatedly used across different infections. This raises the 
+question of whether somatic hypermutations (SHMs) in these shared V genes evolve toward recognition of specific 
+epitopes. We investigated this using the public antibody M15, which targets the S2 domain of sarbecoviruses 
+and is elicited upon SARS-CoV-2 infection/vaccination. From two cohorts of mRNA vaccinees and public 
+databases (CoV-AbDAb, Observed Antibody Space), we identified 147 M15-like sequences based on VJ gene 
+identity (assigned using the ‘changeo’ package in Immcantation) and >70% CDR3 similarity. Using these, we 
+identified convergent SHMs in the light chain, enriched within the M15 clonotype compared with antibodies 
+using the same V gene against unrelated antigens. Reverting these clonotype-enriched SHMs to their germline 
+residues reduced M15 binding affinity 12-fold, equivalent to the reconstructed germline antibody, underscoring 
+their role in affinity maturation. Cryo-EM structure of M15 bound to S2 showed that these SHMs enable 
+interactions with a hydrophobic cleft in a novel central interface epitope, occluded in prefusion spike. Serum 
+antibodies targeting this site increase with repeated SARS-CoV-2 vaccinations. In contrast, among SARS-CoV-2 
+mRNA vaccinated individuals, we show that SHMs shared across spike-specific germinal center B cell clonotypes, 
+are commonly acquired and exhibit similar functional roles in antibodies interacting with other viral antigens. 
+Overall, our results reveal two layers of SHM function: common, pan-antigenic SHMs, and rare clonotype-enriched 
+SHMs that enable affinity maturation toward atypical epitopes. 
+</div>
+
+<strong>Associated Publications:</strong>
+
+- https://doi.org/10.1016/j.celrep.2025.116122 
+
+<strong>Funding:</strong>
+
+This project was funded by the Icahn School of Medicine at Mount Sinai and partially funded by the National 
+Institutes of Health (NIH FIRST U54CA267776 to C.H.C.; AI165072 and AI170715 to D.R.W.). We acknowledge 
+support from the NIH R01 AI168178 and the Irma T. Hirschl/Monique Weill-Caulier Trust to G.B. Some of this 
+work was performed at the National Center for CryoEM Access and Training (NCCAT) and the Simons Electron 
+Microscopy Center located at the New York Structural Biology Center, supported by the NIH Common Fund 
+Transformative High Resolution Cryo-Electron Microscopy program (U24 GM129539) and by grants from the Simons 
+Foundation (SF349247) and the NY State Assembly. This work was supported in part through the computational 
+and data resources and staff expertise provided by Scientific Computing and Data at the Icahn School of 
+Medicine at Mount Sinai and supported by the Clinical and Translational Science Awards (CTSA) grant 
+UL1TR004419 from the National Center for Advancing Translational Sciences. Research reported in this 
+publication was also supported by the Office of Research Infrastructure of the National Institutes 
+of Health under award nos. S10OD026880 and S10OD030463. We thank the Flow Cytometry Core Facility and 
+staff at the Icahn School of Medicine at Mount Sinai for their assistance. The BSL-3 facility used in 
+this project for work with SARS-CoV-2 virus stocks is an NIH BSL-3/ABSL-3 facility, part of the BSL-3 
+Biocontainment CoRE. This core is supported by funding from the ISMMS Dean’s Office and investigator 
+contributions through a cost recovery mechanism. The facility use reported in this publication was supported 
+by the National Institute of Allergy and Infectious Diseases of the National Institutes of Health under 
+award no. G20AI174733 (R.A. Albrecht).  
