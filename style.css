@@ -16,7 +16,7 @@
      font-size: 1.1em;
  }
  
- /* Elegant minimalist table styling */
+ /* Program table styling */
  table {
      border-collapse: collapse;
      font-size: 0.95em;
@@ -58,6 +58,19 @@
  /* Speaker column */
  table td:nth-child(3) {
      color: #666;
+ }
+ 
+ /* Abstract section titles */
+ #abstracts h3 {
+     margin-top: 3em;
+     padding-top: 1.5em;
+     border-top: 1px solid #e5e5e5;
+ }
+ 
+ #abstracts h3:first-of-type {
+     margin-top: 1em;
+     border-top: none;
+     padding-top: 0;
  }
  
  
