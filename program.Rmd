@@ -89,7 +89,7 @@ Jacques Banchereau<sup>1,13,\*</sup>, George A. Kuchel<sup>2,14,\*</sup>, and Du
 
 <sup>‡</sup>These authors contributed equally to this work.
 
-<sup>*</sup>Corresponding authors: duygu.ucar@jax.org, jacques.banchereau@gmail.com, kuchel@uchc.edu  
+<sup>\*</sup>Corresponding authors: duygu.ucar@jax.org, jacques.banchereau@gmail.com, kuchel@uchc.edu  
 
 <div class="abstract-box">
 <strong>Abstract:</strong>
@@ -110,7 +110,7 @@ clonal diversity. Our results establish CMV as a key driver of immune heterogene
 describe novel associations, and present a tool to effectively infer CMV serostatus from single-cell data. 
 </div>
 
-<strong>Publications:</strong> 
+<strong>Associated publications:</strong> 
 
 - CMV-specific clonal expansion of Th1, GZMK⁺ CD8⁺, and TEMRA T cells revealed by human PBMC single cell profiling
  https://doi.org/10.1101/2025.06.24.661167 
@@ -134,5 +134,56 @@ Other partial sources of funding include:
 
 - JAX Cancer Center (P30 CA034196)
 - American Heart Association Predoctoral Fellowship (24PRE1186316) (to T.G.)
+
+[↑ Back to Program](#header)
+
+
+### Nucleotide Context Models Outperform Protein Language Models For Predicting Antibody Affinity Maturation {#session3}
+
+Mackenzie M. Johnson<sup>1</sup>, Kevin Sung<sup>1</sup>, Hugh K. Haddox<sup>1</sup>, 
+Ashni A. Vora<sup>2</sup>, Tatsuya Araki<sup>2</sup>, Gabriel Victora<sup>2</sup>, 
+Yun S. Song<sup>4,5</sup>, Julia Fukuyama<sup>6</sup>, Frederick A. Matsen IV<sup>1,3,7,8,\*</sup> 
+
+<sup>1</sup>Computational Biology Program, Fred Hutch Cancer Center; 
+<sup>2</sup>Laboratory of Lymphocyte Dynamics, The Rockefeller University; 
+<sup>3</sup>Howard Hughes Medical Instititute; 
+<sup>4</sup>Computer Science Division, University of California, Berkeley; 
+<sup>5</sup>Department of Statistics, University of California, Berkeley; 
+<sup>6</sup>Department of Statistics, Indiana University, Bloomington; 
+<sup>7</sup>Department of Genome Sciences, University of Washington; 
+<sup>8</sup>Department of Statistics, University of Washington 
+
+<sup>\*</sup>Corresponding author 
+
+<div class="abstract-box">
+<strong>Abstract:</strong>
+Antibodies play a crucial role in adaptive immunity. They develop as B cell receptors (BCRs) that are 
+expressed on the surfaces of B cells. BCRs are refined through affinity maturation, a process of somatic 
+hypermutation (SHM) and natural selection, to improve binding to an antigen. Computational models of 
+affinity maturation have developed from two main perspectives: molecular evolution and language modeling. 
+The molecular evolution perspective focuses on nucleotide sequence context to describe mutation and 
+selection; the language modeling perspective involves learning patterns from large data sets of protein 
+sequences. We compared models from both perspectives on their ability to predict the course of antibody 
+affinity maturation along phylogenetic trees of BCR sequences. This included models of SHM – such as 
+the S5F model, models of SHM combined with an estimate of selection, and protein language models AbLang2 
+and ESM-1v. We evaluated models on large human BCR repertoire data sets, as well as an antigen-specific 
+mouse experiment with a pre-rearranged cognate naive antibody. We demonstrated that precise modeling 
+of SHM, which requires the nucleotide context, provides a substantial amount of predictive power 
+for predicting the course of affinity maturation. Notably, a simple nucleotide-based convolutional 
+neural network modeling SHM outperformed state-of-the-art protein language models, including one trained 
+exclusively on antibody sequences. Furthermore, incorporating estimates of selection based on a custom 
+deep mutational scanning experiment brought only modest improvement in predictive power. To support 
+further research, we introduce EPAM (Evaluating Predictions of Affinity Maturation), a benchmarking 
+framework to integrate evolutionary principles with advances in language modeling. 
+</div>
+
+<strong>Associated publications:</strong>
+
+- https://doi.org/10.1101/2025.06.16.659977 
+
+
+<strong>Funding Information:</strong>
+
+- National Institutes of Health, https://ror.org/01cwqze88, R01-AI146028, R56-HG013117, R01-HG013117.
 
 [↑ Back to Program](#header)
