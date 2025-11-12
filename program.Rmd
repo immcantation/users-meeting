@@ -340,4 +340,55 @@ this project for work with SARS-CoV-2 virus stocks is an NIH BSL-3/ABSL-3 facili
 Biocontainment CoRE. This core is supported by funding from the ISMMS Dean’s Office and investigator 
 contributions through a cost recovery mechanism. The facility use reported in this publication was supported 
 by the National Institute of Allergy and Infectious Diseases of the National Institutes of Health under 
-award no. G20AI174733 (R.A. Albrecht).  
+award no. G20AI174733 (R.A. Albrecht).
+
+<div class="back-to-program">
+[↑ Back to Program](#header)
+</div>
+
+### Germline-targeting vaccination elicits HIV broadly neutralizing antibodies in nonhuman primates {#session8}
+
+<strong>Patrick J Madden<sup>1,2,‡</sup></strong>, Jon Steichen<sup>2,3,‡</sup>, 
+Monolina Shil<sup>1,2</sup>, Alessia Liguori<sup>2,3,4</sup>, Parham Ramezani-Rad<sup>1,2</sup>, 
+Ivy Phung<sup>1,2</sup>, Claudia Flynn<sup>2,4</sup>, Diane G Carnathan<sup>5</sup>, 
+JH Lee<sup>2,4</sup>, Guido Silvestri<sup>5</sup>, William R Schief<sup>2,3,4,6,\*</sup>, 
+Shane Crotty<sup>1,2,7,\*</sup>
+
+<sup>1</sup>Center for Vaccine Innovation, La Jolla Institute for Immunology;
+<sup>2</sup>Consortium for HIV/AIDS Vaccine Development;
+<sup>3</sup>Department of Immunology and Microbiology, The Scripps Research Institute;
+<sup>4</sup>IAVI Neutralizing Antibody Center, The Scripps Research Institute;
+<sup>5</sup>Emory National Primate Research Center and Emory Vaccine Center, Emory University School of Medicine;
+<sup>6</sup>Moderna, Inc.;
+<sup>7</sup>Department of Medicine, Division of Infectious Disease and Global Public Health, University of California, San Diego
+
+<sup>‡</sup>These authors contributed equally to this work.
+
+<sup>\*</sup>Corresponding authors
+
+<div class="abstract-box">
+<strong>Abstract:</strong>
+
+Germline-targeting and shepherding is an HIV vaccine strategy that relies on multiple phases, priming of 
+rare precursor B cells followed by maturation of those B cells into broadly-neutralizing antibodies (bnAbs) 
+through sequential immunizations and, finally, conversion of those bnAb-expressing B cells into long-lived 
+responses. We recently demonstrated that the priming immunogen N332-GT5 can reproducible prime BG18 type I 
+precursor B cells in rhesus macaques. BG18 is an HIV bnAb that targets the N332 glycan supersite on the 
+Envelope protein and is dependent on a long CDRH3 which makes the precursors incredibly rare in the naïve 
+repertoire (1 in 53 million in humans and estimated 8-fold lower in NHPs). To extend these findings we 
+initiated a study using sequential immunization of progressively more native like trimer immunogens after 
+N332-GT5 ED priming to mature the BG18 type I responses. After a series of seven booster immunizations, 
+>50% of immunized animals developed BG18 type I like bnAb responses and demonstrated broad-neutralization 
+in the serum. Through the use of the Immcantation framework, individual BG18 type I B cell lineages were 
+traced throughout the study. Dowser was used to construct phylogenetic trees and trace the mutation history 
+and development of neutralization potency and breadth in individual clonal families of up to 6000 cells, 
+highlighting the importance of robust bioinformatic packages such as Dowser to aid in the analysis of 
+germline-targeting vaccine regimens. Overall, these results show that germline-targeting can successfully 
+induce bnAbs and serves as proof-of-concept that germline-targeting is a feasible vaccination strategy 
+against HIV.
+</div>
+
+<div class="back-to-program">
+[↑ Back to Program](#header)
+</div>
+
