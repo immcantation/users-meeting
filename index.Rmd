@@ -25,6 +25,7 @@ SUBMISSION_IS_OPEN <- FALSE
 SUBMISSION_OPENS <- NULL
 CONTACT_SPEAKERS <- "October 31st, 2025"
 FINAL_SCHEDULE <- "December 1st, 2025"
+EARLY_PROGRAM_RELEASE <- TRUE # Use true if program is released before the original FINAL_SCHEDULE date
 
 # Add to calendars (https://parcel.io/tools/calendar)
 # Use NULL or link
@@ -81,7 +82,13 @@ cat(paste0("**Abstract submission opens**: ", SUBMISSION_OPENS))
 
 **Abstract deadline**: `r SUBMISSION_ENDS`
 
-**Final program published**: `r FINAL_SCHEDULE`
+```{r, eval=!is.null(FINAL_SCHEDULE), echo=FALSE, results='asis'}
+if (!EARLY_PROGRAM_RELEASE) {
+    cat(paste0("**Final program published**", FINAL_SCHEDULE, "."))
+} else {
+    cat("**Final program now available**")
+}
+```
 
 <!--**Registration ends**: `r REGISTRATION_ENDS`-->
 </div></div>
