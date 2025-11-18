@@ -9,7 +9,7 @@ Abstracts may be uploaded during the registration process, and should follow the
 the use of a variety of the Immcantation tools in advancing knowledge of adaptive immune responses. *Abstracts should state explicitly how Immcantation was used in the research.*
 
 Selected speakers will be contacted by email by `r CONTACT_SPEAKERS`.
-The final program and selected abstracts will be published on `r FINAL_SCHEDULE`.
+The final program and selected abstracts will be published by `r FINAL_SCHEDULE`.
 
 
 ```{r, eval=!is.null(REGISTRATION_FORM), echo=FALSE, results='asis'}
@@ -57,7 +57,13 @@ cat(paste0("**Abstract submission opens**: ", SUBMISSION_OPENS))
 
 **Acceptance notification**: `r CONTACT_SPEAKERS`
 
-**Final program**: `r FINAL_SCHEDULE`
+```{r, eval=!is.null(FINAL_SCHEDULE), echo=FALSE, results='asis'}
+if (!EARLY_PROGRAM_RELEASE) {
+    cat(paste0("**Final program published**", FINAL_SCHEDULE, "."))
+} else {
+    cat("**Final program now available**")
+}
+```
 
 <!--**Registration ends**: `r REGISTRATION_ENDS`-->
 
