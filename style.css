@@ -60,6 +60,11 @@
      color: #666;
  }
  
+  /* Affiliation column */
+ table td:nth-child(4) {
+     color: #666;
+ }
+ 
  /* Abstract section titles */
  #abstracts h3 {
      margin-top: 3em;
