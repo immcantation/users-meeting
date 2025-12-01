@@ -216,6 +216,10 @@ retention. By delivering high-fidelity receptor, isoform, and clonal lineage inf
 the analytical reach of scRNA-seq for B cell immunology.
 </div>
 
+<strong>Associated publications:</strong>
+
+- https://doi.org/10.1101/2025.09.21.677530
+
 <strong>Immcantation Tools Used:</strong>
 
 Immcantation tools used in the postprocessing steps (integrated in the code). Change-O used in the 
