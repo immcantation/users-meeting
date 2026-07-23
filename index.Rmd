@@ -26,7 +26,7 @@ SUBMISSION_ENDS <- "October 1st, 2026"
 SUBMISSION_IS_OPEN <- FALSE
 CONTACT_SPEAKERS <- "October 31st, 2026"
 FINAL_SCHEDULE <- "December 1st, 2026"
-EARLY_PROGRAM_RELEASE <- TRUE # Use true if program is released before the original FINAL_SCHEDULE date
+EARLY_PROGRAM_RELEASE <- FALSE # Use true if program is released before the original FINAL_SCHEDULE date
 
 # Add to calendars (https://parcel.io/tools/calendar)
 # Use NULL or link
