@@ -24,7 +24,7 @@ SUBMISSION_ENDS <- "October 1st, 2026"
 # SUBMISSION_IS_OPEN is a manual on/off to be set once abstract submissions is actually open,
 # then the site swaps from "opens on X date" messaging to "submission is open" messaging.
 SUBMISSION_IS_OPEN <- FALSE
-CONTACT_SPEAKERS <- "October 31st, 2026"
+CONTACT_SPEAKERS <- "October 30th, 2026"
 FINAL_SCHEDULE <- "December 1st, 2026"
 EARLY_PROGRAM_RELEASE <- FALSE # Use true if program is released before the original FINAL_SCHEDULE date
 
