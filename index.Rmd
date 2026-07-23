@@ -38,8 +38,8 @@ ICS_FILE <- NULL
 # ICS_FILE <- "static/Immcantation-Users-Group-Meeting.ics"
 
 # NULL or link to YouTube playlist
-# YOUTUBE_PLAYLIST <- NULL
-YOUTUBE_PLAYLIST <- "https://youtube.com/playlist?list=PL_vz5s41hsdDIRqwwXrF1PyX1AJeblgUz&si=OlnbZKjfER_ir5cK"
+YOUTUBE_PLAYLIST <- NULL
+# YOUTUBE_PLAYLIST <- "https://youtube.com/playlist?list=PL_vz5s41hsdDIRqwwXrF1PyX1AJeblgUz&si=OlnbZKjfER_ir5cK"
 
 # zoom link
 JOIN_WEBINAR <- ""
