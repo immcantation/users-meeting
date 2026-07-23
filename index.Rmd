@@ -85,7 +85,7 @@ cat(paste0("**Abstract submission opens**: ", SUBMISSION_OPENS))
 
 ```{r, eval=!is.null(FINAL_SCHEDULE), echo=FALSE, results='asis'}
 if (!EARLY_PROGRAM_RELEASE) {
-    cat(paste0("**Final program published**", FINAL_SCHEDULE, "."))
+    cat(paste0("**Final program published**: ", FINAL_SCHEDULE, "."))
 } else {
     cat("**Final program now available**")
 }
