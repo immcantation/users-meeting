@@ -19,7 +19,7 @@ BIG_DAY_TIME <- "10:00am to 1:30pm ET"
 REGISTRATION_FORM <- ""
 # REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_emkzxiVIPABLk8K"
 REGISTRATION_ENDS <- "TBA"
-SUBMISSION_OPENS <- "August 24th, 2026" # NULL if undecided or closed
+SUBMISSION_OPENS <- "September 1st, 2026" # NULL if undecided or closed
 SUBMISSION_ENDS <- "October 1st, 2026"
 # SUBMISSION_IS_OPEN is a manual on/off to be set once abstract submissions is actually open,
 # then the site swaps from "opens on X date" messaging to "submission is open" messaging.
