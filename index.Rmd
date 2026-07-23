@@ -1,5 +1,5 @@
 ---
-title: "2026 Immcantation Users Group Meeting"
+title: "2027 Immcantation Users Group Meeting"
 ---
 
 ```{r setup, echo=FALSE}
@@ -8,7 +8,7 @@ suppressPackageStartupMessages(library(fontawesome))
 suppressPackageStartupMessages(library(kableExtra))
 
 #------------ CONFIGURATION -----------------#
-BIG_DAY <- "January 22nd, 2026"
+BIG_DAY <- "January 28th, 2027"
 BIG_DAY_TIME <- "10:00am to 1:30pm ET"
 
 # NULL, "", or link to the registration form
@@ -19,12 +19,13 @@ BIG_DAY_TIME <- "10:00am to 1:30pm ET"
 REGISTRATION_FORM <- ""
 # REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_emkzxiVIPABLk8K"
 REGISTRATION_ENDS <- "TBA"
-# SUBMISSION_OPENS <- "August 25th, 2025" # NULL if undecided or closed
-SUBMISSION_ENDS <- "October 1st, 2025"
+SUBMISSION_OPENS <- "August 24th, 2026" # NULL if undecided or closed
+SUBMISSION_ENDS <- "October 1st, 2026"
+# SUBMISSION_IS_OPEN is a manual on/off to be set once abstract submissions is actually open,
+# then the site swaps from "opens on X date" messaging to "submission is open" messaging.
 SUBMISSION_IS_OPEN <- FALSE
-SUBMISSION_OPENS <- NULL
-CONTACT_SPEAKERS <- "October 31st, 2025"
-FINAL_SCHEDULE <- "December 1st, 2025"
+CONTACT_SPEAKERS <- "October 31st, 2026"
+FINAL_SCHEDULE <- "December 1st, 2026"
 EARLY_PROGRAM_RELEASE <- TRUE # Use true if program is released before the original FINAL_SCHEDULE date
 
 # Add to calendars (https://parcel.io/tools/calendar)
