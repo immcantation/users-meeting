@@ -8,7 +8,7 @@ suppressPackageStartupMessages(library(fontawesome))
 suppressPackageStartupMessages(library(kableExtra))
 
 #------------ CONFIGURATION -----------------#
-BIG_DAY <- "January 28th, 2027"
+BIG_DAY <- "January 21st, 2027"
 BIG_DAY_TIME <- "10:00am to 1:30pm ET"
 
 # NULL, "", or link to the registration form
