@@ -1,0 +1,104 @@
+ .card {
+     padding:1em;
+ }
+ 
+ .abstract-box {
+     background-color: #f8f9fa;
+     border: 2px solid #0366d6;
+     border-radius: 8px;
+     padding: 20px;
+     margin: 20px 0;
+     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+ }
+ 
+ .abstract-box strong {
+     color: #0366d6;
+     font-size: 1.1em;
+ }
+ 
+ /* Program table styling */
+ table {
+     border-collapse: collapse;
+     font-size: 0.95em;
+     color: #333;
+     margin: 2em 0;
+ }
+ 
+ table thead th {
+     border-bottom: 2px solid #333;
+     padding: 0.75em 1em;
+     text-align: left;
+     font-weight: 500;
+     letter-spacing: 0.5px;
+     font-size: 0.9em;
+     text-transform: uppercase;
+     color: #555;
+ }
+ 
+ table tbody td {
+     padding: 1em 1em;
+     border-bottom: 1px solid #e5e5e5;
+ }
+ 
+ table tbody tr:last-child td {
+     border-bottom: 2px solid #333;
+ }
+ 
+ table tbody tr:hover {
+     background-color: #fafafa;
+ }
+ 
+ /* Time columns */
+ table td:nth-child(1),
+ table td:nth-child(2) {
+     color: #888;
+     font-size: 0.9em;
+ }
+ 
+ /* Speaker column */
+ table td:nth-child(3) {
+     color: #666;
+ }
+ 
+  /* Affiliation column */
+ table td:nth-child(4) {
+     color: #666;
+ }
+ 
+ /* Abstract section titles */
+ #abstracts h3 {
+     margin-top: 3em;
+     padding-top: 1.5em;
+     border-top: 1px solid #e5e5e5;
+ }
+ 
+ #abstracts h3:first-of-type {
+     margin-top: 1em;
+     border-top: none;
+     padding-top: 0;
+ }
+ 
+ /* Back to Program link */
+ .back-to-program {
+     margin: 2em 0;
+     padding: 1em 0;
+     border-top: 2px solid #e5e5e5;
+     border-bottom: 2px solid #e5e5e5;
+     text-align: center;
+ }
+ 
+ .back-to-program a {
+     display: inline-block;
+     padding: 0.5em 1.5em;
+     color: #0366d6;
+     text-decoration: none;
+     font-weight: 500;
+     transition: all 0.2s;
+ }
+ 
+ .back-to-program a:hover {
+     color: #024ea2;
+     transform: translateY(-2px);
+ }
+ 
+ 

@@ -1,5 +1,5 @@
 ---
-title: "2026 Immcantation Users Group Meeting"
+title: "2027 Immcantation Users Group Meeting"
 ---
 
 ```{r setup, echo=FALSE}
@@ -8,7 +8,7 @@ suppressPackageStartupMessages(library(fontawesome))
 suppressPackageStartupMessages(library(kableExtra))
 
 #------------ CONFIGURATION -----------------#
-BIG_DAY <- "January 22nd, 2026"
+BIG_DAY <- "January 21st, 2027"
 BIG_DAY_TIME <- "10:00am to 1:30pm ET"
 
 # NULL, "", or link to the registration form
@@ -19,13 +19,14 @@ BIG_DAY_TIME <- "10:00am to 1:30pm ET"
 REGISTRATION_FORM <- ""
 # REGISTRATION_FORM <- "https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_emkzxiVIPABLk8K"
 REGISTRATION_ENDS <- "TBA"
-# SUBMISSION_OPENS <- "August 25th, 2025" # NULL if undecided or closed
-SUBMISSION_ENDS <- "October 1st, 2025"
+SUBMISSION_OPENS <- "September 1st, 2026" # NULL if undecided or closed
+SUBMISSION_ENDS <- "October 1st, 2026"
+# SUBMISSION_IS_OPEN is a manual on/off to be set once abstract submissions is actually open,
+# then the site swaps from "opens on X date" messaging to "submission is open" messaging.
 SUBMISSION_IS_OPEN <- FALSE
-SUBMISSION_OPENS <- NULL
-CONTACT_SPEAKERS <- "October 31st, 2025"
-FINAL_SCHEDULE <- "December 1st, 2025"
-EARLY_PROGRAM_RELEASE <- TRUE # Use true if program is released before the original FINAL_SCHEDULE date
+CONTACT_SPEAKERS <- "October 30th, 2026"
+FINAL_SCHEDULE <- "December 1st, 2026"
+EARLY_PROGRAM_RELEASE <- FALSE # Use true if program is released before the original FINAL_SCHEDULE date
 
 # Add to calendars (https://parcel.io/tools/calendar)
 # Use NULL or link
@@ -37,8 +38,8 @@ ICS_FILE <- NULL
 # ICS_FILE <- "static/Immcantation-Users-Group-Meeting.ics"
 
 # NULL or link to YouTube playlist
-# YOUTUBE_PLAYLIST <- NULL
-YOUTUBE_PLAYLIST <- "https://youtube.com/playlist?list=PL_vz5s41hsdDIRqwwXrF1PyX1AJeblgUz&si=OlnbZKjfER_ir5cK"
+YOUTUBE_PLAYLIST <- NULL
+# YOUTUBE_PLAYLIST <- "https://youtube.com/playlist?list=PL_vz5s41hsdDIRqwwXrF1PyX1AJeblgUz&si=OlnbZKjfER_ir5cK"
 
 # zoom link
 JOIN_WEBINAR <- ""
@@ -84,7 +85,7 @@ cat(paste0("**Abstract submission opens**: ", SUBMISSION_OPENS))
 
 ```{r, eval=!is.null(FINAL_SCHEDULE), echo=FALSE, results='asis'}
 if (!EARLY_PROGRAM_RELEASE) {
-    cat(paste0("**Final program published**", FINAL_SCHEDULE, "."))
+    cat(paste0("**Final program published**: ", FINAL_SCHEDULE, "."))
 } else {
     cat("**Final program now available**")
 }
