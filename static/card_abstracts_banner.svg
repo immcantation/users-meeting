@@ -24,7 +24,7 @@
   <text x="238" y="34" text-anchor="middle" fill="#ffffff" font-size="13" font-weight="bold" letter-spacing="1.8">CALL FOR ABSTRACTS</text>
   <text x="140" y="72" fill="#ffffff" font-size="24" font-weight="bold">2027 Immcantation Users Group Meeting</text>
   <text x="140" y="98" fill="#66a2c9" font-size="16">Share how you use Immcantation in your research</text>
-  <text x="140" y="130" fill="#ffffff" font-size="16"><tspan fill="#27ae60" font-weight="bold">250 words max</tspan> · for a chance at a <tspan font-weight="bold">20-minute oral presentation</tspan></text>
+  <text x="140" y="130" fill="#ffffff" font-size="16"><tspan fill="#27ae60" font-weight="bold">250 words max</tspan> · for a <tspan font-weight="bold">20-minute oral presentation</tspan></text>
 
   <!-- deadline -->
   <g transform="translate(676,14)">
