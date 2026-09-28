@@ -14,7 +14,7 @@ The final program and selected abstracts will be published by `r FINAL_SCHEDULE`
 
 ```{r, eval=!is.null(REGISTRATION_FORM), echo=FALSE, results='asis'}
 if (REGISTRATION_FORM != "") {
-    cat(paste0('The registration form is available [here', fontawesome::fa(name = "fas fa-link", fill = "bg-primary"),'](',REGISTRATION_FORM,')'))
+    cat(paste0('The **registration form** is available [here', fontawesome::fa(name = "fas fa-link", fill = "bg-primary"),'](',REGISTRATION_FORM,')'))
 }
 ```
 
